@@ -1,0 +1,176 @@
+{
+	"AudioList": [
+		{
+			"ID": 0,
+			"ResourceKey": "Sound_Music_01"
+		},
+		{
+			"ID": 1,
+			"ResourceKey": "Sound_Music_02"
+		},
+		{
+			"ID": 2,
+			"ResourceKey": "Sound_Music_03"
+		},
+		{
+			"ID": 3,
+			"ResourceKey": "Sound_Music_04"
+		},
+		{
+			"ID": 4,
+			"ResourceKey": "Sound_Music_05"
+		},
+		{
+			"ID": 5,
+			"ResourceKey": "Sound_Music_06"
+		},
+		{
+			"ID": 6,
+			"ResourceKey": "Sound_Music_07"
+		},
+		{
+			"ID": 7,
+			"ResourceKey": "Sound_Music_08"
+		},
+		{
+			"ID": 8,
+			"ResourceKey": "Sound_Gun_Burst_AK47"
+		},
+		{
+			"ID": 9,
+			"ResourceKey": "Sound_Gun_Burst_AWM"
+		},
+		{
+			"ID": 10,
+			"ResourceKey": "Sound_Gun_Burst_M4"
+		},
+		{
+			"ID": 11,
+			"ResourceKey": "Sound_Gun_Burst_M24R"
+		},
+		{
+			"ID": 12,
+			"ResourceKey": "Sound_3DTest"
+		},
+		{
+			"ID": 13,
+			"ResourceKey": "Sound_Enemy_Damage"
+		},
+		{
+			"ID": 14,
+			"ResourceKey": "Sound_Enemy_Destroy"
+		},
+		{
+			"ID": 15,
+			"ResourceKey": "Sound_Enemy_Shot"
+		},
+		{
+			"ID": 16,
+			"ResourceKey": "Sound_Gun_Reload_AK47"
+		},
+		{
+			"ID": 17,
+			"ResourceKey": "Sound_Gun_Reload_AWM"
+		},
+		{
+			"ID": 18,
+			"ResourceKey": "Sound_Gun_Reload_M4"
+		},
+		{
+			"ID": 19,
+			"ResourceKey": "Sound_Gun_Reload_M24R"
+		},
+		{
+			"ID": 20,
+			"ResourceKey": "Sound_Grenade_Explosion"
+		},
+		{
+			"ID": 21,
+			"ResourceKey": "Sound_Grenade_Hit"
+		},
+		{
+			"ID": 22,
+			"ResourceKey": "Sound_Grenade_Smoke"
+		},
+		{
+			"ID": 23,
+			"ResourceKey": "Sound_Player_ADS"
+		},
+		{
+			"ID": 24,
+			"ResourceKey": "Sound_Player_Crouching"
+		},
+		{
+			"ID": 25,
+			"ResourceKey": "Sound_Player_Death1"
+		},
+		{
+			"ID": 26,
+			"ResourceKey": "Sound_Player_Death2"
+		},
+		{
+			"ID": 27,
+			"ResourceKey": "Sound_Player_Death3"
+		},
+		{
+			"ID": 28,
+			"ResourceKey": "Sound_Player_Footfall"
+		},
+		{
+			"ID": 29,
+			"ResourceKey": "Sound_Player_Throw"
+		},
+		{
+			"ID": 30,
+			"ResourceKey": "Sound_Player_Jump"
+		},
+		{
+			"ID": 31,
+			"ResourceKey": "Sound_Player_Jump_Landing"
+		},
+		{
+			"ID": 32,
+			"ResourceKey": "Sound_Gun_Empty_Magazine"
+		},
+		{
+			"ID": 33,
+			"ResourceKey": "Sound_System_ChangeScene_Single"
+		},
+		{
+			"ID": 34,
+			"ResourceKey": "Sound_System_ChangeScene_Multi"
+		},
+		{
+			"ID": 35,
+			"ResourceKey": "Sound_System_ClickButton"
+		},
+		{
+			"ID": 36,
+			"ResourceKey": "Sound_System_Countdown"
+		},
+		{
+			"ID": 37,
+			"ResourceKey": "Sound_System_Game_Start"
+		},
+		{
+			"ID": 38,
+			"ResourceKey": "Sound_System_RemainingTime"
+		},
+		{
+			"ID": 39,
+			"ResourceKey": "Sound_System_Result"
+		},
+		{
+			"ID": 40,
+			"ResourceKey": "Sound_System_Weapon_Select"
+		},
+		{
+			"ID": 41,
+			"ResourceKey": "Sound_Grenade_Sticky"
+		},
+		{
+			"ID": 42,
+			"ResourceKey": "Sound_System_Cancel"
+		}
+	]
+}

@@ -1,0 +1,40 @@
+{
+    "Weapon": {
+        "Gun": [
+            {
+                "ID": 0,
+                "NameID": 0,
+                "Attack": 1,
+                "MaxBullet": 100
+            },
+            {
+                "ID": 0,
+                "NameID": 0,
+                "Attack": 1,
+                "MaxBullet": 100
+            },
+            {
+                "ID": 0,
+                "NameID": 0,
+                "Attack": 1,
+                "MaxBullet": 100
+            }
+        ],
+        "Bomb": [
+            {
+                "ID": 0,
+                "NameID": 0,
+                "Attack": 1,
+                "IsBurstOnGronud": true,
+                "BurstTime": 2.0
+            },
+            {
+                "ID": 0,
+                "NameID": 0,
+                "Attack": 1,
+                "IsBurstOnGronud": true,
+                "BurstTime": 0.0
+            }
+        ]
+    }
+}

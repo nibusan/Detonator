@@ -1,0 +1,1923 @@
+{
+  "UILayerDatas": [
+    {
+      "LayerType": 0,
+      "UIs": [
+        {
+          "ID": 0,
+          "Type": 0,
+          "Pos": {
+            "X": 960.0,
+            "Y": 540.0
+          },
+          "FixedSize": null,
+          "Scale": 1.0,
+          "Angle": 0.0,
+          "Alpha": 1.0,
+          "IsActive": true,
+          "IsClickable": false,
+          "PositionType": 4,
+          "OnClickFuncID": -1,
+          "Attribute": {
+            "Image_ResourceKey": "Image_Icon_TitleLogo"
+          },
+          "Childs": null
+        }
+      ]
+    },
+    {
+      "LayerType": 1,
+      "UIs": [
+        {
+          "ID": 1,
+          "Type": 0,
+          "Pos": {
+            "X": 60.0,
+            "Y": 42.0
+          },
+          "FixedSize": null,
+          "Scale": 1.0,
+          "Angle": 0.0,
+          "Alpha": 1.0,
+          "IsActive": true,
+          "IsClickable": false,
+          "PositionType": 0,
+          "OnClickFuncID": -1,
+          "Attribute": {
+            "Image_ResourceKey": "Image_Icon_TitleLogo",
+            "PixelShader_ResourceKey": null
+          },
+          "Childs": null
+        },
+        {
+          "ID": 2,
+          "Type": 4,
+          "Pos": {
+            "X": 246.0,
+            "Y": 156.0
+          },
+          "FixedSize": null,
+          "Scale": 1.0,
+          "Angle": 0.0,
+          "Alpha": 1.0,
+          "IsActive": true,
+          "IsClickable": false,
+          "PositionType": 0,
+          "OnClickFuncID": -1,
+          "Attribute": {
+            "Image_ResourceKey": "Image_Menu_Window",
+            "PixelShader_ResourceKey": null,
+            "MessageID": 1,
+            "Font_ResourceKey": "Font_GenShinGothic_Bold",
+            "FontSize": 40,
+            "FontColor": "0xFF0000",
+            "MessageID2": 68,
+            "Font_ResourceKey2": "Font_GenShinGothic_Bold",
+            "FontSize2": 0,
+            "FontColor2": "0x000000",
+            "Buttons": [
+              {
+                "ID": 3,
+                "Type": 2,
+                "Pos": {
+                  "X": 21.0,
+                  "Y": 136.0
+                },
+                "FixedSize": null,
+                "Scale": 1.0,
+                "Angle": 0.0,
+                "Alpha": 1.0,
+                "IsActive": true,
+                "IsClickable": true,
+                "PositionType": 0,
+                "OnClickFuncID": 0,
+                "Attribute": {
+                  "Image_ResourceKey": "Image_Menu_Button",
+                  "PixelShader_ResourceKey": null,
+                  "MessageID": 2,
+                  "Font_ResourceKey": "Font_GenShinGothic_Bold",
+                  "FontSize": 34,
+                  "FontColor": "0x000000",
+                  "MessageID2": 69,
+                  "Font_ResourceKey2": "Font_GenShinGothic_Bold",
+                  "FontSize2": 0,
+                  "FontColor2": "0x000000"
+                },
+                "Childs": null
+              },
+              {
+                "ID": 4,
+                "Type": 2,
+                "Pos": {
+                  "X": 374.0,
+                  "Y": 136.0
+                },
+                "FixedSize": null,
+                "Scale": 1.0,
+                "Angle": 0.0,
+                "Alpha": 1.0,
+                "IsActive": true,
+                "IsClickable": true,
+                "PositionType": 0,
+                "OnClickFuncID": 1,
+                "Attribute": {
+                  "Image_ResourceKey": "Image_Menu_Button",
+                  "PixelShader_ResourceKey": null,
+                  "MessageID": 3,
+                  "Font_ResourceKey": "Font_GenShinGothic_Bold",
+                  "FontSize": 34,
+                  "FontColor": "0x000000",
+                  "MessageID2": 70,
+                  "Font_ResourceKey2": "Font_GenShinGothic_Bold",
+                  "FontSize2": 0,
+                  "FontColor2": "0x000000"
+                },
+                "Childs": null
+              }
+            ]
+          },
+          "Childs": null
+        },
+        {
+          "ID": 5,
+          "Type": 4,
+          "Pos": {
+            "X": 246.0,
+            "Y": 494.0
+          },
+          "FixedSize": null,
+          "Scale": 1.0,
+          "Angle": 0.0,
+          "Alpha": 1.0,
+          "IsActive": true,
+          "IsClickable": false,
+          "PositionType": 0,
+          "OnClickFuncID": -1,
+          "Attribute": {
+            "Image_ResourceKey": "Image_Menu_Window",
+            "PixelShader_ResourceKey": null,
+            "MessageID": 4,
+            "Font_ResourceKey": "Font_GenShinGothic_Bold",
+            "FontSize": 40,
+            "FontColor": "0xFF0000",
+            "MessageID2": 71,
+            "Font_ResourceKey2": "Font_GenShinGothic_Bold",
+            "FontSize2": 0,
+            "FontColor2": "0x000000",
+            "Buttons": [
+              {
+                "ID": 6,
+                "Type": 2,
+                "Pos": {
+                  "X": 21.0,
+                  "Y": 136.0
+                },
+                "FixedSize": null,
+                "Scale": 1.0,
+                "Angle": 0.0,
+                "Alpha": 1.0,
+                "IsActive": true,
+                "IsClickable": true,
+                "PositionType": 0,
+                "OnClickFuncID": 2,
+                "Attribute": {
+                  "Image_ResourceKey": "Image_Menu_Button",
+                  "PixelShader_ResourceKey": null,
+                  "MessageID": 5,
+                  "Font_ResourceKey": "Font_GenShinGothic_Bold",
+                  "FontSize": 34,
+                  "FontColor": "0x000000",
+                  "MessageID2": 74,
+                  "Font_ResourceKey2": "Font_GenShinGothic_Bold",
+                  "FontSize2": 0,
+                  "FontColor2": "0x000000"
+                },
+                "Childs": null
+              },
+              {
+                "ID": 7,
+                "Type": 2,
+                "Pos": {
+                  "X": 374.0,
+                  "Y": 136.0
+                },
+                "FixedSize": null,
+                "Scale": 1.0,
+                "Angle": 0.0,
+                "Alpha": 1.0,
+                "IsActive": true,
+                "IsClickable": true,
+                "PositionType": 0,
+                "OnClickFuncID": 3,
+                "Attribute": {
+                  "Image_ResourceKey": "Image_Menu_Button",
+                  "PixelShader_ResourceKey": null,
+                  "MessageID": 6,
+                  "Font_ResourceKey": "Font_GenShinGothic_Bold",
+                  "FontSize": 34,
+                  "FontColor": "0x000000",
+                  "MessageID2": 75,
+                  "Font_ResourceKey2": "Font_GenShinGothic_Bold",
+                  "FontSize2": 0,
+                  "FontColor2": "0x000000"
+                },
+                "Childs": null
+              }
+            ]
+          },
+          "Childs": null
+        },
+        {
+          "ID": 9,
+          "Type": 0,
+          "Pos": {
+            "X": 100.0,
+            "Y": 850.0
+          },
+          "FixedSize": null,
+          "Scale": 1.0,
+          "Angle": 0.0,
+          "Alpha": 1.0,
+          "IsActive": true,
+          "IsClickable": true,
+          "PositionType": 0,
+          "OnClickFuncID": 5,
+          "Attribute": {
+            "Image_ResourceKey": "Image_Icon_Menu_Exit",
+            "PixelShader_ResourceKey": null
+          },
+          "Childs": null
+        }
+      ]
+    },
+    {
+      "LayerType": 2,
+      "UIs": [
+        {
+          "ID": 0,
+          "Type": 6,
+          "Pos": {
+            "X": 0.0,
+            "Y": 0.0
+          },
+          "FixedSize": {
+            "Width": 1920,
+            "Height": 1080
+          },
+          "Scale": 1.0,
+          "Angle": 0.0,
+          "Alpha": 0.975,
+          "IsActive": true,
+          "IsClickable": false,
+          "PositionType": 0,
+          "OnClickFuncID": -1,
+          "Attribute": {
+            "Color": "0x646464"
+          },
+          "Childs": null
+        },
+        {
+          "ID": 1,
+          "Type": 9,
+          "Pos": {
+            "X": 1500,
+            "Y": 340
+          },
+          "FixedSize": {
+            "Width": 1920,
+            "Height": 150
+          },
+          "Scale": 1.0,
+          "Angle": 0.0,
+          "Alpha": 1.0,
+          "IsActive": true,
+          "IsClickable": false,
+          "PositionType": 1,
+          "OnClickFuncID": -1,
+          "Attribute": {
+            "Image_ResourceKey": "Image_Menu_Button2",
+            "DefMessageID": 76,
+            "Font_ResourceKey": "Font_GenShinGothic_Bold",
+            "FontSize": 36,
+            "FontColor": "0xFFFFFF",
+            "GetAddTextFuncID": 0
+          },
+          "Childs": null
+        },
+        {
+          "ID": 2,
+          "Type": 2,
+          "Pos": {
+            "X": 84.0,
+            "Y": 891.0
+          },
+          "FixedSize": null,
+          "Scale": 1.0,
+          "Angle": 0.0,
+          "Alpha": 1.0,
+          "IsActive": true,
+          "IsClickable": true,
+          "PositionType": 0,
+          "OnClickFuncID": 6,
+          "Attribute": {
+            "Image_ResourceKey": "Image_Menu_Button",
+            "PixelShader_ResourceKey": null,
+            "MessageID": 8,
+            "Font_ResourceKey": "Font_GenShinGothic_Bold",
+            "FontSize": 48,
+            "FontColor": "0x000000",
+            "MessageID2": 72,
+            "Font_ResourceKey2": "Font_GenShinGothic_Bold",
+            "FontSize2": 0,
+            "FontColor2": "0x000000"
+          },
+          "Childs": null
+        },
+        {
+          "ID": 3,
+          "Type": 2,
+          "Pos": {
+            "X": 1462.0,
+            "Y": 891.0
+          },
+          "FixedSize": null,
+          "Scale": 1.0,
+          "Angle": 0.0,
+          "Alpha": 1.0,
+          "IsActive": true,
+          "IsClickable": true,
+          "PositionType": 0,
+          "OnClickFuncID": 7,
+          "Attribute": {
+            "Image_ResourceKey": "Image_Menu_Button",
+            "PixelShader_ResourceKey": null,
+            "MessageID": 9,
+            "Font_ResourceKey": "Font_GenShinGothic_Bold",
+            "FontSize": 48,
+            "FontColor": "0x000000",
+            "MessageID2": 72,
+            "Font_ResourceKey2": "Font_GenShinGothic_Bold",
+            "FontSize2": 0,
+            "FontColor2": "0x000000"
+          },
+          "Childs": null
+        },
+        {
+          "ID": 4,
+          "Type": 5,
+          "Pos": {
+            "X": 205.0,
+            "Y": 600.0
+          },
+          "FixedSize": null,
+          "Scale": 1.0,
+          "Angle": 0.0,
+          "Alpha": 1.0,
+          "IsActive": true,
+          "IsClickable": true,
+          "PositionType": 0,
+          "OnClickFuncID": -1,
+          "Attribute": {
+            "Image_ResourceKey": "Image_Menu_Button",
+            "PixelShader_ResourceKey": null,
+            "MessageID": 9,
+            "Font_ResourceKey": "Font_GenShinGothic_Bold",
+            "FontSize": 48,
+            "FontColor": "0x000000",
+            "InputType": 0,
+            "InputTextType": 0,
+            "MaxLength": 3,
+            "EndInputFuncID": 0
+          },
+          "Childs": null
+        },
+        {
+          "ID": 5,
+          "Type": 5,
+          "Pos": {
+            "X": 587.0,
+            "Y": 600.0
+          },
+          "FixedSize": null,
+          "Scale": 1.0,
+          "Angle": 0.0,
+          "Alpha": 1.0,
+          "IsActive": true,
+          "IsClickable": true,
+          "PositionType": 0,
+          "OnClickFuncID": -1,
+          "Attribute": {
+            "Image_ResourceKey": "Image_Menu_Button",
+            "PixelShader_ResourceKey": null,
+            "MessageID": 9,
+            "Font_ResourceKey": "Font_GenShinGothic_Bold",
+            "FontSize": 48,
+            "FontColor": "0x000000",
+            "InputType": 0,
+            "InputTextType": 0,
+            "MaxLength": 3,
+            "EndInputFuncID": 1
+          },
+          "Childs": null
+        },
+        {
+          "ID": 6,
+          "Type": 5,
+          "Pos": {
+            "X": 969.0,
+            "Y": 600.0
+          },
+          "FixedSize": null,
+          "Scale": 1.0,
+          "Angle": 0.0,
+          "Alpha": 1.0,
+          "IsActive": true,
+          "IsClickable": true,
+          "PositionType": 0,
+          "OnClickFuncID": -1,
+          "Attribute": {
+            "Image_ResourceKey": "Image_Menu_Button",
+            "PixelShader_ResourceKey": null,
+            "MessageID": 9,
+            "Font_ResourceKey": "Font_GenShinGothic_Bold",
+            "FontSize": 48,
+            "FontColor": "0x000000",
+            "InputType": 0,
+            "InputTextType": 0,
+            "MaxLength": 3,
+            "EndInputFuncID": 2
+          },
+          "Childs": null
+        },
+        {
+          "ID": 7,
+          "Type": 5,
+          "Pos": {
+            "X": 1351.0,
+            "Y": 600.0
+          },
+          "FixedSize": null,
+          "Scale": 1.0,
+          "Angle": 0.0,
+          "Alpha": 1.0,
+          "IsActive": true,
+          "IsClickable": true,
+          "PositionType": 0,
+          "OnClickFuncID": -1,
+          "Attribute": {
+            "Image_ResourceKey": "Image_Menu_Button",
+            "PixelShader_ResourceKey": null,
+            "MessageID": 9,
+            "Font_ResourceKey": "Font_GenShinGothic_Bold",
+            "FontSize": 48,
+            "FontColor": "0x000000",
+            "InputType": 0,
+            "InputTextType": 0,
+            "MaxLength": 3,
+            "EndInputFuncID": 3
+          },
+          "Childs": null
+        },
+        {
+          "ID": 1,
+          "Type": 9,
+          "Pos": {
+            "X": 1400,
+            "Y": 460
+          },
+          "FixedSize": {
+            "Width": 1920,
+            "Height": 150
+          },
+          "Scale": 1.0,
+          "Angle": 0.0,
+          "Alpha": 1.0,
+          "IsActive": true,
+          "IsClickable": false,
+          "PositionType": 1,
+          "OnClickFuncID": -1,
+          "Attribute": {
+            "Image_ResourceKey": "Image_Menu_Button2",
+            "DefMessageID": 76,
+            "Font_ResourceKey": "Font_GenShinGothic_Bold",
+            "FontSize": 48,
+            "FontColor": "0xFFFFFF",
+            "GetAddTextFuncID": 7
+          },
+          "Childs": null
+        },
+        {
+          "ID": 8,
+          "Type": 5,
+          "Pos": {
+            "X": 600.0,
+            "Y": 300.0
+          },
+          "FixedSize": null,
+          "Scale": 1.0,
+          "Angle": 0.0,
+          "Alpha": 1.0,
+          "IsActive": true,
+          "IsClickable": true,
+          "PositionType": 0,
+          "OnClickFuncID": -1,
+          "Attribute": {
+            "Image_ResourceKey": "Image_Menu_Button3",
+            "PixelShader_ResourceKey": null,
+            "MessageID": 9,
+            "Font_ResourceKey": "Font_GenShinGothic_Bold",
+            "FontSize": 48,
+            "FontColor": "0x000000",
+            "InputType": 1,
+            "InputTextType": 1,
+            "MaxLength": 10,
+            "EndInputFuncID": 4
+          },
+          "Childs": null
+        },
+        {
+          "ID": 9,
+          "Type": 9,
+          "Pos": {
+            "X": 1540,
+            "Y": 150
+          },
+          "FixedSize": {
+            "Width": 1920,
+            "Height": 150
+          },
+          "Scale": 1.0,
+          "Angle": 0.0,
+          "Alpha": 1.0,
+          "IsActive": true,
+          "IsClickable": false,
+          "PositionType": 1,
+          "OnClickFuncID": -1,
+          "Attribute": {
+            "Image_ResourceKey": "Image_Menu_Button2",
+            "DefMessageID": 77,
+            "Font_ResourceKey": "Font_GenShinGothic_Bold",
+            "FontSize": 48,
+            "FontColor": "0xFFFFFF",
+            "GetAddTextFuncID": 7
+          },
+          "Childs": null
+        }
+      ]
+    },
+    {
+      "LayerType": 3,
+      "UIs": [
+        {
+          "ID": 1,
+          "Type": 1,
+          "Pos": {
+            "X": 30.0,
+            "Y": 90.0
+          },
+          "FixedSize": null,
+          "Scale": 1.0,
+          "Angle": 0.0,
+          "Alpha": 1.0,
+          "IsActive": true,
+          "IsClickable": false,
+          "PositionType": 0,
+          "OnClickFuncID": -1,
+          "Attribute": {
+            "MessageID": 10,
+            "Font_ResourceKey": "Font_GenShinGothic_Bold",
+            "FontSize": 35,
+            "FontColor": "0xffffff"
+          },
+          "Childs": null
+        },
+        {
+          "ID": 10,
+          "Type": 8,
+          "Pos": {
+            "X": 800.0,
+            "Y": 450.0
+          },
+          "FixedSize": null,
+          "Scale": 1.0,
+          "Angle": 0.0,
+          "Alpha": 1.0,
+          "IsActive": true,
+          "IsClickable": true,
+          "PositionType": 4,
+          "OnClickFuncID": 10,
+          "Attribute": {
+            "Image_ResourceKey": "Image_Menu_Cursor",
+            "PixelShader_ResourceKey": null,
+            "Direction": 0
+          },
+          "Childs": null
+        },
+        {
+          "ID": 11,
+          "Type": 8,
+          "Pos": {
+            "X": 1700.0,
+            "Y": 450.0
+          },
+          "FixedSize": null,
+          "Scale": 1.0,
+          "Angle": 0.0,
+          "Alpha": 1.0,
+          "IsActive": true,
+          "IsClickable": true,
+          "PositionType": 4,
+          "OnClickFuncID": 9,
+          "Attribute": {
+            "Image_ResourceKey": "Image_Menu_Cursor",
+            "PixelShader_ResourceKey": null,
+            "Direction": 1
+          },
+          "Childs": null
+        },
+        {
+          "ID": 12,
+          "Type": 8,
+          "Pos": {
+            "X": 800.0,
+            "Y": 830.0
+          },
+          "FixedSize": null,
+          "Scale": 1.0,
+          "Angle": 0.0,
+          "Alpha": 1.0,
+          "IsActive": true,
+          "IsClickable": true,
+          "PositionType": 4,
+          "OnClickFuncID": 12,
+          "Attribute": {
+            "Image_ResourceKey": "Image_Menu_Cursor",
+            "PixelShader_ResourceKey": null,
+            "Direction": 0
+          },
+          "Childs": null
+        },
+        {
+          "ID": 13,
+          "Type": 8,
+          "Pos": {
+            "X": 1100.0,
+            "Y": 830.0
+          },
+          "FixedSize": null,
+          "Scale": 1.0,
+          "Angle": 0.0,
+          "Alpha": 1.0,
+          "IsActive": true,
+          "IsClickable": true,
+          "PositionType": 4,
+          "OnClickFuncID": 11,
+          "Attribute": {
+            "Image_ResourceKey": "Image_Menu_Cursor",
+            "PixelShader_ResourceKey": null,
+            "Direction": 1
+          },
+          "Childs": null
+        },
+        {
+          "ID": 14,
+          "Type": 8,
+          "Pos": {
+            "X": 1400.0,
+            "Y": 830.0
+          },
+          "FixedSize": null,
+          "Scale": 1.0,
+          "Angle": 0.0,
+          "Alpha": 1.0,
+          "IsActive": true,
+          "IsClickable": true,
+          "PositionType": 4,
+          "OnClickFuncID": 14,
+          "Attribute": {
+            "Image_ResourceKey": "Image_Menu_Cursor",
+            "PixelShader_ResourceKey": null,
+            "Direction": 0
+          },
+          "Childs": null
+        },
+        {
+          "ID": 15,
+          "Type": 8,
+          "Pos": {
+            "X": 1700.0,
+            "Y": 830.0
+          },
+          "FixedSize": null,
+          "Scale": 1.0,
+          "Angle": 0.0,
+          "Alpha": 1.0,
+          "IsActive": true,
+          "IsClickable": true,
+          "PositionType": 4,
+          "OnClickFuncID": 13,
+          "Attribute": {
+            "Image_ResourceKey": "Image_Menu_Cursor",
+            "PixelShader_ResourceKey": null,
+            "Direction": 1
+          },
+          "Childs": null
+        },
+        {
+          "ID": 16,
+          "Type": 2,
+          "Pos": {
+            "X": 330.0,
+            "Y": 870.0
+          },
+          "FixedSize": null,
+          "Scale": 1.0,
+          "Angle": 0.0,
+          "Alpha": 1.0,
+          "IsActive": true,
+          "IsClickable": true,
+          "PositionType": 1,
+          "OnClickFuncID": 8,
+          "Attribute": {
+            "Image_ResourceKey": "Image_Menu_Button",
+            "PixelShader_ResourceKey": null,
+            "MessageID": 11,
+            "Font_ResourceKey": "Font_LightNovelPopV2_V2",
+            "FontSize": 36,
+            "FontColor": "0x000000",
+            "MessageID2": 72,
+            "Font_ResourceKey2": "Font_LightNovelPopV2_V2",
+            "FontSize2": 0,
+            "FontColor2": "0x000000"
+          },
+          "Childs": null
+        },
+        {
+          "ID": 17,
+          "Type": 6,
+          "Pos": {
+            "X": 573.0,
+            "Y": 136.0
+          },
+          "FixedSize": {
+            "Width": 3,
+            "Height": 857
+          },
+          "Scale": 1.0,
+          "Angle": 0.0,
+          "Alpha": 1.0,
+          "IsActive": true,
+          "IsClickable": false,
+          "PositionType": 0,
+          "OnClickFuncID": -1,
+          "Attribute": {
+            "Color": "0x808080"
+          },
+          "Childs": null
+        },
+        {
+          "ID": 18,
+          "Type": 6,
+          "Pos": {
+            "X": 573.0,
+            "Y": 136.0
+          },
+          "FixedSize": {
+            "Width": 3,
+            "Height": 857
+          },
+          "Scale": 1.0,
+          "Angle": 0.0,
+          "Alpha": 1.0,
+          "IsActive": true,
+          "IsClickable": false,
+          "PositionType": 0,
+          "OnClickFuncID": -1,
+          "Attribute": {
+            "Color": "0x808080"
+          },
+          "Childs": null
+        },
+        {
+          "ID": 21,
+          "Type": 0,
+          "Pos": {
+            "X": 40.0,
+            "Y": 1000.0
+          },
+          "FixedSize": null,
+          "Scale": 1.0,
+          "Angle": 0.0,
+          "Alpha": 1.0,
+          "IsActive": true,
+          "IsClickable": true,
+          "PositionType": 4,
+          "OnClickFuncID": 20,
+          "Attribute": {
+            "Image_ResourceKey": "Image_Menu_Back",
+            "PixelShader_ResourceKey": null,
+            "Direction": 0
+          },
+          "Childs": null
+        }
+      ]
+    },
+    {
+      "LayerType": 4,
+      "UIs": [
+        {
+          "ID": 0,
+          "Type": 9,
+          "Pos": {
+            "X": 12.0,
+            "Y": 31.0
+          },
+          "FixedSize": {
+            "Width": 800,
+            "Height": 50
+          },
+          "Scale": 1.0,
+          "Angle": 0.0,
+          "Alpha": 0.925,
+          "IsActive": true,
+          "IsClickable": false,
+          "PositionType": 0,
+          "OnClickFuncID": -1,
+          "Attribute": {
+            "Image_ResourceKey": "Image_Icon_Game_HUD_Message_Box",
+            "DefMessageID": 21,
+            "Font_ResourceKey": "Font_LightNovelPopV2_V2",
+            "FontSize": 36,
+            "FontColor": "0xFFFFFF",
+            "GetAddTextFuncID": 0
+          },
+          "Childs": null
+        },
+        {
+          "ID": 1,
+          "Type": 9,
+          "Pos": {
+            "X": 12.0,
+            "Y": 90.0
+          },
+          "FixedSize": {
+            "Width": 800,
+            "Height": 50
+          },
+          "Scale": 1.0,
+          "Angle": 0.0,
+          "Alpha": 0.925,
+          "IsActive": true,
+          "IsClickable": false,
+          "PositionType": 0,
+          "OnClickFuncID": -1,
+          "Attribute": {
+            "Image_ResourceKey": "Image_Icon_Game_HUD_Message_Box",
+            "DefMessageID": 22,
+            "Font_ResourceKey": "Font_GenShinGothic_Bold",
+            "FontSize": 36,
+            "FontColor": "0xFFFFFF",
+            "GetAddTextFuncID": 1
+          },
+          "Childs": null
+        },
+        {
+          "ID": 2,
+          "Type": 10,
+          "Pos": {
+            "X": 1457.0,
+            "Y": 927.0
+          },
+          "FixedSize": null,
+          "Scale": 1.0,
+          "Angle": 0.0,
+          "Alpha": 0.925,
+          "IsActive": true,
+          "IsClickable": false,
+          "PositionType": 0,
+          "OnClickFuncID": -1,
+          "Attribute": {
+            "Image_ResourceKey": "Image_Icon_Game_HUD_Weapon_Info",
+            "Image_Grenade_ResourceKeys": [
+              "Image_Icon_Game_HUD_Gun_1",
+              "Image_Icon_Game_HUD_Gun_2",
+              "Image_Icon_Game_HUD_Gun_3",
+              "Image_Icon_Game_HUD_Gun_4"
+            ],
+            "Image_Gun_ResourceKeys": [
+              "Image_Icon_Game_HUD_Grenade_1",
+              "Image_Icon_Game_HUD_Grenade_2",
+              "Image_Icon_Game_HUD_Grenade_3"
+            ],
+            "Font_Magazine_ResourceKey": "Font_GenShinGothic_Bold",
+            "Font_GunName_ResourceKey": "Font_GenShinGothic_Bold"
+          },
+          "Childs": null
+        },
+        {
+          "ID": 3,
+          "Type": 11,
+          "Pos": {
+            "X": 2050.0,
+            "Y": 75.0
+          },
+          "FixedSize": {
+            "Width": 570,
+            "Height": 288
+          },
+          "Scale": 1.0,
+          "Angle": 0.0,
+          "Alpha": 1.0,
+          "IsActive": true,
+          "IsClickable": false,
+          "PositionType": 2,
+          "OnClickFuncID": -1,
+          "Attribute": {
+            "Font_ResourceKey": "Font_GenShinGothic_Bold",
+            "MaxLineCount": 9,
+            "EnterTime": 0.75,
+            "WaitTime": 2.0,
+            "ExitTime": 0.25,
+            "GetTextFuncID": 0
+          },
+          "Childs": null
+        },
+        {
+          "ID": 4,
+          "Type": 13,
+          "Pos": {
+            "X": 1000.0,
+            "Y": 30.0
+          },
+          "FixedSize": null,
+          "Scale": 1.0,
+          "Angle": 0.0,
+          "Alpha": 1.0,
+          "IsActive": true,
+          "IsClickable": false,
+          "PositionType": 1,
+          "OnClickFuncID": -1,
+          "Attribute": {
+            "Font_ResourceKey": "Font_GenShinGothic_Bold",
+            "FontSize": 64,
+            "FontColor": "0xFFFFFF"
+          },
+          "Childs": null
+        }
+      ]
+    },
+    {
+      "LayerType": 5,
+      "UIs": [
+        {
+          "ID": 0,
+          "Type": 0,
+          "Pos": {
+            "X": 40.0,
+            "Y": 1000.0
+          },
+          "FixedSize": null,
+          "Scale": 1.0,
+          "Angle": 0.0,
+          "Alpha": 1.0,
+          "IsActive": true,
+          "IsClickable": true,
+          "PositionType": 4,
+          "OnClickFuncID": 20,
+          "Attribute": {
+            "Image_ResourceKey": "Image_Menu_Back",
+            "PixelShader_ResourceKey": null,
+            "Direction": 0
+          },
+          "Childs": null
+        },
+        {
+          "ID": 1,
+          "Type": 0,
+          "Pos": {
+            "X": 960.0,
+            "Y": 540.0
+          },
+          "FixedSize": null,
+          "Scale": 1.0,
+          "Angle": 0.0,
+          "Alpha": 1.0,
+          "IsActive": true,
+          "IsClickable": false,
+          "PositionType": 4,
+          "OnClickFuncID": -1,
+          "Attribute": {
+            "Image_ResourceKey": "Image_Result_Window"
+          },
+          "Childs": null
+        }
+      ]
+    },
+    {
+      "LayerType": 6,
+      "UIs": [
+        {
+          "ID": 21,
+          "Type": 0,
+          "Pos": {
+            "X": 40.0,
+            "Y": 1000.0
+          },
+          "FixedSize": null,
+          "Scale": 1.0,
+          "Angle": 0.0,
+          "Alpha": 1.0,
+          "IsActive": true,
+          "IsClickable": true,
+          "PositionType": 4,
+          "OnClickFuncID": 20,
+          "Attribute": {
+            "Image_ResourceKey": "Image_Menu_Back",
+            "PixelShader_ResourceKey": null,
+            "Direction": 0
+          },
+          "Childs": null
+        },
+        {
+          "ID": 10,
+          "Type": 8,
+          "Pos": {
+            "X": 800.0,
+            "Y": 450.0
+          },
+          "FixedSize": null,
+          "Scale": 1.0,
+          "Angle": 0.0,
+          "Alpha": 1.0,
+          "IsActive": true,
+          "IsClickable": true,
+          "PositionType": 4,
+          "OnClickFuncID": 21,
+          "Attribute": {
+            "Image_ResourceKey": "Image_Menu_Cursor",
+            "PixelShader_ResourceKey": null,
+            "Direction": 0
+          },
+          "Childs": null
+        },
+        {
+          "ID": 11,
+          "Type": 8,
+          "Pos": {
+            "X": 1700.0,
+            "Y": 450.0
+          },
+          "FixedSize": null,
+          "Scale": 1.0,
+          "Angle": 0.0,
+          "Alpha": 1.0,
+          "IsActive": true,
+          "IsClickable": true,
+          "PositionType": 4,
+          "OnClickFuncID": 22,
+          "Attribute": {
+            "Image_ResourceKey": "Image_Menu_Cursor",
+            "PixelShader_ResourceKey": null,
+            "Direction": 1
+          },
+          "Childs": null
+        },
+        {
+          "ID": 12,
+          "Type": 8,
+          "Pos": {
+            "X": 800.0,
+            "Y": 830.0
+          },
+          "FixedSize": null,
+          "Scale": 1.0,
+          "Angle": 0.0,
+          "Alpha": 1.0,
+          "IsActive": true,
+          "IsClickable": true,
+          "PositionType": 4,
+          "OnClickFuncID": 23,
+          "Attribute": {
+            "Image_ResourceKey": "Image_Menu_Cursor",
+            "PixelShader_ResourceKey": null,
+            "Direction": 0
+          },
+          "Childs": null
+        },
+        {
+          "ID": 13,
+          "Type": 8,
+          "Pos": {
+            "X": 1100.0,
+            "Y": 830.0
+          },
+          "FixedSize": null,
+          "Scale": 1.0,
+          "Angle": 0.0,
+          "Alpha": 1.0,
+          "IsActive": true,
+          "IsClickable": true,
+          "PositionType": 4,
+          "OnClickFuncID": 24,
+          "Attribute": {
+            "Image_ResourceKey": "Image_Menu_Cursor",
+            "PixelShader_ResourceKey": null,
+            "Direction": 1
+          },
+          "Childs": null
+        },
+        {
+          "ID": 14,
+          "Type": 8,
+          "Pos": {
+            "X": 1400.0,
+            "Y": 830.0
+          },
+          "FixedSize": null,
+          "Scale": 1.0,
+          "Angle": 0.0,
+          "Alpha": 1.0,
+          "IsActive": true,
+          "IsClickable": true,
+          "PositionType": 4,
+          "OnClickFuncID": 25,
+          "Attribute": {
+            "Image_ResourceKey": "Image_Menu_Cursor",
+            "PixelShader_ResourceKey": null,
+            "Direction": 0
+          },
+          "Childs": null
+        },
+        {
+          "ID": 15,
+          "Type": 8,
+          "Pos": {
+            "X": 1700.0,
+            "Y": 830.0
+          },
+          "FixedSize": null,
+          "Scale": 1.0,
+          "Angle": 0.0,
+          "Alpha": 1.0,
+          "IsActive": true,
+          "IsClickable": true,
+          "PositionType": 4,
+          "OnClickFuncID": 26,
+          "Attribute": {
+            "Image_ResourceKey": "Image_Menu_Cursor",
+            "PixelShader_ResourceKey": null,
+            "Direction": 1
+          },
+          "Childs": null
+        },
+        {
+          "ID": 16,
+          "Type": 2,
+          "Pos": {
+            "X": 330.0,
+            "Y": 870.0
+          },
+          "FixedSize": null,
+          "Scale": 1.0,
+          "Angle": 0.0,
+          "Alpha": 1.0,
+          "IsActive": true,
+          "IsClickable": true,
+          "PositionType": 1,
+          "OnClickFuncID": 28,
+          "Attribute": {
+            "Image_ResourceKey": "Image_Menu_Button",
+            "PixelShader_ResourceKey": null,
+            "MessageID": 11,
+            "Font_ResourceKey": "Font_LightNovelPopV2_V2",
+            "FontSize": 36,
+            "FontColor": "0x000000",
+            "MessageID2": 72,
+            "Font_ResourceKey2": "Font_LightNovelPopV2_V2",
+            "FontSize2": 0,
+            "FontColor2": "0x000000"
+          },
+          "Childs": null
+        },
+        {
+          "ID": 17,
+          "Type": 6,
+          "Pos": {
+            "X": 573.0,
+            "Y": 136.0
+          },
+          "FixedSize": {
+            "Width": 3,
+            "Height": 857
+          },
+          "Scale": 1.0,
+          "Angle": 0.0,
+          "Alpha": 1.0,
+          "IsActive": true,
+          "IsClickable": false,
+          "PositionType": 0,
+          "OnClickFuncID": -1,
+          "Attribute": {
+            "Color": "0x808080"
+          },
+          "Childs": null
+        }
+      ]
+    },
+    {
+      "LayerType": 7,
+      "UIs": [
+        {
+          "ID": 2,
+          "Type": 10,
+          "Pos": {
+            "X": 1457.0,
+            "Y": 927.0
+          },
+          "FixedSize": null,
+          "Scale": 1.0,
+          "Angle": 0.0,
+          "Alpha": 0.925,
+          "IsActive": true,
+          "IsClickable": false,
+          "PositionType": 0,
+          "OnClickFuncID": -1,
+          "Attribute": {
+            "Image_ResourceKey": "Image_Icon_Game_HUD_Weapon_Info",
+            "Image_Grenade_ResourceKeys": [
+              "Image_Icon_Game_HUD_Gun_1",
+              "Image_Icon_Game_HUD_Gun_2",
+              "Image_Icon_Game_HUD_Gun_3",
+              "Image_Icon_Game_HUD_Gun_4"
+            ],
+            "Image_Gun_ResourceKeys": [
+              "Image_Icon_Game_HUD_Grenade_1",
+              "Image_Icon_Game_HUD_Grenade_2",
+              "Image_Icon_Game_HUD_Grenade_3"
+            ],
+            "Font_Magazine_ResourceKey": "Font_GenShinGothic_Bold",
+            "Font_GunName_ResourceKey": "Font_GenShinGothic_Bold"
+          },
+          "Childs": null
+        },
+        {
+          "ID": 3,
+          "Type": 11,
+          "Pos": {
+            "X": 2050.0,
+            "Y": 75.0
+          },
+          "FixedSize": {
+            "Width": 570,
+            "Height": 288
+          },
+          "Scale": 1.0,
+          "Angle": 0.0,
+          "Alpha": 1.0,
+          "IsActive": true,
+          "IsClickable": false,
+          "PositionType": 2,
+          "OnClickFuncID": -1,
+          "Attribute": {
+            "Font_ResourceKey": "Font_GenShinGothic_Bold",
+            "MaxLineCount": 9,
+            "EnterTime": 0.75,
+            "WaitTime": 2.0,
+            "ExitTime": 0.25,
+            "GetTextFuncID": 0
+          },
+          "Childs": null
+        },
+        {
+          "ID": 4,
+          "Type": 13,
+          "Pos": {
+            "X": 995.0,
+            "Y": 20.0
+          },
+          "FixedSize": null,
+          "Scale": 1.0,
+          "Angle": 0.0,
+          "Alpha": 1.0,
+          "IsActive": true,
+          "IsClickable": false,
+          "PositionType": 1,
+          "OnClickFuncID": -1,
+          "Attribute": {
+            "Font_ResourceKey": "Font_GenShinGothic_Bold",
+            "FontSize": 60,
+            "FontColor": "0xFFFFFF"
+          },
+          "Childs": null
+        }
+      ]
+    },
+    {
+      "LayerType": 8,
+      "UIs": [
+        {
+          "ID": 201,
+          "Type": 0,
+          "Pos": {
+            "X": 40.0,
+            "Y": 1000.0
+          },
+          "FixedSize": null,
+          "Scale": 1.0,
+          "Angle": 0.0,
+          "Alpha": 1.0,
+          "IsActive": true,
+          "IsClickable": true,
+          "PositionType": 4,
+          "OnClickFuncID": 20,
+          "Attribute": {
+            "Image_ResourceKey": "Image_Menu_Back",
+            "PixelShader_ResourceKey": null,
+            "Direction": 0
+          },
+          "Childs": null
+        }
+      ]
+    },
+    {
+      "LayerType": 11,
+      "UIs": [
+        {
+          "ID": 0,
+          "Type": 1,
+          "Pos": {
+            "X": 250.0,
+            "Y": 170.0
+          },
+          "FixedSize": null,
+          "Scale": 1.0,
+          "Angle": 0.0,
+          "Alpha": 1.0,
+          "IsActive": true,
+          "IsClickable": false,
+          "PositionType": 0,
+          "OnClickFuncID": -1,
+          "Attribute": {
+            "MessageID": 36,
+            "Font_ResourceKey": "Font_GenShinGothic_Bold",
+            "FontSize": 120,
+            "FontColor": "0xFFFFFF"
+          },
+          "Childs": null
+        },
+        {
+          "ID": 1,
+          "Type": 1,
+          "Pos": {
+            "X": 250.0,
+            "Y": 290.0
+          },
+          "FixedSize": null,
+          "Scale": 1.0,
+          "Angle": 0.0,
+          "Alpha": 1.0,
+          "IsActive": true,
+          "IsClickable": false,
+          "PositionType": 0,
+          "OnClickFuncID": -1,
+          "Attribute": {
+            "MessageID": 69,
+            "Font_ResourceKey": "Font_GenShinGothic_Bold",
+            "FontSize": 90,
+            "FontColor": "0xFFFFFF"
+          },
+          "Childs": null
+        },
+        {
+          "ID": 2,
+          "Type": 1,
+          "Pos": {
+            "X": 960.0,
+            "Y": 900.0
+          },
+          "FixedSize": null,
+          "Scale": 1.0,
+          "Angle": 0.0,
+          "Alpha": 1.0,
+          "IsActive": true,
+          "IsClickable": false,
+          "PositionType": 7,
+          "OnClickFuncID": -1,
+          "Attribute": {
+            "MessageID": 80,
+            "Font_ResourceKey": "Font_GenShinGothic_Bold",
+            "FontSize": 72,
+            "FontColor": "0xFFFFFF"
+          },
+          "Childs": null
+        },
+        {
+          "ID": 3,
+          "Type": 1,
+          "Pos": {
+            "X": 960.0,
+            "Y": 900.0
+          },
+          "FixedSize": null,
+          "Scale": 1.0,
+          "Angle": 0.0,
+          "Alpha": 1.0,
+          "IsActive": true,
+          "IsClickable": false,
+          "PositionType": 1,
+          "OnClickFuncID": -1,
+          "Attribute": {
+            "MessageID": 81,
+            "Font_ResourceKey": "Font_GenShinGothic_Bold",
+            "FontSize": 72,
+            "FontColor": "0xFFFFFF"
+          },
+          "Childs": null
+        }
+      ]
+    },
+    {
+      "LayerType": 12,
+      "UIs": [
+        {
+          "ID": 0,
+          "Type": 1,
+          "Pos": {
+            "X": 250.0,
+            "Y": 170.0
+          },
+          "FixedSize": null,
+          "Scale": 1.0,
+          "Angle": 0.0,
+          "Alpha": 1.0,
+          "IsActive": true,
+          "IsClickable": false,
+          "PositionType": 0,
+          "OnClickFuncID": -1,
+          "Attribute": {
+            "MessageID": 33,
+            "Font_ResourceKey": "Font_GenShinGothic_Bold",
+            "FontSize": 120,
+            "FontColor": "0xFFFFFF"
+          },
+          "Childs": null
+        },
+        {
+          "ID": 1,
+          "Type": 1,
+          "Pos": {
+            "X": 250.0,
+            "Y": 290.0
+          },
+          "FixedSize": null,
+          "Scale": 1.0,
+          "Angle": 0.0,
+          "Alpha": 1.0,
+          "IsActive": true,
+          "IsClickable": false,
+          "PositionType": 0,
+          "OnClickFuncID": -1,
+          "Attribute": {
+            "MessageID": 70,
+            "Font_ResourceKey": "Font_GenShinGothic_Bold",
+            "FontSize": 90,
+            "FontColor": "0xFFFFFF"
+          },
+          "Childs": null
+        },
+        {
+          "ID": 2,
+          "Type": 1,
+          "Pos": {
+            "X": 960.0,
+            "Y": 900.0
+          },
+          "FixedSize": null,
+          "Scale": 1.0,
+          "Angle": 0.0,
+          "Alpha": 1.0,
+          "IsActive": true,
+          "IsClickable": false,
+          "PositionType": 7,
+          "OnClickFuncID": -1,
+          "Attribute": {
+            "MessageID": 34,
+            "Font_ResourceKey": "Font_GenShinGothic_Bold",
+            "FontSize": 72,
+            "FontColor": "0xFFFFFF"
+          },
+          "Childs": null
+        },
+        {
+          "ID": 3,
+          "Type": 1,
+          "Pos": {
+            "X": 960.0,
+            "Y": 900.0
+          },
+          "FixedSize": null,
+          "Scale": 1.0,
+          "Angle": 0.0,
+          "Alpha": 1.0,
+          "IsActive": true,
+          "IsClickable": false,
+          "PositionType": 1,
+          "OnClickFuncID": -1,
+          "Attribute": {
+            "MessageID": 35,
+            "Font_ResourceKey": "Font_GenShinGothic_Bold",
+            "FontSize": 72,
+            "FontColor": "0xFFFFFF"
+          },
+          "Childs": null
+        }
+      ]
+    },
+    {
+      "LayerType": 13,
+      "UIs": [
+        {
+          "ID": 0,
+          "Type": 2,
+          "Pos": {
+            "X": 0.0,
+            "Y": 0.0
+          },
+          "FixedSize": {
+            "Width": 1920,
+            "Height": 1080
+          },
+          "Scale": 1.0,
+          "Angle": 0.0,
+          "Alpha": 0.25,
+          "IsActive": true,
+          "IsClickable": false,
+          "PositionType": 0,
+          "OnClickFuncID": -1,
+          "Attribute": {
+            "Image_ResourceKey": "Image_Menu_Button2",
+            "PixelShader_ResourceKey": null,
+            "MessageID": 73,
+            "Font_ResourceKey": "Font_GenShinGothic_Bold",
+            "FontSize": 48,
+            "FontColor": "0x000000",
+            "MessageID2": 72,
+            "Font_ResourceKey2": "Font_GenShinGothic_Bold",
+            "FontSize2": 0,
+            "FontColor2": "0x000000"
+          },
+          "Childs": null
+        },
+        {
+          "ID": 1,
+          "Type": 6,
+          "Pos": {
+            "X": 0.0,
+            "Y": 0.0
+          },
+          "FixedSize": {
+            "Width": 1920,
+            "Height": 1080
+          },
+          "Scale": 1.0,
+          "Angle": 0.0,
+          "Alpha": 0.25,
+          "IsActive": true,
+          "IsClickable": false,
+          "PositionType": 0,
+          "OnClickFuncID": -1,
+          "Attribute": {
+            "Color": "0x000000"
+          },
+          "Childs": null
+        }
+      ]
+    },
+    {
+      "LayerType": 14,
+      "UIs": [
+        {
+          "ID": 0,
+          "Type": 6,
+          "Pos": {
+            "X": 0.0,
+            "Y": 0.0
+          },
+          "FixedSize": {
+            "Width": 1920,
+            "Height": 1080
+          },
+          "Scale": 1.0,
+          "Angle": 0.0,
+          "Alpha": 0.75,
+          "IsActive": true,
+          "IsClickable": false,
+          "PositionType": 0,
+          "OnClickFuncID": -1,
+          "Attribute": {
+            "Color": "0x000000"
+          },
+          "Childs": null
+        },
+        {
+          "ID": 2,
+          "Type": 2,
+          "Pos": {
+            "X": 960.0,
+            "Y": 400.0
+          },
+          "FixedSize": null,
+          "Scale": 1.0,
+          "Angle": 0.0,
+          "Alpha": 1.0,
+          "IsActive": true,
+          "IsClickable": true,
+          "PositionType": 4,
+          "OnClickFuncID": 19,
+          "Attribute": {
+            "Image_ResourceKey": "Image_Menu_Button2",
+            "PixelShader_ResourceKey": null,
+            "MessageID": 73,
+            "Font_ResourceKey": "Font_GenShinGothic_Bold",
+            "FontSize": 48,
+            "FontColor": "0xffffff",
+            "MessageID2": 72,
+            "Font_ResourceKey2": "Font_GenShinGothic_Bold",
+            "FontSize2": 0,
+            "FontColor2": "0xffffff"
+          },
+          "Childs": null
+        },
+        {
+          "ID": 3,
+          "Type": 2,
+          "Pos": {
+            "X": 960.0,
+            "Y": 680.0
+          },
+          "FixedSize": null,
+          "Scale": 1.0,
+          "Angle": 0.0,
+          "Alpha": 1.0,
+          "IsActive": true,
+          "IsClickable": true,
+          "PositionType": 4,
+          "OnClickFuncID": 16,
+          "Attribute": {
+            "Image_ResourceKey": "Image_Menu_Button2",
+            "PixelShader_ResourceKey": null,
+            "MessageID": 79,
+            "Font_ResourceKey": "Font_GenShinGothic_Bold",
+            "FontSize": 48,
+            "FontColor": "0xffffff",
+            "MessageID2": 72,
+            "Font_ResourceKey2": "Font_GenShinGothic_Bold",
+            "FontSize2": 0,
+            "FontColor2": "0xffffff"
+          },
+          "Childs": null
+        }
+      ]
+    },
+    {
+      "LayerType": 15,
+      "UIs": [
+        {
+          "ID": 0,
+          "Type": 6,
+          "Pos": {
+            "X": 0.0,
+            "Y": 0.0
+          },
+          "FixedSize": {
+            "Width": 1920,
+            "Height": 1080
+          },
+          "Scale": 1.0,
+          "Angle": 0.0,
+          "Alpha": 0.975,
+          "IsActive": true,
+          "IsClickable": false,
+          "PositionType": 0,
+          "OnClickFuncID": -1,
+          "Attribute": {
+            "Color": "0x646464"
+          },
+          "Childs": null
+        },
+        {
+          "ID": 2,
+          "Type": 2,
+          "Pos": {
+            "X": 84.0,
+            "Y": 891.0
+          },
+          "FixedSize": null,
+          "Scale": 1.0,
+          "Angle": 0.0,
+          "Alpha": 1.0,
+          "IsActive": true,
+          "IsClickable": true,
+          "PositionType": 0,
+          "OnClickFuncID": 6,
+          "Attribute": {
+            "Image_ResourceKey": "Image_Menu_Button",
+            "PixelShader_ResourceKey": null,
+            "MessageID": 8,
+            "Font_ResourceKey": "Font_GenShinGothic_Bold",
+            "FontSize": 48,
+            "FontColor": "0x000000",
+            "MessageID2": 72,
+            "Font_ResourceKey2": "Font_GenShinGothic_Bold",
+            "FontSize2": 0,
+            "FontColor2": "0x000000"
+          },
+          "Childs": null
+        },
+        {
+          "ID": 3,
+          "Type": 2,
+          "Pos": {
+            "X": 1462.0,
+            "Y": 891.0
+          },
+          "FixedSize": null,
+          "Scale": 1.0,
+          "Angle": 0.0,
+          "Alpha": 1.0,
+          "IsActive": true,
+          "IsClickable": true,
+          "PositionType": 0,
+          "OnClickFuncID": 27,
+          "Attribute": {
+            "Image_ResourceKey": "Image_Menu_Button",
+            "PixelShader_ResourceKey": null,
+            "MessageID": 9,
+            "Font_ResourceKey": "Font_GenShinGothic_Bold",
+            "FontSize": 48,
+            "FontColor": "0x000000",
+            "MessageID2": 72,
+            "Font_ResourceKey2": "Font_GenShinGothic_Bold",
+            "FontSize2": 0,
+            "FontColor2": "0x000000"
+          },
+          "Childs": null
+        },
+        {
+          "ID": 8,
+          "Type": 5,
+          "Pos": {
+            "X": 600.0,
+            "Y": 300.0
+          },
+          "FixedSize": null,
+          "Scale": 1.0,
+          "Angle": 0.0,
+          "Alpha": 1.0,
+          "IsActive": true,
+          "IsClickable": true,
+          "PositionType": 0,
+          "OnClickFuncID": -1,
+          "Attribute": {
+            "Image_ResourceKey": "Image_Menu_Button3",
+            "PixelShader_ResourceKey": null,
+            "MessageID": 9,
+            "Font_ResourceKey": "Font_GenShinGothic_Bold",
+            "FontSize": 48,
+            "FontColor": "0x000000",
+            "InputType": 1,
+            "InputTextType": 1,
+            "MaxLength": 10,
+            "EndInputFuncID": 4
+          },
+          "Childs": null
+        },
+        {
+          "ID": 9,
+          "Type": 9,
+          "Pos": {
+            "X": 1500,
+            "Y": 150
+          },
+          "FixedSize": {
+            "Width": 1920,
+            "Height": 150
+          },
+          "Scale": 1.0,
+          "Angle": 0.0,
+          "Alpha": 1.0,
+          "IsActive": true,
+          "IsClickable": false,
+          "PositionType": 1,
+          "OnClickFuncID": -1,
+          "Attribute": {
+            "Image_ResourceKey": "Image_Menu_Button2",
+            "DefMessageID": 77,
+            "Font_ResourceKey": "Font_GenShinGothic_Bold",
+            "FontSize": 48,
+            "FontColor": "0xFFFFFF",
+            "GetAddTextFuncID": 7
+          },
+          "Childs": null
+        }
+      ]
+    },
+    {
+      "LayerType": 16,
+      "UIs": [
+        {
+          "ID": 0,
+          "Type": 1,
+          "Pos": {
+            "X": 250.0,
+            "Y": 170.0
+          },
+          "FixedSize": null,
+          "Scale": 1.0,
+          "Angle": 0.0,
+          "Alpha": 1.0,
+          "IsActive": true,
+          "IsClickable": false,
+          "PositionType": 0,
+          "OnClickFuncID": -1,
+          "Attribute": {
+            "MessageID": 82,
+            "Font_ResourceKey": "Font_GenShinGothic_Bold",
+            "FontSize": 120,
+            "FontColor": "0xFFFFFF"
+          },
+          "Childs": null
+        },
+        {
+          "ID": 1,
+          "Type": 1,
+          "Pos": {
+            "X": 250.0,
+            "Y": 290.0
+          },
+          "FixedSize": null,
+          "Scale": 1.0,
+          "Angle": 0.0,
+          "Alpha": 1.0,
+          "IsActive": true,
+          "IsClickable": false,
+          "PositionType": 0,
+          "OnClickFuncID": -1,
+          "Attribute": {
+            "MessageID": 83,
+            "Font_ResourceKey": "Font_GenShinGothic_Bold",
+            "FontSize": 90,
+            "FontColor": "0xFFFFFF"
+          },
+          "Childs": null
+        },
+        {
+          "ID": 2,
+          "Type": 1,
+          "Pos": {
+            "X": 960.0,
+            "Y": 900.0
+          },
+          "FixedSize": null,
+          "Scale": 1.0,
+          "Angle": 0.0,
+          "Alpha": 1.0,
+          "IsActive": true,
+          "IsClickable": false,
+          "PositionType": 7,
+          "OnClickFuncID": -1,
+          "Attribute": {
+            "MessageID": 84,
+            "Font_ResourceKey": "Font_GenShinGothic_Bold",
+            "FontSize": 72,
+            "FontColor": "0xFFFFFF"
+          },
+          "Childs": null
+        },
+        {
+          "ID": 3,
+          "Type": 1,
+          "Pos": {
+            "X": 960.0,
+            "Y": 900.0
+          },
+          "FixedSize": null,
+          "Scale": 1.0,
+          "Angle": 0.0,
+          "Alpha": 1.0,
+          "IsActive": true,
+          "IsClickable": false,
+          "PositionType": 1,
+          "OnClickFuncID": -1,
+          "Attribute": {
+            "MessageID": 85,
+            "Font_ResourceKey": "Font_GenShinGothic_Bold",
+            "FontSize": 72,
+            "FontColor": "0xFFFFFF"
+          },
+          "Childs": null
+        }
+      ]
+    }
+  ]
+      }
