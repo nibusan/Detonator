@@ -17,7 +17,7 @@ public:
 	static const std::string PATH_EFFECT;
 	//-------------------------------------------
 
-	// 明示的にインステンスを生成する
+	// 明示的にインスタンスを生成する
 	static void CreateInstance(void);
 
 	// 静的インスタンスの取得

@@ -32,22 +32,22 @@ public:
 	//void SetBarrelPos(VECTOR pos);
 
 
-	const bool& IsMoveF(void) const;
-	const bool& IsMoveB(void) const;
-	const bool& IsMoveL(void) const;
-	const bool& IsMoveR(void) const;
-	const bool& IsPutDash(void) const;
-	const bool& IsPutCrouch(void) const;
-	const bool& IsPutJump(void) const;
-	const bool& IsPutShot(void) const;
-	const bool& IsReload(void) const;
-	const bool& IsADS(void) const;
-	const bool& IsRotate(void) const;
-	const bool& IsGrenade(void) const;
-	const bool& IsGrenadeChange(void) const;
-	const bool& IsGrenadeInitiation(void) const;
+	bool IsMoveF(void) const;
+	bool IsMoveB(void) const;
+	bool IsMoveL(void) const;
+	bool IsMoveR(void) const;
+	bool IsPutDash(void) const;
+	bool IsPutCrouch(void) const;
+	bool IsPutJump(void) const;
+	bool IsPutShot(void) const;
+	bool IsReload(void) const;
+	bool IsADS(void) const;
+	bool IsRotate(void) const;
+	bool IsGrenade(void) const;
+	bool IsGrenadeChange(void) const;
+	bool IsGrenadeInitiation(void) const;
 
-	const bool& IsMe(void) const;
+	bool IsMe(void) const;
 
 	//const VECTOR GetBulletVec(void) const;
 

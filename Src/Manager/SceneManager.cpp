@@ -140,7 +140,7 @@ void SceneManager::Update(void) {
 	ImGui::Begin("DebugMenu");
 
 	//各シーンの名前
-	std::string sceneName[] = {
+	const std::string sceneName[] = {
 		"None",
 		"Logo",
 		"Title",
@@ -374,6 +374,7 @@ void SceneManager::ResetDeltaTime(void)
 
 void SceneManager::DoChangeScene(SCENE_ID sceneId)
 {
+	// シーンによってBGMを変える
 	if (sceneId_ == SCENE_ID::sRESULT ||
 		sceneId_ == SCENE_ID::mRESULT) {
 		AudioManager::GetInstance().Stop(sound_Music_);
@@ -409,11 +410,13 @@ void SceneManager::DoChangeScene(SCENE_ID sceneId)
 		camera_->Release();
 	}
 
+	// コライダー情報のクリア
 	CollisionManager::GetInstance().ClearColliders();
 
 	// シーンで使うリソースの読み込み & 不要なリソースの解放
 	ResourceManager::GetInstance().LoadResource(sceneId_);
 
+	// シーンのインスタンスの生成
 	switch (sceneId_)
 	{
 	case SceneManager::SCENE_ID::LOGO:

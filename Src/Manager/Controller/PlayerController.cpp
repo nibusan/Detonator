@@ -144,42 +144,42 @@ void PlayerController::NetUpdate(void)
 //	barrelPos_ = pos;
 //}
 
-const bool& PlayerController::IsPutShot(void) const
+bool PlayerController::IsPutShot(void) const
 {
 	return isPutShot_;
 }
 
-const bool& PlayerController::IsReload(void) const
+bool PlayerController::IsReload(void) const
 {
 	return isReload_;
 }
 
-const bool& PlayerController::IsADS(void) const
+bool PlayerController::IsADS(void) const
 {
 	return isADS_;
 }
 
-const bool& PlayerController::IsRotate(void) const
+bool PlayerController::IsRotate(void) const
 {
 	return isRotate_;
 }
 
-const bool& PlayerController::IsGrenade(void) const
+bool PlayerController::IsGrenade(void) const
 {
 	return isGrenade_;
 }
 
-const bool& PlayerController::IsGrenadeChange(void) const
+bool PlayerController::IsGrenadeChange(void) const
 {
 	return isGrenadeChange_;
 }
 
-const bool& PlayerController::IsGrenadeInitiation(void) const
+bool PlayerController::IsGrenadeInitiation(void) const
 {
 	return isGrenadeInitiation_;
 }
 
-const bool& PlayerController::IsMe(void) const
+bool PlayerController::IsMe(void) const
 {
 	return isMe_;
 }
@@ -189,37 +189,37 @@ const bool& PlayerController::IsMe(void) const
 //	return bulletVec_;
 //}
 
-const bool& PlayerController::IsMoveF(void) const
+bool PlayerController::IsMoveF(void) const
 {
 	return isMoveF_;
 }
 
-const bool& PlayerController::IsMoveB(void) const
+bool PlayerController::IsMoveB(void) const
 {
 	return isMoveB_;
 }
 
-const bool& PlayerController::IsMoveL(void) const
+bool PlayerController::IsMoveL(void) const
 {
 	return isMoveL_;
 }
 
-const bool& PlayerController::IsMoveR(void) const
+bool PlayerController::IsMoveR(void) const
 {
 	return isMoveR_;
 }
 
-const bool& PlayerController::IsPutDash(void) const
+bool PlayerController::IsPutDash(void) const
 {
 	return isDash_;
 }
 
-const bool& PlayerController::IsPutCrouch(void) const
+bool PlayerController::IsPutCrouch(void) const
 {
 	return isCrouch_;
 }
 
-const bool& PlayerController::IsPutJump(void) const
+bool PlayerController::IsPutJump(void) const
 {
 	return isJump_;
 }

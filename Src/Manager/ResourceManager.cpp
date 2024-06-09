@@ -25,6 +25,7 @@ ResourceManager::~ResourceManager(void) {
 }
 
 void ResourceManager::Init(void) {
+	// jsonの読み込み & パース
 	nlohmann::json json_ResourceList;
 	std::ifstream ifs("Data/Data/Resource/ResourceList.json");
 	ifs >> json_ResourceList;
@@ -44,6 +45,7 @@ void ResourceManager::Init(void) {
 			std::string fileName = json_ResourceList["ResourceData"][i]["Datas"][j]["FileName"];
 			std::string extension = json_ResourceList["ResourceData"][i]["Datas"][j]["Extension"];
 
+			// 各リソースファイルの読み込み
 			switch (type) {
 			case ResourceManager::RESOURCE_TYPE::GRAPHIC: {
 				RESOURCE_DATA_BASE resData = {
