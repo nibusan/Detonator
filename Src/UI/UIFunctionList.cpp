@@ -14,6 +14,7 @@
 #include "UIFunctionList.h"
 
 void UIFunctionList::Init(void) {
+	// 各コールバック関数の登録
 	RegisterOnClickFunction();
 	RegisterEndInputFunction();
 	RegisterGetAddTextFunction();

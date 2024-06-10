@@ -17,11 +17,13 @@ bool UI_Image::Update_UI(void) {
 	auto& inputManager = InputManager::GetInstance();
 	auto mousePos = inputManager.GetMousePos();
 
+	// マウスカーソルがUIの中に入っているかを判定
 	bool isHit = Collision2DManager::IsContain_Rect(
 		inputManager.GetMousePos().ToVector2f(), 
 		std::dynamic_pointer_cast<Collision2D_Rect>(collision_)
 	);
-
+	
+	// 中に入っていなくてなおかつクリックできなかったら強調表示状態を解除してfalseを返す
 	if (!isHit || !IsClickable()) {
 		SetIsHighlighted(false);
 		scale_ = 1.0f;
@@ -54,5 +56,5 @@ Weak_PixelShader UI_Image::GetUsingPixelShader(void) const {
 }
 
 void UI_Image::HighlightedUpdate(void) {
-	scale_ = 1.5f;
+	scale_ = HIGHLIGHTED_SCALE;
 }

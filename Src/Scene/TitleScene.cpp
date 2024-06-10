@@ -62,7 +62,7 @@ void TitleScene::Draw(void)
 
 	SceneManager::GetInstance().GetCamera()->SetBeforeDraw();
 
-
+	// UI‚Æ‚µ‚Äˆµ‚¢‚½‚­‚È‚¢ƒ‚ƒm‚Ì•`‰æ
 	if ((frameCNT_ / 120) % 2 == 0) {
 		int width = GetDrawStringWidthToHandle("PRESS SPACE", 3, usingFont_->GetHandle());
 		DrawStringToHandle(Application::SCREEN_SIZE_X / 2 - width / 2 - 80, 950, "PRESS SPACE", 0xFFFFFF, usingFont_->GetHandle());

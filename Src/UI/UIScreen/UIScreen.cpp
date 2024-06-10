@@ -47,6 +47,7 @@ void UIScreen::DeleteUILayer(void) {
 		uiLayers_.erase(uiLayers_.begin() + deleteUILayerID_[i]);
 	}
 	if (uiLayers_.size() > 0) {
+		// 新しく先頭になったUILayerをアクティブにする
 		uiLayers_[uiLayers_.size() - 1]->SetIsActive(true);
 	}
 	deleteCount_ = 0;

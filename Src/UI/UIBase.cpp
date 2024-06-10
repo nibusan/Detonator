@@ -110,6 +110,7 @@ bool UIBase::Update(void) {
 
 	auto& sceneManager = SceneManager::GetInstance();
 
+	// コライダーの更新
 	auto&& drawPos = GetDrawPos(totalPos_, drawScreen_->GetSize().ToVector2f(), GetDrawPositionType());
 	collision_->SetPos(drawPos);
 
@@ -166,6 +167,7 @@ void UIBase::Draw(void) {
 	int defScreen = GetDrawScreen();
 	SetDrawScreen(drawScreen_->GetHandle());
 	ClearDrawScreen();
+	// UIそのものの描画
 	Draw_UI();
 	SetDrawScreen(defScreen);
 
@@ -201,6 +203,7 @@ const Vector2<float>& UIBase::GetPos(void) const {
 }
 
 Vector2<float> UIBase::GetTotalPos(void) const {
+	// 親の座標などを全て考慮して計算する
 	Vector2<float> totalPos = {};
 	if (parent_.lock() != nullptr) {
 		totalPos = totalPos + parent_.lock()->GetTotalPos();
@@ -216,6 +219,7 @@ Vector2<float> UIBase::GetTotalPos(void) const {
 void UIBase::SetPos(const Vector2<float>& pos) {
 	pos_ = pos;
 
+	// 親の座標などを全て考慮して計算する
 	Vector2<float> totalPos = {};
 	if (parent_.lock() != nullptr) {
 		totalPos = totalPos + parent_.lock()->GetTotalPos();

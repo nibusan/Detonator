@@ -19,11 +19,13 @@ bool UI_Text::Update_UI(void) {
 	auto& inputManager = InputManager::GetInstance();
 	auto mousePos = inputManager.GetMousePos();
 
+	// マウスカーソルがUIの中に入っているかを判定
 	bool isHit = Collision2DManager::IsContain_Rect(
 		inputManager.GetMousePos().ToVector2f(), 
 		std::dynamic_pointer_cast<Collision2D_Rect>(collision_)
 	);
 
+	// 中に入っててなおかつ左クリックしたらtrueを返す
 	if (isHit && inputManager.IsTrgMouseLeft()) {
 		return true;
 	}

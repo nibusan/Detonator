@@ -47,6 +47,7 @@ void MenuScene::Update(void)
 
 void MenuScene::Draw(void)
 {
+	// UI‚Æ‚µ‚Äˆµ‚¢‚½‚­‚È‚¢ƒ‚ƒm‚Ì•`‰æ
 	DrawGraph(0, 0, back_, true);
 
 	SetUseLighting(false);

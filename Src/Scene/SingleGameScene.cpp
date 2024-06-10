@@ -250,7 +250,8 @@ void SingleGameScene::Update(void)
 
 void SingleGameScene::Draw(void)
 {
-
+	// UIとして扱いたくないモノの描画
+	
 	// デバッグ
 	auto camera = std::dynamic_pointer_cast<GameCamera>(SceneManager::GetInstance().GetCamera());
 

@@ -97,6 +97,8 @@ void SingleLobbyScene::UISetting(void)
 
 void SingleLobbyScene::DrawUI(void)
 {
+	// UI‚Æ‚µ‚Äˆµ‚¢‚½‚­‚È‚¢ƒ‚ƒm‚Ì•`‰æ
+
 	DrawGraph(0, 0, back_, true);
 
 	box_.Draw();

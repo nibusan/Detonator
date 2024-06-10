@@ -58,6 +58,8 @@ void SingleResultScene::UISetting(void)
 
 void SingleResultScene::DrawUI(void)
 {
+	// UI‚Æ‚µ‚Äˆµ‚¢‚½‚­‚È‚¢ƒ‚ƒm‚Ì•`‰æ
+
 	DrawGraph(0, 0, back_, true);
 
 	if (gameManager_.GetMode() == GameManager::MODE::TIMEATTACK) {

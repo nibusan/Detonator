@@ -246,7 +246,7 @@ void MultiGameScene::Update(void)
 
 void MultiGameScene::Draw(void)
 {
-
+	// UI‚Æ‚µ‚Äˆµ‚¢‚½‚­‚È‚¢ƒ‚ƒm‚Ì•`‰æ
 	auto playeraaa = std::dynamic_pointer_cast<Player>(players_.at(keyMain_));
 
 	auto defScreen = DxLib::GetDrawScreen();
