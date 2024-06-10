@@ -7,17 +7,17 @@ Effect2D::Effect2D(int handle)
     handle_ = handle;
 }
 
-void Effect2D::SetPos(VECTOR& pos)
+void Effect2D::SetPos(const VECTOR& pos)
 {
     SetPosPlayingEffekseer2DEffect(GetHandle(), pos.x, pos.y, pos.z);
 }
 
-void Effect2D::SetScale(VECTOR& scl)
+void Effect2D::SetScale(const VECTOR& scl)
 {
     SetScalePlayingEffekseer2DEffect(GetHandle(), scl.x, scl.y, scl.z);
 }
 
-void Effect2D::SetAngle(VECTOR& rot)
+void Effect2D::SetAngle(const VECTOR& rot)
 {
     SetRotationPlayingEffekseer2DEffect(GetHandle(), rot.x, rot.y, rot.z);
 }
@@ -43,7 +43,7 @@ float Effect2D::GetSpeed(void) const
     return GetSpeedPlayingEffekseer2DEffect(GetHandle());
 }
 
-void Effect2D::Play(VECTOR& pos)
+void Effect2D::Play(const VECTOR& pos)
 {
     SetPosPlayingEffekseer2DEffect(GetHandle(), pos.x, pos.y, pos.z);
 }

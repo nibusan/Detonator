@@ -23,19 +23,6 @@ PixelShader::~PixelShader(void) {
 	}
 }
 
-void PixelShader::Begin(void) {
-	UpdateShaderConstantBuffer(cbuff_);
-	SetShaderConstantBuffer(cbuff_, DX_SHADERTYPE_PIXEL, 0);
-	SetUseAlphaTestFlag(true);
-	SetUsePixelShader(handle_);
-}
-
-void PixelShader::End(void) {
-	DrawPrimitive2DToShader(vertex_, 6, DX_PRIMTYPE_TRIANGLESTRIP);
-	SetUsePixelShader(-1);
-	SetRenderTargetToShader(0, -1);
-}
-
 void PixelShader::Draw(void) {
 	UpdateShaderConstantBuffer(cbuff_);
 	SetShaderConstantBuffer(cbuff_, DX_SHADERTYPE_PIXEL, 0);
@@ -44,10 +31,6 @@ void PixelShader::Draw(void) {
 	DrawPrimitive2DToShader(vertex_, 6, DX_PRIMTYPE_TRIANGLESTRIP);
 	SetUsePixelShader(-1);
 	SetRenderTargetToShader(0, -1);
-}
-
-void PixelShader::SetRenderTarget(int targetIndex, int screenHandle) {
-	SetRenderTargetToShader(targetIndex, screenHandle);
 }
 
 void PixelShader::SetUseTexture(int stageIndex, int graphicHandle) {
@@ -73,7 +56,7 @@ void PixelShader::SetUseTexture(int stageIndex, int graphicHandle) {
 	}
 }
 
-void PixelShader::SetUseTexture(int stageIndex, int graphicHandle, Vector2<float> pos) {
+void PixelShader::SetUseTexture(int stageIndex, int graphicHandle, const Vector2<float>& pos) {
 	SetUseTextureToShader(stageIndex, graphicHandle);
 
 	if (stageIndex == 0) {
@@ -109,4 +92,8 @@ void PixelShader::SetConstantValue(int index, float value) {
 
 void PixelShader::CreateConstantBuffer(int size) {
 	cbuff_ = CreateShaderConstantBuffer(size);
+}
+
+int PixelShader::GetConstantBuffer(void) const {
+	return cbuff_;
 }

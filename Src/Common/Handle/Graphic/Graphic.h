@@ -8,7 +8,6 @@
 #include "../HandleBase.h"
 #include "../PixelShader/PixelShader.h"
 
-class PixelShader;
 class Graphic : public HandleBase
 {
 
@@ -20,12 +19,13 @@ public:
 	~Graphic(void) override;
 
 	// •`‰æŒn
-	void Draw(const Vector2<float>& pos, bool isCenterDraw, const Shared_PixelShader& ps);
-	void Draw(const Vector2<float>& pos, bool isCenterDraw, int divX, int divY, int numX, int numY, const Shared_PixelShader& ps);
+	void Draw(const Vector2<float>& pos, bool isCenterDraw, const std::shared_ptr<PixelShader>& ps);
+	void Draw(const Vector2<float>& pos, bool isCenterDraw, int divX, int divY, int numX, int numY, const std::shared_ptr<PixelShader>& ps);
+	void Draw(const Vector2<float>& pos, float scale, float angle, int divX, int divY, int numX, int numY, const std::shared_ptr<PixelShader>& ps);
 	void Draw(const Vector2<float>& pos1, const Vector2<float>& pos2, bool isCenterDraw, int divX, int divY, int numX, int numY, const Shared_PixelShader& ps);
-	void Draw(const Vector2<float>& pos1, const Vector2<float>& pos2, const Shared_PixelShader& ps);
-	void Draw(const Vector2<float>& pos1, const Vector2<float>& pos2, const Vector2<float>& pos3, const Shared_PixelShader& ps);
-	void Draw(const Vector2<float>& pos, float scale, float angle, const Shared_PixelShader& ps);
+	void Draw(const Vector2<float>& pos1, const Vector2<float>& pos2, const std::shared_ptr<PixelShader>& ps);
+	void Draw(const Vector2<float>& pos1, const Vector2<float>& pos2, const Vector2<float>& pos3, const std::shared_ptr<PixelShader>& ps);
+	void Draw(const Vector2<float>& pos, float scale, float angle, const std::shared_ptr<PixelShader>& ps);
 
 	[[nodiscard]] const Vector2<int>& GetSize(void) const;
 

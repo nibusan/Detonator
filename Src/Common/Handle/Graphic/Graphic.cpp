@@ -1,6 +1,7 @@
 #include <filesystem>
 #include <DxLib.h>
 #include "../../Vector2.h"
+#include "../PixelShader/PixelShader.h"
 #include "Graphic.h"
 
 Graphic::Graphic(void) {
@@ -29,7 +30,7 @@ Graphic::~Graphic(void) {
 	}
 }
 
-void Graphic::Draw(const Vector2<float>& pos, bool isCenterDraw, const Shared_PixelShader& ps = nullptr) {
+void Graphic::Draw(const Vector2<float>& pos, bool isCenterDraw, const std::shared_ptr<PixelShader>& ps = nullptr) {
 	if (ps == nullptr) {
 		if (isCenterDraw) {
 			DrawRotaGraph(pos.x, pos.y, 1.0f, 0.0f, handle_, true);
@@ -61,7 +62,7 @@ void Graphic::Draw(const Vector2<float>& pos, bool isCenterDraw, const Shared_Pi
 	}
 }
 
-void Graphic::Draw(const Vector2<float>& pos, bool isCenterDraw, int divX, int divY, int numX, int numY, const Shared_PixelShader& ps) {
+void Graphic::Draw(const Vector2<float>& pos, bool isCenterDraw, int divX, int divY, int numX, int numY, const std::shared_ptr<PixelShader>& ps) {
 	Vector2<int> gDiv = { size_.x / divX, size_.y / divY };
 	Vector2<int> gStartPos = { gDiv.x * numX, gDiv.y * numY };
 
@@ -85,6 +86,31 @@ void Graphic::Draw(const Vector2<float>& pos, bool isCenterDraw, int divX, int d
 		else {
 			DrawRectGraph(0, 0, gStartPos.x, gStartPos.y, gDiv.x, gDiv.y, handle_, true);
 		}
+
+		SetDrawScreen(beforeShaderScreen_);
+		ClearDrawScreen();
+		ps->SetUseTexture(0, afterShaderScreen_);
+		ps->Draw();
+
+		SetDrawScreen(defScreen);
+		DrawGraph(pos.x, pos.y, beforeShaderScreen_, true);
+	}
+}
+
+void Graphic::Draw(const Vector2<float>& pos, float scale, float angle, int divX, int divY, int numX, int numY, const std::shared_ptr<PixelShader>& ps) {
+	Vector2<int> gDiv = { size_.x / divX, size_.y / divY };
+	Vector2<int> gStartPos = { gDiv.x * numX, gDiv.y * numY };
+
+	if (ps == nullptr) {
+		DrawRectRotaGraph(pos.x, pos.y, gStartPos.x, gStartPos.y, gDiv.x, gDiv.y, scale, angle, handle_, true);
+	}
+	else {
+		// å≥ÇÃï`âÊÉXÉNÉäÅ[ÉìÇëﬁî
+		auto defScreen = GetDrawScreen();
+
+		SetDrawScreen(afterShaderScreen_);
+		ClearDrawScreen();
+		DrawRectRotaGraph(pos.x, pos.y, gStartPos.x, gStartPos.y, gDiv.x, gDiv.y, scale, angle, handle_, true);
 
 		SetDrawScreen(beforeShaderScreen_);
 		ClearDrawScreen();
@@ -132,7 +158,7 @@ void Graphic::Draw(const Vector2<float>& pos1, const Vector2<float>& pos2, bool 
 	}
 }
 
-void Graphic::Draw(const Vector2<float>& pos1, const Vector2<float>& pos2, const Shared_PixelShader& ps = nullptr) {
+void Graphic::Draw(const Vector2<float>& pos1, const Vector2<float>& pos2, const std::shared_ptr<PixelShader>& ps = nullptr) {
 	if (ps == nullptr) {
 		DrawExtendGraph(pos1.x, pos1.y, pos2.x, pos2.y, handle_, true);
 	}
@@ -154,7 +180,7 @@ void Graphic::Draw(const Vector2<float>& pos1, const Vector2<float>& pos2, const
 	}
 }
 
-void Graphic::Draw(const Vector2<float>& pos1, const Vector2<float>& pos2, const Vector2<float>& pos3, const Shared_PixelShader& ps = nullptr) {
+void Graphic::Draw(const Vector2<float>& pos1, const Vector2<float>& pos2, const Vector2<float>& pos3, const std::shared_ptr<PixelShader>& ps = nullptr) {
 	if (ps == nullptr) {
 		DrawExtendGraph(pos1.x - pos3.x, pos1.y - pos3.y, pos2.x - pos3.x, pos2.y - pos3.y, handle_, true);
 	}
@@ -176,7 +202,7 @@ void Graphic::Draw(const Vector2<float>& pos1, const Vector2<float>& pos2, const
 	}
 }
 
-void Graphic::Draw(const Vector2<float>& pos, float scale, float angle, const Shared_PixelShader& ps = nullptr) {
+void Graphic::Draw(const Vector2<float>& pos, float scale, float angle, const std::shared_ptr<PixelShader>& ps = nullptr) {
 	if (ps == nullptr) {
 		DrawRotaGraph(pos.x, pos.y, scale, angle, handle_, true);
 	}
@@ -190,7 +216,7 @@ void Graphic::Draw(const Vector2<float>& pos, float scale, float angle, const Sh
 
 		SetDrawScreen(beforeShaderScreen_);
 		ClearDrawScreen();
-		ps->SetUseTexture(0, afterShaderScreen_);
+		ps->SetUseTexture(0, afterShaderScreen_, Vector2<float>(-100.0f, 0.0f));
 		ps->Draw();
 
 		SetDrawScreen(defScreen);

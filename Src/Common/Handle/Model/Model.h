@@ -3,18 +3,11 @@
 #include <string>
 #include <DxLib.h>
 #include "../HandleBase.h"
-#include "../VertexShader/VertexShader.h"
-#include "../PixelShader/PixelShader.h"
 
 class VertexShader;
 class PixelShader;
 class Model : public HandleBase
 {
-
-public:
-
-private:
-	
 public:
 	Model(void);
 	Model(const std::filesystem::path& path);
@@ -22,14 +15,22 @@ public:
 
 	~Model(void) override;
 
+	/// @brief MV1モデルを描画
+	/// @param pos 座標
+	/// @param localPos ローカル座標
+	/// @param rot 角度
+	/// @param localRot ローカル角度(名前間違ってるかも)
+	/// @param scl スケール値
+	/// @param vs 頂点シェーダー
+	/// @param ps ピクセルシェーダー
 	void Draw(
-		VECTOR pos, 
-		VECTOR localPos, 
-		VECTOR rot, 
-		VECTOR localRot, 
-		VECTOR scl, 
-		Shared_VertexShader vs,
-		Shared_PixelShader ps
+		const VECTOR& pos, 
+		const VECTOR& localPos, 
+		const VECTOR& rot, 
+		const VECTOR& localRot, 
+		const VECTOR& scl, 
+		std::shared_ptr<VertexShader> vs,
+		std::shared_ptr<PixelShader> ps
 	);
 };
 

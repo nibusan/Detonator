@@ -11,17 +11,17 @@ Effect3D::Effect3D(const Effect3D& ins)
 {
 }
 
-void Effect3D::SetPos(VECTOR& pos)
+void Effect3D::SetPos(const VECTOR& pos)
 {
     SetPosPlayingEffekseer3DEffect(GetHandle(), pos.x, pos.y, pos.z);
 }
 
-void Effect3D::SetScale(VECTOR& scl)
+void Effect3D::SetScale(const VECTOR& scl)
 {
     SetScalePlayingEffekseer3DEffect(GetHandle(), scl.x, scl.y, scl.z);
 }
 
-void Effect3D::SetAngle(VECTOR& rot)
+void Effect3D::SetAngle(const VECTOR& rot)
 {
     SetRotationPlayingEffekseer3DEffect(GetHandle(), rot.x, rot.y, rot.z);
 }
@@ -47,7 +47,7 @@ float Effect3D::GetSpeed(void) const
     return GetSpeedPlayingEffekseer3DEffect(GetHandle());
 }
 
-void Effect3D::Play(VECTOR& pos)
+void Effect3D::Play(const VECTOR& pos)
 {
     SetPosPlayingEffekseer3DEffect(GetHandle(), pos.x, pos.y, pos.z);
 }

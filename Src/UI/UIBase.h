@@ -166,7 +166,7 @@ public:
 
 	// このUIをクリックできるかをセット
 	void SetIsClickable(bool isClickable);
-
+	
 	// 使用するピクセルシェーダーをセット(定数を更新する場合は毎フレーム呼び出す必要あり)
 	void SetUsePixelShader(Weak_PixelShader ps);
 

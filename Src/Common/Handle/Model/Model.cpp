@@ -23,18 +23,18 @@ Model::~Model(void) {
 }
 
 void Model::Draw(
-	VECTOR pos,
-	VECTOR localPos,
-	VECTOR rot,
-	VECTOR localRot,
-	VECTOR scl,
-	Shared_VertexShader vs = nullptr,
-	Shared_PixelShader ps = nullptr
+	const VECTOR& pos,
+	const VECTOR& localPos,
+	const VECTOR& rot,
+	const VECTOR& localRot,
+	const VECTOR& scl,
+	std::shared_ptr<VertexShader> vs = nullptr,
+	std::shared_ptr<PixelShader> ps = nullptr
 ) {
 
 	// シェーダーがセットされているかを判定
-	bool isSettingOrigShader = vs != nullptr && ps != nullptr;
-	 
+	bool isSettingOrigShader = (vs != nullptr) && (ps != nullptr);
+
 	// そのシェーダーを使って描画
 	if (isSettingOrigShader) {
 		MV1SetUseOrigShader(true);
@@ -42,10 +42,13 @@ void Model::Draw(
 		SetUseVertexShader(vs->GetHandle());
 	}
 
+	// モデルの座標などの情報をセットする
 	auto handle = GetHandle();
 	MV1SetPosition(handle, VAdd(pos, localPos));
 	MV1SetRotationXYZ(handle, VAdd(rot, localRot));
 	MV1SetScale(handle, scl);
+
+	// モデルの描画
 	MV1DrawModel(handle);
 
 	// シェーダーをセットしている場合は

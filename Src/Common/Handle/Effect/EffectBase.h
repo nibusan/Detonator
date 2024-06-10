@@ -16,33 +16,41 @@ public:
 
 	~EffectBase(void) override;
 
-	// 座標をセット
-	virtual void SetPos(VECTOR& pos);
+	/// @brief 座標をセット
+	/// @param pos 座標
+	virtual void SetPos(const VECTOR& pos);
 
-	// スケール値をセット
-	virtual void SetScale(VECTOR& scl);
+	/// @brief スケール値をセット
+	/// @param scl スケール値
+	virtual void SetScale(const VECTOR& scl);
 
-	// 角度をセット
-	virtual void SetAngle(VECTOR& rot);
+	/// @brief 角度をセット
+	/// @param rot 角度
+	virtual void SetAngle(const VECTOR& rot);
 
-	// 色をセット
+	/// @brief 色をセット
+	/// @param r Red
+	/// @param g Green
+	/// @param b Blue
+	/// @param a Alpha
 	virtual void SetColor(unsigned char r, unsigned char g, unsigned char b, unsigned char a);
 	
-	// スピードをセット
+	/// @brief スピードをセット
+	/// @param speed スピード
 	virtual void SetSpeed(float speed);
 	
-	// スピードを返す
+	/// @brief スピードを返す
+	/// @return スピード
 	virtual float GetSpeed(void) const;
 	
-	// エフェクトを再生
-	virtual void Play(VECTOR& pos);
+	/// @brief エフェクトを再生
+	/// @param pos 座標
+	virtual void Play(const VECTOR& pos);
 	
-	// 再生されてるかを返す
+	/// @brief 再生されてるかを返す
+	/// @return 再生されてるか
 	virtual bool IsPlaying(void) const;
 	
-	// エフェクトを停止させる
+	/// @brief エフェクトを停止させる
 	virtual void Stop(void) const;
 };
-
-using Unique_Effect = std::unique_ptr<EffectBase>;
-using Shared_Effect = std::shared_ptr<EffectBase>;

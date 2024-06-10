@@ -26,47 +26,24 @@ EffectBase::~EffectBase(void)
 	}
 }
 
-void EffectBase::SetPos(VECTOR& pos)
-{
+void EffectBase::SetPos(const VECTOR& pos) {}
 
-}
+void EffectBase::SetScale(const VECTOR& scl) {}
 
-void EffectBase::SetScale(VECTOR& scl)
-{
-	
-}
+void EffectBase::SetAngle(const VECTOR& rot) {}
 
-void EffectBase::SetAngle(VECTOR& rot)
-{
+void EffectBase::SetColor(unsigned char r, unsigned char g, unsigned char b, unsigned char a) {}
 
-}
+void EffectBase::SetSpeed(float speed) {}
 
-void EffectBase::SetColor(unsigned char r, unsigned char g, unsigned char b, unsigned char a)
-{
-
-}
-
-void EffectBase::SetSpeed(float speed)
-{
-
-}
-
-float EffectBase::GetSpeed(void) const
-{
+float EffectBase::GetSpeed(void) const {
 	return 0.0f;
 }
 
-void EffectBase::Play(VECTOR& pos)
-{
+void EffectBase::Play(const VECTOR& pos) {}
 
-}
-
-bool EffectBase::IsPlaying(void) const
-{
+bool EffectBase::IsPlaying(void) const {
 	return false;
 }
 
-void EffectBase::Stop(void) const
-{
-
-}
+void EffectBase::Stop(void) const {}
