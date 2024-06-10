@@ -26,16 +26,21 @@ public:
 private:
 	// 画像
 	Weak_Graphic graphic_;
+
+	// 使用するピクセルシェーダー
 	Weak_PixelShader pixelShader_;
 
+	// 描画するテキスト、フォント、色
 	std::string text_;
 	Shared_Font usingFont_;
 	unsigned int color_;
 
+	// 描画するテキスト、フォント、色(補足用)
 	std::string text2_;
 	Shared_Font usingFont2_;
 	unsigned int color2_;
 
+	// 
 	float scaleRad_;
 	float colorValue_;
 

@@ -35,6 +35,8 @@ protected:
 	void DrawUI(std::shared_ptr<UIBase> ui);
 	void ReleaseUI(std::shared_ptr<UIBase> ui);
 	virtual void SetDefaultUI(void) = 0;
+
+	// UI‚Ì¶¬ˆ—
 	std::shared_ptr<UIBase> CreateUI(std::shared_ptr<UILayerList::DEFAULT_UI_DATA> uiData);
 };
 

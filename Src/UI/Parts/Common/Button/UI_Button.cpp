@@ -41,11 +41,13 @@ bool UI_Button::Update_UI(void) {
 
 	if (!IsClickable()) return false;
 
+	// マウスカーソルがUIの中に入ってるかを判定
 	bool isHit = Collision2DManager::IsContain_Rect(
 		inputManager.GetMousePos().ToVector2f(), 
 		std::dynamic_pointer_cast<Collision2D_Rect>(collision_)
 	);
 
+	// 入っていなかったら強調表示状態を解除してクリックされてない状態を示すfalseを返す
 	if (!isHit) {
 		SetIsHighlighted(false);
 		scaleRad_ = 0.0f;
@@ -67,9 +69,11 @@ void UI_Button::Draw_UI(void) {
 	pixelShader_.lock()->SetConstantValue(0, colorValue_);
 	graphic_.lock()->Draw({ 0.0f ,0.0f }, false, pixelShader_.lock());
 	
+	// 描画する文字のY座標のオフセット
+	const int offsetY = 40;
 	DrawStringToHandle(
 		graphic_.lock()->GetSize().x / 2 - GetDrawStringWidthToHandle(text_.c_str(), text_.length(), usingFont_->GetHandle()) / 2,
-		40, 
+		offsetY, 
 		text_.c_str(), 
 		color_, 
 		usingFont_->GetHandle()
@@ -77,7 +81,7 @@ void UI_Button::Draw_UI(void) {
 
 	DrawStringToHandle(
 		graphic_.lock()->GetSize().x / 2 - (GetDrawStringWidthToHandle(text2_.c_str(), text2_.length(), usingFont2_->GetHandle()) / 2),
-		40 + usingFont_->GetFontSize(),
+		offsetY + usingFont_->GetFontSize(),
 		text2_.c_str(), 
 		color2_, 
 		usingFont2_->GetHandle()

@@ -113,8 +113,10 @@ bool UIBase::Update(void) {
 	auto&& drawPos = GetDrawPos(totalPos_, drawScreen_->GetSize().ToVector2f(), GetDrawPositionType());
 	collision_->SetPos(drawPos);
 
+	// UIの更新処理とともにクリックされてるかをセットする
 	SetIsClick(Update_UI());
 
+	// 強調表示状態だったら専用の更新処理を行う
 	if (IsHighlighted()) HighlightedUpdate();
 
 	// クリックされてなおかつアクション関数がセットされていたらその関数を呼び出す

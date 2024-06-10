@@ -165,6 +165,7 @@
     <ClCompile Include="Src\Manager\Camera\NormalCamera.cpp" />
     <ClCompile Include="Src\Manager\Collision2DManager.cpp" />
     <ClCompile Include="Src\Manager\Controller\PlayerController.cpp" />
+    <ClCompile Include="Src\Manager\JsonReader.cpp" />
     <ClCompile Include="Src\Net\NetBase.cpp" />
     <ClCompile Include="Src\Net\NetClient.cpp" />
     <ClCompile Include="Src\Net\NetHost.cpp" />
@@ -286,6 +287,7 @@
     <ClCompile Include="Src\UI\UILayer\UILayer_mGame_Start.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Src\Data\Audio\AudioList.h" />
     <ClInclude Include="Src\Data\Music\MusicList.h" />
     <ClInclude Include="Src\Manager\AudioManager.h" />
     <ClInclude Include="Src\Common\Collision2D\Collision2D.h" />
@@ -306,7 +308,9 @@
     <ClInclude Include="Src\Manager\Camera\NormalCamera.h" />
     <ClInclude Include="Src\Manager\Collision2DManager.h" />
     <ClInclude Include="Src\Manager\Controller\PlayerController.h" />
+    <ClInclude Include="Src\Manager\JsonReader.h" />
     <ClInclude Include="Src\Manager\LoadOut.h" />
+    <ClInclude Include="Src\Manager\ResourceType.h" />
     <ClInclude Include="Src\Net\NetBase.h" />
     <ClInclude Include="Src\Net\NetClient.h" />
     <ClInclude Include="Src\Net\NetHost.h" />
