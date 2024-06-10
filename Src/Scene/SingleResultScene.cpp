@@ -44,7 +44,7 @@ void SingleResultScene::UISetting(void)
 	back_ = LoadGraph("Data/Image/UI/Result_Window_Single.png");
 
 	std::weak_ptr<Font> s = std::dynamic_pointer_cast<Font>(ResourceManager::GetInstance().
-		Get("Font_GenShinGothic_Bold"));
+		GetResourceFile("Font_GenShinGothic_Bold"));
 
 	fontHeading_ = std::make_unique<Font>(s.lock()->GetFontName(), 65);
 	fontHeading_->SetIsAutoDeleteHandle(true);

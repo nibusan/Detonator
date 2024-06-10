@@ -1,7 +1,7 @@
 #pragma once
 #include <filesystem>
 #include "../Common/StaticSingleton.h"
-#include "../Library/nlohmann-json/json.hpp"
+#include "../Common/nlohmann-json/json.hpp"
 
 class JsonReader : public StaticSingleton<JsonReader> {
 public:

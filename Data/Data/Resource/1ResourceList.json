@@ -1,0 +1,1445 @@
+{
+    "BasePath": "Data/",
+    "ResourcePath": [
+        "Image/",
+        "Sound/",
+        "Font/",
+        "Model/",
+        "Shader/Pixel/",
+        "Shader/Vertex/"
+    ],
+    "ResourceData": [
+        {
+            "TypeID": 0,
+          "Datas": [
+            {
+              "Key": "Image_Icon_TitleLogo",
+              "Path": "UI/",
+              "FileName": "Icon_TitleLogo",
+              "Extension": "png"
+            },
+            {
+              "Key": "Image_Menu_Background",
+              "Path": "",
+              "FileName": "Menu_Background",
+              "Extension": "png"
+            },
+            {
+              "Key": "Image_Icon_Menu_Exit",
+              "Path": "UI/",
+              "FileName": "Icon_Menu_Exit",
+              "Extension": "png"
+            },
+            {
+              "Key": "Image_Icon_Menu_Option",
+              "Path": "UI/",
+              "FileName": "Icon_Menu_Option",
+              "Extension": "png"
+            },
+            {
+              "Key": "Image_Icon_Menu_Player_1",
+              "Path": "UI/",
+              "FileName": "Icon_Menu_Player_1",
+              "Extension": "png"
+            },
+            {
+              "Key": "Image_Menu_Button",
+              "Path": "UI/",
+              "FileName": "Menu_Button",
+              "Extension": "png"
+            },
+            {
+              "Key": "Image_Menu_Button2",
+              "Path": "UI/",
+              "FileName": "Menu_Button2",
+              "Extension": "png"
+            },
+            {
+              "Key": "Image_Menu_Button3",
+              "Path": "UI/",
+              "FileName": "Menu_Button3",
+              "Extension": "png"
+            },
+            {
+              "Key": "Image_Menu_Back",
+              "Path": "UI/",
+              "FileName": "Icon_Menu_Back",
+              "Extension": "png"
+            },
+            {
+              "Key": "Image_Menu_Cursor",
+              "Path": "UI/",
+              "FileName": "Menu_Cursor",
+              "Extension": "png"
+            },
+            {
+              "Key": "Image_Model_Viewer",
+              "Path": "UI/",
+              "FileName": "Menu_Model_Viewer",
+              "Extension": "png"
+            },
+            {
+              "Key": "Image_Model_Viewer_Mask",
+              "Path": "UI/",
+              "FileName": "Menu_Model_Viewer_Mask",
+              "Extension": "png"
+            },
+            {
+              "Key": "Image_Menu_Window",
+              "Path": "UI/",
+              "FileName": "Menu_Window",
+              "Extension": "png"
+            },
+            {
+              "Key": "Image_Result_Mode",
+              "Path": "UI/",
+              "FileName": "Result_Mode",
+              "Extension": "png"
+            },
+            {
+              "Key": "Image_Result_Window",
+              "Path": "UI/",
+              "FileName": "Result_Window",
+              "Extension": "png"
+            },
+            {
+              "Key": "Image_Icon_Game_HUD_Message_Box",
+              "Path": "UI/",
+              "FileName": "Icon_Game_HUD_Message_Box",
+              "Extension": "png"
+            },
+            {
+              "Key": "Image_Icon_Game_HUD_Weapon_Info",
+              "Path": "UI/",
+              "FileName": "Icon_Game_HUD_Weapon_Info",
+              "Extension": "png"
+            },
+            {
+              "Key": "Image_Icon_Game_HUD_Gun_1",
+              "Path": "UI/",
+              "FileName": "Icon_Game_HUD_Gun_1",
+              "Extension": "png"
+            },
+            {
+              "Key": "Image_Icon_Game_HUD_Gun_2",
+              "Path": "UI/",
+              "FileName": "Icon_Game_HUD_Gun_2",
+              "Extension": "png"
+            },
+            {
+              "Key": "Image_Icon_Game_HUD_Gun_3",
+              "Path": "UI/",
+              "FileName": "Icon_Game_HUD_Gun_3",
+              "Extension": "png"
+            },
+            {
+              "Key": "Image_Icon_Game_HUD_Gun_4",
+              "Path": "UI/",
+              "FileName": "Icon_Game_HUD_Gun_4",
+              "Extension": "png"
+            },
+            {
+              "Key": "Image_Icon_Game_HUD_Grenade_1",
+              "Path": "UI/",
+              "FileName": "Icon_Game_HUD_Grenade_1",
+              "Extension": "png"
+            },
+            {
+              "Key": "Image_Icon_Game_HUD_Grenade_2",
+              "Path": "UI/",
+              "FileName": "Icon_Game_HUD_Grenade_2",
+              "Extension": "png"
+            },
+            {
+              "Key": "Image_Icon_Game_HUD_Grenade_3",
+              "Path": "UI/",
+              "FileName": "Icon_Game_HUD_Grenade_3",
+              "Extension": "png"
+            },
+            {
+              "Key": "Image_Icon_Game_Kill_Log",
+              "Path": "UI/",
+              "FileName": "Icon_KillLog",
+              "Extension": "png"
+            }
+          ]
+        },
+        {
+            "TypeID": 1,
+            "Datas": [
+                {
+					"Key": "Sound_Music_01",
+					"Path": "Common/",
+					"FileName": "Music_01_The_desolation_of_a_civilization_loop",
+					"Extension": "ogg",
+                    "SoundData": {
+                        "DimensionType": 0
+                    }
+				},
+                {
+					"Key": "Sound_Music_02",
+					"Path": "Common/",
+					"FileName": "Music_02_Agony_Space_deep_loop",
+					"Extension": "ogg",
+                    "SoundData": {
+                        "DimensionType": 0
+                    }
+				},
+                {
+					"Key": "Sound_Music_03",
+					"Path": "Common/",
+					"FileName": "Music_03_I_Can_See_You_loop",
+					"Extension": "ogg",
+                    "SoundData": {
+                        "DimensionType": 0
+                    }
+				},
+                {
+					"Key": "Sound_Music_04",
+					"Path": "Common/",
+					"FileName": "Music_04_Eating_offal_loop",
+					"Extension": "ogg",
+                    "SoundData": {
+                        "DimensionType": 0
+                    }
+				},
+                {
+					"Key": "Sound_Music_05",
+					"Path": "Common/",
+					"FileName": "Music_05_Evil_soul_inside_loop",
+					"Extension": "ogg",
+                    "SoundData": {
+                        "DimensionType": 0
+                    }
+				},
+                {
+					"Key": "Sound_Music_06",
+					"Path": "Common/",
+					"FileName": "Music_06_God_of_darkness_loop",
+					"Extension": "ogg",
+                    "SoundData": {
+                        "DimensionType": 0
+                    }
+				},
+                {
+					"Key": "Sound_Music_07",
+					"Path": "Common/",
+					"FileName": "Music_07_Suffocation_loop",
+					"Extension": "ogg",
+                    "SoundData": {
+                        "DimensionType": 0
+                    }
+				},
+                {
+					"Key": "Sound_Music_08",
+					"Path": "Common/",
+					"FileName": "Music_08_While_We_Sleep_loop",
+					"Extension": "ogg",
+                    "SoundData": {
+                        "DimensionType": 0
+                    }
+				},
+                {
+					"Key": "Sound_Gun_Burst_AK47",
+					"Path": "Game/Gun/",
+					"FileName": "Burst_AK47",
+					"Extension": "ogg",
+                    "SoundData": {
+                        "DimensionType": 1
+                    }
+				},
+                {
+					"Key": "Sound_Gun_Burst_AWM",
+					"Path": "Game/Gun/",
+					"FileName": "Burst_AWM",
+					"Extension": "ogg",
+                    "SoundData": {
+                        "DimensionType": 1
+                    }
+				},
+                {
+					"Key": "Sound_Gun_Burst_M4",
+					"Path": "Game/Gun/",
+					"FileName": "Burst_M4",
+					"Extension": "ogg",
+                    "SoundData": {
+                        "DimensionType": 1
+                    }
+				},
+                {
+					"Key": "Sound_Gun_Burst_M24R",
+					"Path": "Game/Gun/",
+					"FileName": "Burst_M24R",
+					"Extension": "ogg",
+                    "SoundData": {
+                        "DimensionType": 1
+                    }
+				},
+                {
+					"Key": "Sound_3DTest",
+					"Path": "Game/",
+					"FileName": "Test",
+					"Extension": "ogg",
+                    "SoundData": {
+                        "DimensionType": 1
+                    }
+				},
+                {
+          "Key": "Sound_Enemy_Damage",
+          "Path": "Game/Enemy/",
+          "FileName": "damage",
+          "Extension": "ogg",
+                    "SoundData": {
+                      "DimensionType": 1
+                    }
+        },
+                {
+          "Key": "Sound_Enemy_Destroy",
+          "Path": "Game/Enemy/",
+          "FileName": "destroy",
+          "Extension": "mp3",
+                    "SoundData": {
+                      "DimensionType": 1
+                    }
+        },
+                {
+          "Key": "Sound_Enemy_Shot",
+          "Path": "Game/Enemy/",
+          "FileName": "shot",
+          "Extension": "mp3",
+                    "SoundData": {
+                      "DimensionType": 1
+                    }
+        },
+                {
+          "Key": "Sound_Gun_Reload_AK47",
+          "Path": "Game/Gun/",
+          "FileName": "Reload_AR",
+          "Extension": "ogg",
+                    "SoundData": {
+                      "DimensionType": 1
+                    }
+        },
+              {
+          "Key": "Sound_Gun_Reload_AWM",
+          "Path": "Game/Gun/",
+          "FileName": "Reload_SR",
+          "Extension": "ogg",
+                    "SoundData": {
+                      "DimensionType": 1
+                    }
+        },
+              {
+          "Key": "Sound_Gun_Reload_M4",
+          "Path": "Game/Gun/",
+          "FileName": "Reload_AR",
+          "Extension": "ogg",
+                    "SoundData": {
+                      "DimensionType": 1
+                    }
+        },
+              {
+          "Key": "Sound_Gun_Reload_M24R",
+          "Path": "Game/Gun/",
+          "FileName": "Reload_Sub",
+          "Extension": "ogg",
+                    "SoundData": {
+                      "DimensionType": 1
+                    }
+        },
+                            {
+          "Key": "Sound_Grenade_Explosion",
+          "Path": "Game/Grenade/",
+          "FileName": "Grenade_explosion",
+          "Extension": "ogg",
+                    "SoundData": {
+                      "DimensionType": 1
+                    }
+        },
+                            {
+          "Key": "Sound_Grenade_Hit",
+          "Path": "Game/Grenade/",
+          "FileName": "Grenade_hit",
+          "Extension": "ogg",
+                    "SoundData": {
+                      "DimensionType": 1
+                    }
+        },
+                            {
+          "Key": "Sound_Grenade_Smoke",
+          "Path": "Game/Grenade/",
+          "FileName": "Grenade_smoke",
+          "Extension": "ogg",
+                    "SoundData": {
+                      "DimensionType": 1
+                    }
+        },
+                            {
+          "Key": "Sound_Player_ADS",
+          "Path": "Game/Player/",
+          "FileName": "ADS",
+          "Extension": "ogg",
+                    "SoundData": {
+                      "DimensionType": 1
+                    }
+        },
+                            {
+          "Key": "Sound_Player_Crouching",
+          "Path": "Game/Player/",
+          "FileName": "Crouching",
+          "Extension": "ogg",
+                    "SoundData": {
+                      "DimensionType": 1
+                    }
+        },
+                            {
+          "Key": "Sound_Player_Death1",
+          "Path": "Game/Player/",
+          "FileName": "death_1",
+          "Extension": "ogg",
+                    "SoundData": {
+                      "DimensionType": 1
+                    }
+        },
+                            {
+          "Key": "Sound_Player_Death2",
+          "Path": "Game/Player/",
+          "FileName": "death_2",
+          "Extension": "ogg",
+                    "SoundData": {
+                      "DimensionType": 1
+                    }
+        },
+                            {
+          "Key": "Sound_Player_Death3",
+          "Path": "Game/Player/",
+          "FileName": "death_3",
+          "Extension": "ogg",
+                    "SoundData": {
+                      "DimensionType": 1
+                    }
+        },
+                            {
+          "Key": "Sound_Player_Footfall",
+          "Path": "Game/Player/",
+          "FileName": "Footfall",
+          "Extension": "ogg",
+                    "SoundData": {
+                      "DimensionType": 1
+                    }
+        },
+                            {
+          "Key": "Sound_Player_Throw",
+          "Path": "Game/Player/",
+          "FileName": "Grenade_throw",
+          "Extension": "ogg",
+                    "SoundData": {
+                      "DimensionType": 1
+                    }
+        },
+                            {
+          "Key": "Sound_Player_Jump",
+          "Path": "Game/Player/",
+          "FileName": "Jump",
+          "Extension": "ogg",
+                    "SoundData": {
+                      "DimensionType": 1
+                    }
+        },
+                            {
+          "Key": "Sound_Player_Jump_Landing",
+          "Path": "Game/Player/",
+          "FileName": "Jump_landing",
+          "Extension": "ogg",
+                    "SoundData": {
+                      "DimensionType": 1
+                    }
+        },
+                            {
+          "Key": "Sound_Gun_Empty_Magazine",
+          "Path": "Game/Gun/",
+          "FileName": "EmptyMagazine",
+          "Extension": "ogg",
+                    "SoundData": {
+                      "DimensionType": 1
+                    }
+        },
+                            {
+          "Key": "Sound_System_ChangeScene_Single",
+          "Path": "System/",
+          "FileName": "ChangeSecne_single",
+          "Extension": "ogg",
+                    "SoundData": {
+                      "DimensionType": 2
+                    }
+        },
+                            {
+          "Key": "Sound_System_ChangeScene_Multi",
+          "Path": "System/",
+          "FileName": "ChangeSecne_multi",
+          "Extension": "ogg",
+                    "SoundData": {
+                      "DimensionType": 2
+                    }
+        },
+                            {
+          "Key": "Sound_System_ClickButton",
+          "Path": "System/",
+          "FileName": "Clickbutton",
+          "Extension": "ogg",
+                    "SoundData": {
+                      "DimensionType": 2
+                    }
+        },
+                            {
+          "Key": "Sound_System_Countdown",
+          "Path": "System/",
+          "FileName": "Countdown",
+          "Extension": "ogg",
+                    "SoundData": {
+                      "DimensionType": 2
+                    }
+        },
+                            {
+          "Key": "Sound_System_Game_Start",
+          "Path": "System/",
+          "FileName": "Game_start",
+          "Extension": "ogg",
+                    "SoundData": {
+                      "DimensionType": 2
+                    }
+        },
+                            {
+          "Key": "Sound_System_RemainingTime",
+          "Path": "System/",
+          "FileName": "Remainingtime",
+          "Extension": "ogg",
+                    "SoundData": {
+                      "DimensionType": 2
+                    }
+        },
+                            {
+          "Key": "Sound_System_Result",
+          "Path": "System/",
+          "FileName": "Result",
+          "Extension": "ogg",
+                    "SoundData": {
+                      "DimensionType": 2
+                    }
+        },
+                            {
+          "Key": "Sound_System_Weapon_Select",
+          "Path": "System/",
+          "FileName": "Weapon_select",
+          "Extension": "ogg",
+                    "SoundData": {
+                      "DimensionType": 2
+                    }
+        },
+                            {
+          "Key": "Sound_Grenade_Sticky",
+          "Path": "Game/Grenade",
+          "FileName": "Grenade_sticky",
+          "Extension": "ogg",
+                    "SoundData": {
+                      "DimensionType": 1
+                    }
+        },
+                            {
+          "Key": "Sound_System_Cancel",
+          "Path": "System/",
+          "FileName": "Cancel",
+          "Extension": "ogg",
+                    "SoundData": {
+                      "DimensionType": 2
+                    }
+        }
+            ]
+        },
+        {
+            "TypeID": 2,
+          "Datas": [
+              {
+                  "Key": "Font_LightNovelPopV2_V2",
+                  "Path": "",
+                  "FileName": "LightNovelPopV2_V2",
+                  "Extension": "otf"
+              },
+              {
+                  "Key": "Font_GenShinGothic_Bold",
+                  "Path": "",
+                  "FileName": "GenShinGothic_Bold",
+                  "Extension": "ttf"
+              }
+          ]
+        },
+        {
+            "TypeID": 3,
+            "Datas": [
+                {
+                    "Key": "Model_Bullet_ar",
+                    "Path": "Bullet/", 
+                    "FileName": "ar",
+                    "Extension": "mv1"
+                },
+                {
+                    "Key": "Model_Bullet_sr",
+                    "Path": "Bullet/", 
+                    "FileName": "sr",
+                    "Extension": "mv1"
+                },
+                {
+                    "Key": "Model_Bullet_sub",
+                    "Path": "Bullet/", 
+                    "FileName": "sub",
+                    "Extension": "mv1"
+                },
+                {
+                    "Key": "Model_Enemy_robot_metallic",
+                    "Path": "Enemy/", 
+                    "FileName": "robot_metallic",
+                    "Extension": "mv1"
+                },
+                {
+                    "Key": "Model_Enemy_Vanguard By T. Choonyung",
+                    "Path": "Enemy/", 
+                    "FileName": "Vanguard By T. Choonyung",
+                    "Extension": "mv1"
+                },
+                                {
+                    "Key": "Model_Enemy_Shield04",
+                    "Path": "Enemy/", 
+                    "FileName": "Shield04",
+                    "Extension": "mv1"
+                },
+                {
+                    "Key": "Model_Grenade_HandGrenade1",
+                    "Path": "Grenade/", 
+                    "FileName": "HandGranade1",
+                    "Extension": "mv1"
+                },
+                {
+                    "Key": "Model_Grenade_SmokeGrenade",
+                    "Path": "Grenade/", 
+                    "FileName": "SmokeGranade",
+                    "Extension": "mv1"
+                },
+                {
+                    "Key": "Model_Grenade_StickyGrenade",
+                    "Path": "Grenade/", 
+                    "FileName": "StickyGrenade",
+                    "Extension": "mv1"
+                },
+                {
+                    "Key": "Model_Gun_AK47",
+                    "Path": "Gun/", 
+                    "FileName": "AK47",
+                    "Extension": "mv1"
+                },
+                {
+                    "Key": "Model_Gun_AWM",
+                    "Path": "Gun/", 
+                    "FileName": "AWM",
+                    "Extension": "mv1"
+                },
+                {
+                    "Key": "Model_Gun_M4",
+                    "Path": "Gun/", 
+                    "FileName": "M4",
+                    "Extension": "mv1"
+                },
+                {
+                    "Key": "Model_Gun_M24R",
+                    "Path": "Gun/", 
+                    "FileName": "M24R",
+                    "Extension": "mv1"
+                },
+                {
+                    "Key": "Model_Gun_SS2",
+                    "Path": "Gun/", 
+                    "FileName": "SS2_AssaultRifle",
+                    "Extension": "mv1"
+                },
+                {
+                    "Key": "Model_Gun_Scope_Red+Dot+Sight",
+                    "Path": "Gun/Scope/", 
+                    "FileName": "Red+Dot+Sight",
+                    "Extension": "mv1"
+                },
+                {
+                    "Key": "Model_Gun_Scope_AWM",
+                    "Path": "Gun/Scope/", 
+                    "FileName": "AWMScope",
+                    "Extension": "mv1"
+                },
+                {
+                    "Key": "Model_Map_Hangar_Full_Collision",
+                    "Path": "Map/", 
+                    "FileName": "Hangar_Full_Collision",
+                    "Extension": "mv1"
+                },
+                {
+                    "Key": "Model_Map_Hangar_Full_CollisionUnBreak",
+                    "Path": "Map/", 
+                    "FileName": "Hangar_Full_CollisionUnBreak",
+                    "Extension": "mv1"
+                },
+                {
+                    "Key": "Model_Map_Hangar_Full_Obj",
+                    "Path": "Map/", 
+                    "FileName": "Hangar_Full_Obj",
+                    "Extension": "mv1"
+                },
+                {
+                    "Key": "Model_Map_Hangar_Full_Wall",
+                    "Path": "Map/", 
+                    "FileName": "Hangar_Full_Wall",
+                    "Extension": "mv1"
+                },
+                {
+                    "Key": "Model_Map_HangarLight",
+                    "Path": "Map/", 
+                    "FileName": "HangarLight",
+                    "Extension": "mv1"
+                },
+                {
+                    "Key": "Model_Map_SafeHouse_Obj",
+                    "Path": "Map/", 
+                    "FileName": "SafeHouse_Obj",
+                    "Extension": "mv1"
+                },
+                {
+                    "Key": "Model_Map_SafeHouse_Wall",
+                    "Path": "Map/", 
+                    "FileName": "SafeHouse_Wall",
+                    "Extension": "mv1"
+                },
+                {
+                    "Key": "Model_Player_Player1",
+                    "Path": "Player/", 
+                    "FileName": "Player1",
+                    "Extension": "mv1"
+                },
+                {
+                    "Key": "Model_Player_Player2",
+                    "Path": "Player/", 
+                    "FileName": "Player2",
+                    "Extension": "mv1"
+                },
+                {
+                    "Key": "Model_Player_Animation_Crouch_Fire_Rifle",
+                    "Path": "Player/Animation/", 
+                    "FileName": "Crouch Fire Rifle",
+                    "Extension": "mv1"
+                },
+                {
+                    "Key": "Model_Player_Animation_Crouch_Reload",
+                    "Path": "Player/Animation/", 
+                    "FileName": "Crouch Reload",
+                    "Extension": "mv1"
+                },
+                {
+                    "Key": "Model_Player_Animation_Crouch_Walk_Strafe_Left",
+                    "Path": "Player/Animation/", 
+                    "FileName": "Crouch Walk Strafe Left",
+                    "Extension": "mv1"
+                },
+                {
+                    "Key": "Model_Player_Animation_Crouch_Walk_Strafe_Right",
+                    "Path": "Player/Animation/", 
+                    "FileName": "Crouch Walk Strafe Right",
+                    "Extension": "mv1"
+                },
+                {
+                    "Key": "Model_Player_Animation_Crouch_Walking_Backwards",
+                    "Path": "Player/Animation/", 
+                    "FileName": "Crouch Walking Backwards",
+                    "Extension": "mv1"
+                },
+                {
+                    "Key": "Model_Player_Animation_Crouch_Walking",
+                    "Path": "Player/Animation/", 
+                    "FileName": "Crouch Walking",
+                    "Extension": "mv1"
+                },
+                {
+                    "Key": "Model_Player_Animation_firing_rifle",
+                    "Path": "Player/Animation/", 
+                    "FileName": "firing rifle",
+                    "Extension": "mv1"
+                },
+                {
+                    "Key": "Model_Player_Animation_Jump_Down",
+                    "Path": "Player/Animation/", 
+                    "FileName": "Jump Down",
+                    "Extension": "mv1"
+                },
+                {
+                    "Key": "Model_Player_Animation_Jump_Loop",
+                    "Path": "Player/Animation/", 
+                    "FileName": "Jump Loop",
+                    "Extension": "mv1"
+                },
+                {
+                    "Key": "Model_Player_Animation_Jump_Up",
+                    "Path": "Player/Animation/", 
+                    "FileName": "Jump Up",
+                    "Extension": "mv1"
+                },
+                {
+                    "Key": "Model_Player_Animation_reloading",
+                    "Path": "Player/Animation/", 
+                    "FileName": "reloading",
+                    "Extension": "mv1"
+                },
+                {
+                    "Key": "Model_Player_Animation_rifle_aiming_idle",
+                    "Path": "Player/Animation/", 
+                    "FileName": "rifle aiming idle",
+                    "Extension": "mv1"
+                },
+                {
+                    "Key": "Model_Player_Animation_Rifle_Idle",
+                    "Path": "Player/Animation/", 
+                    "FileName": "Rifle Idle",
+                    "Extension": "mv1"
+                },
+                {
+                    "Key": "Model_Player_Animation_Rifle_Kneel_Idle",
+                    "Path": "Player/Animation/", 
+                    "FileName": "Rifle Kneel Idle",
+                    "Extension": "mv1"
+                },
+                {
+                    "Key": "Model_Player_Animation_rifle_run",
+                    "Path": "Player/Animation/", 
+                    "FileName": "rifle run",
+                    "Extension": "mv1"
+                },
+                {
+                    "Key": "Model_Player_Animation_strafe_left",
+                    "Path": "Player/Animation/", 
+                    "FileName": "strafe left",
+                    "Extension": "mv1"
+                },
+                {
+                    "Key": "Model_Player_Animation_strafe_right",
+                    "Path": "Player/Animation/", 
+                    "FileName": "strafe right",
+                    "Extension": "mv1"
+                },
+                {
+                    "Key": "Model_Player_Animation_toss_grenade",
+                    "Path": "Player/Animation/", 
+                    "FileName": "toss grenade",
+                    "Extension": "mv1"
+                },
+                {
+                    "Key": "Model_Player_Animation_walking_backwards",
+                    "Path": "Player/Animation/", 
+                    "FileName": "walking backwards",
+                    "Extension": "mv1"
+                },
+                {
+                    "Key": "Model_Player_Animation_walking",
+                    "Path": "Player/Animation/", 
+                    "FileName": "walking",
+                    "Extension": "mv1"
+                },
+                {
+                    "Key": "Model_Player_Animation_Death",
+                    "Path": "Player/Animation/", 
+                    "FileName": "Death",
+                    "Extension": "mv1"
+                },
+                {
+                    "Key": "Model_SkyDoom_SkyDoom",
+                    "Path": "SkyDoom/", 
+                    "FileName": "SkyDoom",
+                    "Extension": "mv1"
+                }
+            ]
+        },
+        {
+            "TypeID": 4,
+          "Datas": [
+            {
+              "Key": "PixelShader_Mask",
+              "Path": "",
+              "FileName": "Mask_PS",
+              "Extension": "pso"
+            },
+            {
+              "Key": "PixelShader_Vignette",
+              "Path": "",
+              "FileName": "Vignette_PS",
+              "Extension": "pso"
+            },
+            {
+              "Key": "PixelShader_Button",
+              "Path": "",
+              "FileName": "UI_Button_Select",
+              "Extension": "pso"
+            }
+          ]
+        },
+        {
+            "TypeID": 5,
+            "Datas": null
+        }
+    ],
+    "Global": [
+        {
+            "TypeID": 0,
+          "Datas": [
+            "Image_Menu_Button",
+            "Image_Menu_Button2",
+            "Image_Menu_Button3",
+            "Image_Menu_Back",
+            "Image_Icon_Game_HUD_Message_Box",
+            "Image_Icon_Game_HUD_Weapon_Info",
+            "Image_Icon_Game_HUD_Gun_1",
+            "Image_Icon_Game_HUD_Gun_2",
+            "Image_Icon_Game_HUD_Gun_3",
+            "Image_Icon_Game_HUD_Gun_4",
+            "Image_Icon_Game_HUD_Grenade_1",
+            "Image_Icon_Game_HUD_Grenade_2",
+            "Image_Icon_Game_HUD_Grenade_3",
+            "Image_Icon_Game_Kill_Log",
+            "Image_Menu_Cursor"
+          ]
+        },
+        {
+            "TypeID": 1,
+            "Datas": [
+                "Sound_Music_01",
+                "Sound_Music_02",
+                "Sound_Music_03",
+                "Sound_Music_04",
+                "Sound_Music_05",
+                "Sound_Music_06",
+                "Sound_Music_07",
+                "Sound_Music_08",
+                "Sound_Gun_Burst_AK47",
+                "Sound_Gun_Burst_AWM",
+                "Sound_Gun_Burst_M4",
+                "Sound_Gun_Burst_M24R",
+                "Sound_3DTest",
+                "Sound_Enemy_Damage",
+                "Sound_Enemy_Destroy",
+                "Sound_Enemy_Shot",
+                "Sound_Gun_Reload_AK47",
+                "Sound_Gun_Reload_AWM",
+                "Sound_Gun_Reload_M4",
+                "Sound_Gun_Reload_M24R",
+                "Sound_Grenade_Explosion",
+                "Sound_Grenade_Hit",
+                "Sound_Grenade_Smoke",
+                "Sound_Player_ADS",
+                "Sound_Player_Crouching",
+                "Sound_Player_Death1",
+                "Sound_Player_Death2",
+                "Sound_Player_Death3",
+                "Sound_Player_Footfall",
+                "Sound_Player_Throw",
+                "Sound_Player_Jump",
+                "Sound_Player_Jump_Landing",
+                "Sound_Gun_Empty_Magazine",
+                "Sound_System_ChangeScene_Single",
+                "Sound_System_ChangeScene_Multi",
+                "Sound_System_ClickButton",
+                "Sound_System_Countdown",
+                "Sound_System_Game_Start",
+                "Sound_System_RemainingTime",
+                "Sound_System_Result",
+                "Sound_System_Weapon_Select",
+                "Sound_Grenade_Sticky",
+                "Sound_System_Cancel"
+            ]
+        },
+        {
+            "TypeID": 2,
+            "Datas": [
+                "Font_LightNovelPopV2_V2",
+                "Font_GenShinGothic_Bold"
+            ]
+        },
+        {
+            "TypeID": 3,
+            "Datas": null
+        },
+        {
+            "TypeID": 4,
+          "Datas": [
+            "PixelShader_Button",
+            "PixelShader_Vignette"
+          ]
+        },
+        {
+            "TypeID": 5,
+            "Datas": null
+        }
+    ],
+    "Scene": [
+        {
+            "SceneID": 0,
+            "UsingResource": [
+                {
+                    "TypeID": 0,
+                  "Datas": null
+                },
+                {
+                    "TypeID": 1,
+                    "Datas": null
+                },
+                {
+                    "TypeID": 2,
+                    "Datas": null
+                },
+                {
+                    "TypeID": 3,
+                    "Datas": null
+                },
+                {
+                    "TypeID": 4,
+                  "Datas": null
+                },
+                {
+                    "TypeID": 5,
+                    "Datas": null
+                }
+            ]
+        },
+        {
+            "SceneID": 1,
+            "UsingResource": [
+                {
+                    "TypeID": 0,
+                  "Datas": null
+                },
+                {
+                    "TypeID": 1,
+                    "Datas": null
+                },
+                {
+                    "TypeID": 2,
+                    "Datas": null
+                },
+                {
+                    "TypeID": 3,
+                     "Datas": null
+                },
+                {
+                    "TypeID": 4,
+                  "Datas": null
+                },
+                {
+                    "TypeID": 5,
+                    "Datas": null
+                }
+            ]
+        },
+        {
+            "SceneID": 2,
+            "UsingResource": [
+                {
+                    "TypeID": 0,
+                  "Datas": [
+                    "Image_Icon_TitleLogo"
+                  ]
+                },
+                {
+                    "TypeID": 1,
+                    "Datas": null
+                },
+                {
+                    "TypeID": 2,
+                    "Datas": null
+                },
+                {
+                    "TypeID": 3,
+                    "Datas": null
+                },
+                {
+                    "TypeID": 4,
+                  "Datas": null
+                },
+                {
+                    "TypeID": 5,
+                    "Datas": null
+                }
+            ]
+        },
+        {
+            "SceneID": 3,
+            "UsingResource": [
+                {
+                    "TypeID": 0,
+                  "Datas": [
+                    "Image_Menu_Background",
+                    "Image_Icon_Menu_Exit",
+                    "Image_Icon_Menu_Option",
+                    "Image_Icon_TitleLogo",
+                    "Image_Icon_Menu_Player_1",
+                    "Image_Menu_Window"
+                  ]
+                },
+                {
+                    "TypeID": 1,
+                    "Datas": null
+                },
+                {
+                    "TypeID": 2,
+                    "Datas": null
+                },
+                {
+                    "TypeID": 3,
+                    "Datas": [ 
+                       "Model_Gun_AK47" 
+                  ]
+                },
+                {
+                    "TypeID": 4,
+                  "Datas": null
+                },
+                {
+                    "TypeID": 5,
+                    "Datas": null
+                }
+            ]
+        },
+        {
+            "SceneID": 4,
+            "UsingResource": [
+                {
+                    "TypeID": 0,
+                  "Datas": [
+                    "Image_Menu_Background",
+                    "Image_Model_Viewer",
+                    "Image_Model_Viewer_Mask"
+                  ]
+                },
+                {
+                    "TypeID": 1,
+                    "Datas": null
+                },
+                {
+                    "TypeID": 2,
+                    "Datas": null
+                },
+                {
+                    "TypeID": 3,
+                    "Datas": [
+                        "Model_Player_Player1",
+                        "Model_Player_Animation_Crouch_Fire_Rifle",
+                        "Model_Player_Animation_Crouch_Reload",
+                        "Model_Player_Animation_Crouch_Walk_Strafe_Left",
+                        "Model_Player_Animation_Crouch_Walk_Strafe_Right",
+                        "Model_Player_Animation_Crouch_Walking_Backwards",
+                        "Model_Player_Animation_Crouch_Walking",
+                        "Model_Player_Animation_firing_rifle",
+                        "Model_Player_Animation_Jump_Down",
+                        "Model_Player_Animation_Jump_Loop",
+                        "Model_Player_Animation_Jump_Up",
+                        "Model_Player_Animation_reloading",
+                        "Model_Player_Animation_rifle_aiming_idle",
+                        "Model_Player_Animation_Rifle_Idle",
+                        "Model_Player_Animation_Rifle_Kneel_Idle",
+                        "Model_Player_Animation_rifle_run",
+                        "Model_Player_Animation_strafe_left",
+                        "Model_Player_Animation_strafe_right",
+                        "Model_Player_Animation_toss_grenade",
+                        "Model_Player_Animation_walking_backwards",
+                        "Model_Player_Animation_walking",
+                        "Model_Player_Animation_Death",
+                        "Model_Gun_AK47",
+                        "Model_Gun_AWM",
+                        "Model_Gun_M4",
+                        "Model_Gun_M24R",
+                        "Model_Gun_Scope_Red+Dot+Sight",
+                        "Model_Gun_Scope_AWM",
+                        "Model_Grenade_HandGrenade1",
+                        "Model_Grenade_SmokeGrenade",
+                        "Model_Grenade_StickyGrenade",
+                        "Model_Map_Hangar_Full_Collision",
+                        "Model_Map_Hangar_Full_CollisionUnBreak",
+                        "Model_Map_Hangar_Full_Obj",
+                        "Model_Map_Hangar_Full_Wall"
+                    ]
+                },
+                {
+                    "TypeID": 4,
+                  "Datas": [
+                    "PixelShader_Mask"
+                  ]
+                },
+                {
+                    "TypeID": 5,
+                    "Datas": null
+                }
+            ]
+        },
+        {
+            "SceneID": 5,
+            "UsingResource": [
+                {
+                    "TypeID": 0,
+                    "Datas": null
+                },
+                {
+                    "TypeID": 1,
+                    "Datas": null
+                },
+                {
+                    "TypeID": 2,
+                    "Datas": null
+                },
+                {
+                    "TypeID": 3,
+                    "Datas": [
+                        "Model_Player_Player1",
+                        "Model_Player_Animation_Crouch_Fire_Rifle",
+                        "Model_Player_Animation_Crouch_Reload",
+                        "Model_Player_Animation_Crouch_Walk_Strafe_Left",
+                        "Model_Player_Animation_Crouch_Walk_Strafe_Right",
+                        "Model_Player_Animation_Crouch_Walking_Backwards",
+                        "Model_Player_Animation_Crouch_Walking",
+                        "Model_Player_Animation_firing_rifle",
+                        "Model_Player_Animation_Jump_Down",
+                        "Model_Player_Animation_Jump_Loop",
+                        "Model_Player_Animation_Jump_Up",
+                        "Model_Player_Animation_reloading",
+                        "Model_Player_Animation_rifle_aiming_idle",
+                        "Model_Player_Animation_Rifle_Idle",
+                        "Model_Player_Animation_Rifle_Kneel_Idle",
+                        "Model_Player_Animation_rifle_run",
+                        "Model_Player_Animation_strafe_left",
+                        "Model_Player_Animation_strafe_right",
+                        "Model_Player_Animation_toss_grenade",
+                        "Model_Player_Animation_walking_backwards",
+                        "Model_Player_Animation_walking",
+                        "Model_Player_Animation_Death",
+                        "Model_Gun_AK47",
+                        "Model_Gun_AWM",
+                        "Model_Gun_M4",
+                        "Model_Gun_M24R",
+                        "Model_Gun_SS2",
+                        "Model_Gun_Scope_Red+Dot+Sight",
+                        "Model_Gun_Scope_AWM",
+                        "Model_Grenade_HandGrenade1",
+                        "Model_Grenade_SmokeGrenade",
+                        "Model_Grenade_StickyGrenade",
+                        "Model_Enemy_robot_metallic",
+                        "Model_Enemy_Vanguard By T. Choonyung",
+                        "Model_Enemy_Shield04",
+                        "Model_Map_Hangar_Full_Collision",
+                        "Model_Map_Hangar_Full_CollisionUnBreak",
+                        "Model_Map_Hangar_Full_Obj",
+                        "Model_Map_Hangar_Full_Wall"
+                    ]
+                },
+                {
+                    "TypeID": 4,
+                    "Datas": null
+                },
+                {
+                    "TypeID": 5,
+                    "Datas": null
+                }
+            ]
+        },
+        {
+            "SceneID": 6,
+            "UsingResource": [
+                {
+                    "TypeID": 0,
+                  "Datas": [
+                    "Image_Menu_Background",
+                    "Image_Result_Window"
+                  ]
+                },
+                {
+                    "TypeID": 1,
+                    "Datas": null
+                },
+                {
+                    "TypeID": 2,
+                    "Datas": null
+                },
+                {
+                    "TypeID": 3,
+                    "Datas": null
+                },
+                {
+                    "TypeID": 4,
+                  "Datas": null
+                },
+                {
+                    "TypeID": 5,
+                    "Datas": null
+                }
+            ]
+        },
+        {
+            "SceneID": 7,
+            "UsingResource": [
+                {
+                    "TypeID": 0,
+                  "Datas": null
+                },
+                {
+                    "TypeID": 1,
+                    "Datas": null
+                },
+                {
+                    "TypeID": 2,
+                    "Datas": null
+                },
+                {
+                    "TypeID": 3,
+                  "Datas": [
+                    "Model_Player_Player1",
+                    "Model_Gun_AK47",
+                    "Model_Gun_AWM",
+                    "Model_Gun_M4",
+                    "Model_Gun_M24R",
+                    "Model_Grenade_HandGrenade1",
+                    "Model_Grenade_SmokeGrenade",
+                    "Model_Grenade_StickyGrenade"
+                  ]
+                },
+                {
+                    "TypeID": 4,
+                  "Datas": null
+                },
+                {
+                    "TypeID": 5,
+                    "Datas": null
+                }
+            ]
+        },
+        {
+            "SceneID": 8,
+            "UsingResource": [
+                {
+                    "TypeID": 0,
+                  "Datas": null
+                },
+                {
+                    "TypeID": 1,
+                    "Datas": null
+                },
+                {
+                    "TypeID": 2,
+                    "Datas": null
+                },
+                {
+                    "TypeID": 3,
+                  "Datas": [
+                    "Model_Player_Player1",
+                    "Model_Player_Animation_Crouch_Fire_Rifle",
+                    "Model_Player_Animation_Crouch_Reload",
+                    "Model_Player_Animation_Crouch_Walk_Strafe_Left",
+                    "Model_Player_Animation_Crouch_Walk_Strafe_Right",
+                    "Model_Player_Animation_Crouch_Walking_Backwards",
+                    "Model_Player_Animation_Crouch_Walking",
+                    "Model_Player_Animation_firing_rifle",
+                    "Model_Player_Animation_Jump_Down",
+                    "Model_Player_Animation_Jump_Loop",
+                    "Model_Player_Animation_Jump_Up",
+                    "Model_Player_Animation_reloading",
+                    "Model_Player_Animation_rifle_aiming_idle",
+                    "Model_Player_Animation_Rifle_Idle",
+                    "Model_Player_Animation_Rifle_Kneel_Idle",
+                    "Model_Player_Animation_rifle_run",
+                    "Model_Player_Animation_strafe_left",
+                    "Model_Player_Animation_strafe_right",
+                    "Model_Player_Animation_toss_grenade",
+                    "Model_Player_Animation_walking_backwards",
+                    "Model_Player_Animation_walking",
+                    "Model_Player_Animation_Death",
+                    "Model_Gun_AK47",
+                    "Model_Gun_AWM",
+                    "Model_Gun_M4",
+                    "Model_Gun_M24R",
+                    "Model_Gun_Scope_Red+Dot+Sight",
+                    "Model_Gun_Scope_AWM",
+                    "Model_Grenade_HandGrenade1",
+                    "Model_Grenade_SmokeGrenade",
+                    "Model_Grenade_StickyGrenade",
+                    "Model_Map_Hangar_Full_Collision",
+                    "Model_Map_Hangar_Full_CollisionUnBreak",
+                    "Model_Map_Hangar_Full_Obj",
+                    "Model_Map_Hangar_Full_Wall"
+                  ]
+                },
+                {
+                    "TypeID": 4,
+                  "Datas": null
+                },
+                {
+                    "TypeID": 5,
+                    "Datas": null
+                }
+            ]
+        },
+        {
+            "SceneID": 9,
+            "UsingResource": [
+                {
+                    "TypeID": 0,
+                    "Datas": null
+                },
+                {
+                    "TypeID": 1,
+                    "Datas": null
+                },
+                {
+                    "TypeID": 2,
+                    "Datas": null
+                },
+                {
+                    "TypeID": 3,
+                    "Datas": null
+                },
+                {
+                    "TypeID": 4,
+                    "Datas": null
+                },
+                {
+                    "TypeID": 5,
+                    "Datas": null
+                }
+            ]
+        },
+        {
+            "SceneID": 10,
+            "UsingResource": [
+                {
+                    "TypeID": 0,
+                    "Datas": null
+                },
+                {
+                    "TypeID": 1,
+                    "Datas": null
+                },
+                {
+                    "TypeID": 2,
+                    "Datas": null
+                },
+                {
+                    "TypeID": 3,
+                    "Datas": null
+                },
+                {
+                    "TypeID": 4,
+                    "Datas": null
+                },
+                {
+                    "TypeID": 5,
+                    "Datas": null
+                }
+            ]
+        }
+    ]
+}

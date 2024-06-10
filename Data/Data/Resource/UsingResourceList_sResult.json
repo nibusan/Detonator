@@ -1,0 +1,14 @@
+{
+    "ResourceList": {
+        "Image": [
+            "Image_Menu_Background",
+            "Image_Result_Window"
+        ],
+        "Sound2D": null,
+        "Sound3D": null,
+        "Model": null,
+        "Font": null,
+        "PixelShader": null,
+        "VertexShader": null
+    }
+}

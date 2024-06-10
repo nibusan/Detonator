@@ -12,7 +12,7 @@
 Shield::Shield(std::weak_ptr<Armour>follow,VECTOR pos, VECTOR rot)
 {
 	follow_ = follow;
-	model_ = std::make_unique<Model>(ResourceManager::GetInstance().Get("Model_Enemy_Shield04")->GetHandle());
+	model_ = std::make_unique<Model>(ResourceManager::GetInstance().GetResourceFile("Model_Enemy_Shield04")->GetHandle());
 	model_->SetIsAutoDeleteHandle(true);
 	transform_.SetModel(model_->GetHandle());
 

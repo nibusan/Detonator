@@ -15,7 +15,7 @@ void PlayerMenu::Init_Actor(void)
 	//ID_ = ID::PLAYER_1;
 
 	// âºì«Ç›çûÇ›
-	model_ = std::make_unique<Model>(ResourceManager::GetInstance().Get("Model_Player_Player1")->GetHandle());
+	model_ = std::make_unique<Model>(ResourceManager::GetInstance().GetResourceFile("Model_Player_Player1")->GetHandle());
 	model_->SetIsAutoDeleteHandle(true);
 	transform_.SetModel(model_->GetHandle());
 

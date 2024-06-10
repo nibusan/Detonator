@@ -10,19 +10,19 @@ followFrameNo_(frameNo)
 	ID_ = id;
 	type_ = GUN_TYPE::AWM;
 
-	models_[(int)GUN_TYPE::AK47] = std::make_unique<Model>(ResourceManager::GetInstance().Get("Model_Gun_AK47")->GetHandle());
+	models_[(int)GUN_TYPE::AK47] = std::make_unique<Model>(ResourceManager::GetInstance().GetResourceFile("Model_Gun_AK47")->GetHandle());
 	models_[(int)GUN_TYPE::AK47]->SetIsAutoDeleteHandle(true);
 	gunTransform_[(int)GUN_TYPE::AK47].SetModel(models_[(int)GUN_TYPE::AK47]->GetHandle());
 
-	models_[(int)GUN_TYPE::AWM] = std::make_unique<Model>(ResourceManager::GetInstance().Get("Model_Gun_AWM")->GetHandle());
+	models_[(int)GUN_TYPE::AWM] = std::make_unique<Model>(ResourceManager::GetInstance().GetResourceFile("Model_Gun_AWM")->GetHandle());
 	models_[(int)GUN_TYPE::AWM]->SetIsAutoDeleteHandle(true);
 	gunTransform_[(int)GUN_TYPE::AWM].SetModel(models_[(int)GUN_TYPE::AWM]->GetHandle());
 
-	models_[(int)GUN_TYPE::M4] = std::make_unique<Model>(ResourceManager::GetInstance().Get("Model_Gun_M4")->GetHandle());
+	models_[(int)GUN_TYPE::M4] = std::make_unique<Model>(ResourceManager::GetInstance().GetResourceFile("Model_Gun_M4")->GetHandle());
 	models_[(int)GUN_TYPE::M4]->SetIsAutoDeleteHandle(true);
 	gunTransform_[(int)GUN_TYPE::M4].SetModel(models_[(int)GUN_TYPE::M4]->GetHandle());
 
-	models_[(int)GUN_TYPE::M24R] = std::make_unique<Model>(ResourceManager::GetInstance().Get("Model_Gun_M24R")->GetHandle());
+	models_[(int)GUN_TYPE::M24R] = std::make_unique<Model>(ResourceManager::GetInstance().GetResourceFile("Model_Gun_M24R")->GetHandle());
 	models_[(int)GUN_TYPE::M24R]->SetIsAutoDeleteHandle(true);
 	gunTransform_[(int)GUN_TYPE::M24R].SetModel(models_[(int)GUN_TYPE::M24R]->GetHandle());
 

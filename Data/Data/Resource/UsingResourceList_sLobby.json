@@ -1,0 +1,53 @@
+{
+    "ResourceList": {
+        "Image": [
+            "Image_Menu_Background",
+            "Image_Model_Viewer",
+            "Image_Model_Viewer_Mask"
+        ],
+        "Sound2D": null,
+        "Sound3D": null,
+        "Model": [
+            "Model_Player_Player1",
+            "Model_Player_Animation_Crouch_Fire_Rifle",
+            "Model_Player_Animation_Crouch_Reload",
+            "Model_Player_Animation_Crouch_Walk_Strafe_Left",
+            "Model_Player_Animation_Crouch_Walk_Strafe_Right",
+            "Model_Player_Animation_Crouch_Walking_Backwards",
+            "Model_Player_Animation_Crouch_Walking",
+            "Model_Player_Animation_firing_rifle",
+            "Model_Player_Animation_Jump_Down",
+            "Model_Player_Animation_Jump_Loop",
+            "Model_Player_Animation_Jump_Up",
+            "Model_Player_Animation_reloading",
+            "Model_Player_Animation_rifle_aiming_idle",
+            "Model_Player_Animation_Rifle_Idle",
+            "Model_Player_Animation_Rifle_Kneel_Idle",
+            "Model_Player_Animation_rifle_run",
+            "Model_Player_Animation_strafe_left",
+            "Model_Player_Animation_strafe_right",
+            "Model_Player_Animation_toss_grenade",
+            "Model_Player_Animation_walking_backwards",
+            "Model_Player_Animation_walking",
+            "Model_Player_Animation_Death",
+            "Model_Gun_AK47",
+            "Model_Gun_AWM",
+            "Model_Gun_M4",
+            "Model_Gun_M24R",
+            "Model_Gun_Scope_Red+Dot+Sight",
+            "Model_Gun_Scope_AWM",
+            "Model_Grenade_HandGrenade1",
+            "Model_Grenade_SmokeGrenade",
+            "Model_Grenade_StickyGrenade",
+            "Model_Map_Hangar_Full_Collision",
+            "Model_Map_Hangar_Full_CollisionUnBreak",
+            "Model_Map_Hangar_Full_Obj",
+            "Model_Map_Hangar_Full_Wall"
+        ],
+        "Font": null,
+        "PixelShader": [
+            "PixelShader_Mask"
+        ],
+        "VertexShader": null
+    }
+}

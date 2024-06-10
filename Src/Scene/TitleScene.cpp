@@ -35,7 +35,7 @@ void TitleScene::Init(void)
 	auto uiScreen = SceneManager::GetInstance().GetUIScreen();
 	uiScreen.lock()->PushUILayer(std::move(uiLayer));
 
-	usingFont_ = std::make_unique<Font>(std::dynamic_pointer_cast<Font>(ResourceManager::GetInstance().Get("Font_GenShinGothic_Bold"))->GetFontName(), 32);
+	usingFont_ = std::make_unique<Font>(std::dynamic_pointer_cast<Font>(ResourceManager::GetInstance().GetResourceFile("Font_GenShinGothic_Bold"))->GetFontName(), 32);
 	usingFont_->SetIsAutoDeleteHandle(true);
 	alphaRad_ = 0.0f;
 	frameCNT_ = 0;

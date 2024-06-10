@@ -20,8 +20,8 @@ void MapBase::Init_Object(void)
 		// NORMAL
 	//map_[(int)TYPE::NORMAL].
 	//	transform_.SetModel(MV1LoadModel("Data/Model/Map/Hangar_Full_Obj.mv1"));
-	map_[(int)TYPE::NORMAL].models_[0] = std::make_shared<Model>(ResourceManager::GetInstance().Get("Model_Map_Hangar_Full_Obj")->GetHandle());
-	map_[(int)TYPE::NORMAL].models_[1] = std::make_shared<Model>(ResourceManager::GetInstance().Get("Model_Map_Hangar_Full_Collision")->GetHandle());
+	map_[(int)TYPE::NORMAL].models_[0] = std::make_shared<Model>(ResourceManager::GetInstance().GetResourceFile("Model_Map_Hangar_Full_Obj")->GetHandle());
+	map_[(int)TYPE::NORMAL].models_[1] = std::make_shared<Model>(ResourceManager::GetInstance().GetResourceFile("Model_Map_Hangar_Full_Collision")->GetHandle());
 	map_[(int)TYPE::NORMAL].models_[0]->SetIsAutoDeleteHandle(true);
 	map_[(int)TYPE::NORMAL].transform_.SetModel(map_[(int)TYPE::NORMAL].models_[0]->GetHandle());
 	map_[(int)TYPE::NORMAL].
@@ -34,8 +34,8 @@ void MapBase::Init_Object(void)
 	// UNBREAK
 	//map_[(int)TYPE::UNBREAK].
 	//	transform_.SetModel(MV1LoadModel("Data/Model/Map/Hangar_Full_Wall.mv1"));
-	map_[(int)TYPE::UNBREAK].models_[0] = std::make_shared<Model>(ResourceManager::GetInstance().Get("Model_Map_Hangar_Full_Wall")->GetHandle());
-	map_[(int)TYPE::UNBREAK].models_[1] = std::make_shared<Model>(ResourceManager::GetInstance().Get("Model_Map_Hangar_Full_CollisionUnBreak")->GetHandle());
+	map_[(int)TYPE::UNBREAK].models_[0] = std::make_shared<Model>(ResourceManager::GetInstance().GetResourceFile("Model_Map_Hangar_Full_Wall")->GetHandle());
+	map_[(int)TYPE::UNBREAK].models_[1] = std::make_shared<Model>(ResourceManager::GetInstance().GetResourceFile("Model_Map_Hangar_Full_CollisionUnBreak")->GetHandle());
 	map_[(int)TYPE::UNBREAK].models_[0]->SetIsAutoDeleteHandle(true);
 	map_[(int)TYPE::UNBREAK].transform_.SetModel(map_[(int)TYPE::UNBREAK].models_[0]->GetHandle());
 	map_[(int)TYPE::UNBREAK].

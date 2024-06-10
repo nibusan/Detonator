@@ -229,7 +229,7 @@ void EnemyNeuvio::Init_Enemy(void)
 	pointB_ = { static_cast<float>(B_ENEMY_RESPAWN_POS_X + GetRand(F_ENEMY_RESPAWN_POS_X)) , static_cast<float>(B_ENEMY_RESPAWN_POS_Y + GetRand(F_ENEMY_RESPAWN_POS_Y)) , static_cast<float>(B_ENEMY_RESPAWN_POS_Z + GetRand(F_ENEMY_RESPAWN_POS_Z)) };
 	pointC_ = { static_cast<float>(B_ENEMY_RESPAWN_POS_X + GetRand(F_ENEMY_RESPAWN_POS_X)) , static_cast<float>(B_ENEMY_RESPAWN_POS_Y + GetRand(F_ENEMY_RESPAWN_POS_Y)) , static_cast<float>(B_ENEMY_RESPAWN_POS_Z + GetRand(F_ENEMY_RESPAWN_POS_Z)) };
 	// ÉÇÉfÉãÇÃì«Ç›çûÇ›
-	model_ = std::make_unique<Model>(ResourceManager::GetInstance().Get("Model_Enemy_robot_metallic")->GetHandle());
+	model_ = std::make_unique<Model>(ResourceManager::GetInstance().GetResourceFile("Model_Enemy_robot_metallic")->GetHandle());
 	model_->SetIsAutoDeleteHandle(true);
 	transform_.SetModel(model_->GetHandle());/*
 	transform_.modelId = MV1LoadModel("Data/Model/Enemy/robot_metallic.mv1");*/

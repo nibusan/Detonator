@@ -24,7 +24,7 @@ getLogDataFunction_(getLogDataFunction) {
 
 void UI_LogMessageArea::Init_UI(void) {
 	auto& resourceManager = ResourceManager::GetInstance();
-	icon_KillLog_ = std::dynamic_pointer_cast<Graphic>(resourceManager.Get("Image_Icon_Game_Kill_Log"));
+	icon_KillLog_ = std::dynamic_pointer_cast<Graphic>(resourceManager.GetResourceFile("Image_Icon_Game_Kill_Log"));
 
 	messageList_.resize(maxLineCount_, std::make_shared<MESSAGE_DATA_BASE>());
 }

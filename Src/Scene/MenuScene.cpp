@@ -24,7 +24,7 @@ void MenuScene::Init(void)
 	back_ = LoadGraph("Data/Image/Menu_Background.png");
 	colorGrHandle_ = LoadGraph("Data/Model/Gun/GunTextures/white.png");
 
-	model_ = std::make_unique<Model>(ResourceManager::GetInstance().Get("Model_Gun_AK47")->GetHandle());
+	model_ = std::make_unique<Model>(ResourceManager::GetInstance().GetResourceFile("Model_Gun_AK47")->GetHandle());
 	model_->SetIsAutoDeleteHandle(true);
 	gun_.SetModel(model_->GetHandle());
 	//gun_.SetModel(MV1LoadModel("Data/Model/Gun/AK47.mv1"));

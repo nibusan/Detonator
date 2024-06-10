@@ -254,7 +254,7 @@ void EnemyGeorge::Init_Enemy(void)
 	ID_ = ID::ENEMY_GEORGE;
 
 	// ƒ‚ƒfƒ‹‚Ì“Ç‚İ‚İ
-	model_ = std::make_unique<Model>(ResourceManager::GetInstance().Get("Model_Enemy_Vanguard By T. Choonyung")->GetHandle());
+	model_ = std::make_unique<Model>(ResourceManager::GetInstance().GetResourceFile("Model_Enemy_Vanguard By T. Choonyung")->GetHandle());
 	model_->SetIsAutoDeleteHandle(true);
 	transform_.SetModel(model_->GetHandle());
 

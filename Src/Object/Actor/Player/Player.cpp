@@ -605,7 +605,7 @@ void Player::Init_Actor(void)
 {
 
 	// 仮読み込み
-	model_ = std::make_unique<Model>(ResourceManager::GetInstance().Get("Model_Player_Player1")->GetHandle());
+	model_ = std::make_unique<Model>(ResourceManager::GetInstance().GetResourceFile("Model_Player_Player1")->GetHandle());
 	model_->SetIsAutoDeleteHandle(true);
 	transform_.SetModel(model_->GetHandle());
 
@@ -1071,18 +1071,18 @@ void Player::AnimationSetting(void)
 	// アニメーション
 	//int anim = -1;
 	// 待機
-	animModels_[(int)ACTION::IDLE] = std::make_unique<Model>(ResourceManager::GetInstance().Get("Model_Player_Animation_rifle_aiming_idle")->GetHandle());
+	animModels_[(int)ACTION::IDLE] = std::make_unique<Model>(ResourceManager::GetInstance().GetResourceFile("Model_Player_Animation_rifle_aiming_idle")->GetHandle());
 	animModels_[(int)ACTION::IDLE]->SetIsAutoDeleteHandle(true);
 	animCon_->SetAnimData((int)ACTION::IDLE, animModels_[(int)ACTION::IDLE]->GetHandle(), defPos);
 	// 歩く(前)
 	//anim = MV1LoadModel("Data/Model/Player/Animation/walking.mv1");
-	animModels_[(int)ACTION::WALK_FORWARD] = std::make_unique<Model>(ResourceManager::GetInstance().Get("Model_Player_Animation_walking")->GetHandle());
+	animModels_[(int)ACTION::WALK_FORWARD] = std::make_unique<Model>(ResourceManager::GetInstance().GetResourceFile("Model_Player_Animation_walking")->GetHandle());
 	animModels_[(int)ACTION::WALK_FORWARD]->SetIsAutoDeleteHandle(true);
 	animCon_->SetAnimData((int)ACTION::WALK_FORWARD, animModels_[(int)ACTION::WALK_FORWARD]->GetHandle(), defPos);
 	animCon_->SetAnimSpeed((int)ACTION::WALK_FORWARD, 90.0f);
 	animCon_->SetStartTime((int)ACTION::WALK_FORWARD, 30.0f);
 	// 歩く(左)
-	animModels_[(int)ACTION::WALK_LEFT] = std::make_unique<Model>(ResourceManager::GetInstance().Get("Model_Player_Animation_strafe_left")->GetHandle());
+	animModels_[(int)ACTION::WALK_LEFT] = std::make_unique<Model>(ResourceManager::GetInstance().GetResourceFile("Model_Player_Animation_strafe_left")->GetHandle());
 	animModels_[(int)ACTION::WALK_LEFT]->SetIsAutoDeleteHandle(true);
 	//anim = MV1LoadModel("Data/Model/Player/Animation/strafe left.mv1");
 	animCon_->SetAnimData((int)ACTION::WALK_LEFT, animModels_[(int)ACTION::WALK_LEFT]->GetHandle(), defPos);
@@ -1090,20 +1090,20 @@ void Player::AnimationSetting(void)
 	animCon_->SetStartTime((int)ACTION::WALK_LEFT, 40.0f);
 	// 歩く(右)
 	//anim = MV1LoadModel("Data/Model/Player/Animation/strafe right.mv1");
-	animModels_[(int)ACTION::WALK_RIGHT] = std::make_unique<Model>(ResourceManager::GetInstance().Get("Model_Player_Animation_strafe_right")->GetHandle());
+	animModels_[(int)ACTION::WALK_RIGHT] = std::make_unique<Model>(ResourceManager::GetInstance().GetResourceFile("Model_Player_Animation_strafe_right")->GetHandle());
 	animModels_[(int)ACTION::WALK_RIGHT]->SetIsAutoDeleteHandle(true);
 	animCon_->SetAnimData((int)ACTION::WALK_RIGHT, animModels_[(int)ACTION::WALK_RIGHT]->GetHandle(), defPos);
 	animCon_->SetAnimSpeed((int)ACTION::WALK_RIGHT, 85.0f);
 	animCon_->SetStartTime((int)ACTION::WALK_RIGHT, 40.0f);
 	// 歩く(後)
 	//anim = MV1LoadModel("Data/Model/Player/Animation/walking backwards.mv1");
-	animModels_[(int)ACTION::WALK_BACK] = std::make_unique<Model>(ResourceManager::GetInstance().Get("Model_Player_Animation_walking_backwards")->GetHandle());
+	animModels_[(int)ACTION::WALK_BACK] = std::make_unique<Model>(ResourceManager::GetInstance().GetResourceFile("Model_Player_Animation_walking_backwards")->GetHandle());
 	animModels_[(int)ACTION::WALK_BACK]->SetIsAutoDeleteHandle(true);
 	animCon_->SetAnimData((int)ACTION::WALK_BACK, animModels_[(int)ACTION::WALK_BACK]->GetHandle(), defPos);
 	animCon_->SetAnimSpeed((int)ACTION::WALK_BACK, 70.0f);
 	// 走る
 	//anim = MV1LoadModel("Data/Model/Player/Animation/rifle run.mv1");
-	animModels_[(int)ACTION::RUN] = std::make_unique<Model>(ResourceManager::GetInstance().Get("Model_Player_Animation_rifle_run")->GetHandle());
+	animModels_[(int)ACTION::RUN] = std::make_unique<Model>(ResourceManager::GetInstance().GetResourceFile("Model_Player_Animation_rifle_run")->GetHandle());
 	animModels_[(int)ACTION::RUN]->SetIsAutoDeleteHandle(true);
 	animCon_->SetAnimData((int)ACTION::RUN, animModels_[(int)ACTION::RUN]->GetHandle(), defPos);
 	//// ジャンプ開始
@@ -1112,7 +1112,7 @@ void Player::AnimationSetting(void)
 	//animCon_->SetAnimSpeed((int)ACTION::JUMP_UP, 60.0f);
 	// ジャンプ中dfa
 	//anim = MV1LoadModel("Data/Model/Player/Animation/Jump Loop.mv1");
-	animModels_[(int)ACTION::JUMP_NOW] = std::make_unique<Model>(ResourceManager::GetInstance().Get("Model_Player_Animation_Jump_Loop")->GetHandle());
+	animModels_[(int)ACTION::JUMP_NOW] = std::make_unique<Model>(ResourceManager::GetInstance().GetResourceFile("Model_Player_Animation_Jump_Loop")->GetHandle());
 	animModels_[(int)ACTION::JUMP_NOW]->SetIsAutoDeleteHandle(true);
 	animCon_->SetAnimData((int)ACTION::JUMP_NOW, animModels_[(int)ACTION::JUMP_NOW]->GetHandle(), defPos);
 	animCon_->SetDetachSpeed((int)ACTION::JUMP_NOW, 8.0f);
@@ -1122,12 +1122,12 @@ void Player::AnimationSetting(void)
 
 	// 撃つ
 	//anim = MV1LoadModel("Data/Model/Player/Animation/firing rifle.mv1");
-	animModels_[(int)ACTION::SHOT] = std::make_unique<Model>(ResourceManager::GetInstance().Get("Model_Player_Animation_firing_rifle")->GetHandle());
+	animModels_[(int)ACTION::SHOT] = std::make_unique<Model>(ResourceManager::GetInstance().GetResourceFile("Model_Player_Animation_firing_rifle")->GetHandle());
 	animModels_[(int)ACTION::SHOT]->SetIsAutoDeleteHandle(true);
 	animCon_->SetAnimData((int)ACTION::SHOT, animModels_[(int)ACTION::SHOT]->GetHandle(), defPos, 1);
 	// リロード
 	//anim = MV1LoadModel("Data/Model/Player/Animation/reloading.mv1");
-	animModels_[(int)ACTION::RELOAD] = std::make_unique<Model>(ResourceManager::GetInstance().Get("Model_Player_Animation_reloading")->GetHandle());
+	animModels_[(int)ACTION::RELOAD] = std::make_unique<Model>(ResourceManager::GetInstance().GetResourceFile("Model_Player_Animation_reloading")->GetHandle());
 	animModels_[(int)ACTION::RELOAD]->SetIsAutoDeleteHandle(true);
 	//animCon_->SetAnimData((int)ACTION::RELOAD, anim, defPos, 1,(int)ACTION::IDLE, false);
 	animCon_->SetAnimData((int)ACTION::RELOAD, animModels_[(int)ACTION::RELOAD]->GetHandle(), defPos, 1);
@@ -1135,7 +1135,7 @@ void Player::AnimationSetting(void)
 	animCon_->SetCallAnimEnd((int)ACTION::RELOAD, true);
 	// グレネード
 	//anim = MV1LoadModel("Data/Model/Player/Animation/Toss Grenade.mv1");
-	animModels_[(int)ACTION::GRENADE] = std::make_unique<Model>(ResourceManager::GetInstance().Get("Model_Player_Animation_toss_grenade")->GetHandle());
+	animModels_[(int)ACTION::GRENADE] = std::make_unique<Model>(ResourceManager::GetInstance().GetResourceFile("Model_Player_Animation_toss_grenade")->GetHandle());
 	animModels_[(int)ACTION::GRENADE]->SetIsAutoDeleteHandle(true);
 	//animCon_->SetAnimData((int)ACTION::GRENADE, anim, defPos, 1,(int)ACTION::IDLE,true);
 	animCon_->SetAnimData((int)ACTION::GRENADE, animModels_[(int)ACTION::GRENADE]->GetHandle(), defPos, 1);
@@ -1146,7 +1146,7 @@ void Player::AnimationSetting(void)
 
 	// 死亡
 	//anim = MV1LoadModel("Data/Model/Player/Animation/Death.mv1");
-	animModels_[(int)ACTION::DEAD] = std::make_unique<Model>(ResourceManager::GetInstance().Get("Model_Player_Animation_Death")->GetHandle());
+	animModels_[(int)ACTION::DEAD] = std::make_unique<Model>(ResourceManager::GetInstance().GetResourceFile("Model_Player_Animation_Death")->GetHandle());
 	animModels_[(int)ACTION::DEAD]->SetIsAutoDeleteHandle(true);
 	animCon_->SetAnimData((int)ACTION::DEAD, animModels_[(int)ACTION::DEAD]->GetHandle(), {0.0f,0.0f,0.0f});
 	animCon_->SetNoticeTime((int)ACTION::DEAD, 180.0f);
@@ -1154,43 +1154,43 @@ void Player::AnimationSetting(void)
 
 	// しゃがむ
 	//anim = MV1LoadModel("Data/Model/Player/Animation/Rifle Kneel Idle.mv1");
-	animModels_[(int)ACTION::CROUCH] = std::make_unique<Model>(ResourceManager::GetInstance().Get("Model_Player_Animation_Rifle_Kneel_Idle")->GetHandle());
+	animModels_[(int)ACTION::CROUCH] = std::make_unique<Model>(ResourceManager::GetInstance().GetResourceFile("Model_Player_Animation_Rifle_Kneel_Idle")->GetHandle());
 	animModels_[(int)ACTION::CROUCH]->SetIsAutoDeleteHandle(true);
 	animCon_->SetAnimData((int)ACTION::CROUCH, animModels_[(int)ACTION::CROUCH]->GetHandle(), {0.0f,35.0f,0.0f});
 
 	// しゃがむ歩く(前)
 	//anim = MV1LoadModel("Data/Model/Player/Animation/Crouch Walking.mv1");
-	animModels_[(int)ACTION::CROUCH_WALK_FORWARD] = std::make_unique<Model>(ResourceManager::GetInstance().Get("Model_Player_Animation_Crouch_Walking")->GetHandle());
+	animModels_[(int)ACTION::CROUCH_WALK_FORWARD] = std::make_unique<Model>(ResourceManager::GetInstance().GetResourceFile("Model_Player_Animation_Crouch_Walking")->GetHandle());
 	animModels_[(int)ACTION::CROUCH_WALK_FORWARD]->SetIsAutoDeleteHandle(true);
 	animCon_->SetAnimData((int)ACTION::CROUCH_WALK_FORWARD, animModels_[(int)ACTION::CROUCH_WALK_FORWARD]->GetHandle(), {0.0f,70.0f,0.0f});
 	
 	// しゃがむ歩く(左)
 	//anim = MV1LoadModel("Data/Model/Player/Animation/Crouch Walk Strafe Left.mv1");
-	animModels_[(int)ACTION::CROUCH_LEFT] = std::make_unique<Model>(ResourceManager::GetInstance().Get("Model_Player_Animation_Crouch_Walk_Strafe_Left")->GetHandle());
+	animModels_[(int)ACTION::CROUCH_LEFT] = std::make_unique<Model>(ResourceManager::GetInstance().GetResourceFile("Model_Player_Animation_Crouch_Walk_Strafe_Left")->GetHandle());
 	animModels_[(int)ACTION::CROUCH_LEFT]->SetIsAutoDeleteHandle(true);
 	animCon_->SetAnimData((int)ACTION::CROUCH_LEFT, animModels_[(int)ACTION::CROUCH_LEFT]->GetHandle(), {0.0f,70.0f,0.0f});
 
 	// しゃがむ歩く(右)
 	//anim = MV1LoadModel("Data/Model/Player/Animation/Crouch Walk Strafe Right.mv1");
-	animModels_[(int)ACTION::CROUCH_RIGHT] = std::make_unique<Model>(ResourceManager::GetInstance().Get("Model_Player_Animation_Crouch_Walk_Strafe_Right")->GetHandle());
+	animModels_[(int)ACTION::CROUCH_RIGHT] = std::make_unique<Model>(ResourceManager::GetInstance().GetResourceFile("Model_Player_Animation_Crouch_Walk_Strafe_Right")->GetHandle());
 	animModels_[(int)ACTION::CROUCH_RIGHT]->SetIsAutoDeleteHandle(true);
 	animCon_->SetAnimData((int)ACTION::CROUCH_RIGHT, animModels_[(int)ACTION::CROUCH_RIGHT]->GetHandle(), {0.0f,70.0f,0.0f});
 	
 	// しゃがむ歩く(後)
 	//anim = MV1LoadModel("Data/Model/Player/Animation/Crouch Walking Backwards.mv1");
-	animModels_[(int)ACTION::CROUCH_BACK] = std::make_unique<Model>(ResourceManager::GetInstance().Get("Model_Player_Animation_Crouch_Walking_Backwards")->GetHandle());
+	animModels_[(int)ACTION::CROUCH_BACK] = std::make_unique<Model>(ResourceManager::GetInstance().GetResourceFile("Model_Player_Animation_Crouch_Walking_Backwards")->GetHandle());
 	animModels_[(int)ACTION::CROUCH_BACK]->SetIsAutoDeleteHandle(true);
 	animCon_->SetAnimData((int)ACTION::CROUCH_BACK, animModels_[(int)ACTION::CROUCH_BACK]->GetHandle(), {0.0f,70.0f,0.0f});
 	
 	// しゃがむリロード
 	//anim = MV1LoadModel("Data/Model/Player/Animation/Crouch Reload.mv1");
-	animModels_[(int)ACTION::CROUCH_RELOAD] = std::make_unique<Model>(ResourceManager::GetInstance().Get("Model_Player_Animation_Crouch_Reload")->GetHandle());
+	animModels_[(int)ACTION::CROUCH_RELOAD] = std::make_unique<Model>(ResourceManager::GetInstance().GetResourceFile("Model_Player_Animation_Crouch_Reload")->GetHandle());
 	animModels_[(int)ACTION::CROUCH_RELOAD]->SetIsAutoDeleteHandle(true);
 	animCon_->SetAnimData((int)ACTION::CROUCH_RELOAD, animModels_[(int)ACTION::CROUCH_RELOAD]->GetHandle(), {0.0f,70.0f,0.0f});
 	
 	// しゃがむ撃つ
 	//anim = MV1LoadModel("Data/Model/Player/Animation/Crouch Fire Rifle.mv1");
-	animModels_[(int)ACTION::CROUCH_SHOT] = std::make_unique<Model>(ResourceManager::GetInstance().Get("Model_Player_Animation_Crouch_Fire_Rifle")->GetHandle());
+	animModels_[(int)ACTION::CROUCH_SHOT] = std::make_unique<Model>(ResourceManager::GetInstance().GetResourceFile("Model_Player_Animation_Crouch_Fire_Rifle")->GetHandle());
 	animModels_[(int)ACTION::CROUCH_SHOT]->SetIsAutoDeleteHandle(true);
 	animCon_->SetAnimData((int)ACTION::CROUCH_SHOT, animModels_[(int)ACTION::CROUCH_SHOT]->GetHandle(), {0.0f,70.0f,0.0f});
 

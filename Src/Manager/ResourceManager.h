@@ -34,7 +34,7 @@ public:
 	/// @brief 登録されているリソースファイルのデータを返す
 	/// @param key 取得したいリソースファイルのキー
 	/// @return キーに対応したリソースファイルのデータ
-	std::weak_ptr<HandleBase> GetResourceFile(const std::string& key);
+	std::shared_ptr<HandleBase> GetResourceFile(const std::string& key);
 
 	/// @brief 指定されたシーンに登録されてるリソースファイルを読み込む
 	/// @param sceneType シーンの種類

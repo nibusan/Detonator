@@ -9,10 +9,8 @@
 #include "../Common/Handle/PixelShader/PixelShader.h"
 #include "../Common/Handle/VertexShader/VertexShader.h"
 
-#define AIUEO a;
-
-const std::filesystem::path ResourceManager::BASE_ASSETS_PATH = "Assets/";
-const std::filesystem::path ResourceManager::RESOURCE_LIST_PATH =  ResourceManager::BASE_ASSETS_PATH / "ResourceList/ResourceList.json";
+const std::filesystem::path ResourceManager::BASE_ASSETS_PATH = "Data/";
+const std::filesystem::path ResourceManager::RESOURCE_LIST_PATH =  ResourceManager::BASE_ASSETS_PATH / "Data/Resource/ResourceList.json";
 const std::array<std::string, static_cast<int>(Resource::RESOURCE_FILE_TYPE::MAX)> ResourceFileTag = {
 	"Image",
 	"Sound2D",
@@ -38,7 +36,7 @@ void ResourceManager::Init(void) {
 
 }
 
-std::weak_ptr<HandleBase> ResourceManager::GetResourceFile(const std::string& key) {
+std::shared_ptr<HandleBase> ResourceManager::GetResourceFile(const std::string& key) {
 	return currentUsingResourceFiles_[key];
 }
 
@@ -67,6 +65,8 @@ void ResourceManager::LoadSceneResourceFile(SceneManager::SCENE_ID sceneType) {
 		}
 		else {
 			// ‘¶Ý‚µ‚È‚¢ê‡‚Ííœ‚·‚é
+			itr->second.reset();
+			itr->second = nullptr;
 			itr = currentUsingResourceFiles_.erase(itr);
 		}
 	}

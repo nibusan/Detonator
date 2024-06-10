@@ -414,7 +414,7 @@ void SceneManager::DoChangeScene(SCENE_ID sceneId)
 	CollisionManager::GetInstance().ClearColliders();
 
 	// シーンで使うリソースの読み込み & 不要なリソースの解放
-	ResourceManager::GetInstance().LoadResource(sceneId_);
+	ResourceManager::GetInstance().LoadSceneResourceFile(sceneId_);
 
 	// シーンのインスタンスの生成
 	switch (sceneId_)

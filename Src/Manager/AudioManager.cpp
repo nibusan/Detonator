@@ -13,7 +13,7 @@ int AudioManager::Play(AudioList::AUDIO_TYPE type, bool isLoop, float volume, in
 	auto& audioList = AudioList::GetInstance();
 	auto& resourceManager = ResourceManager::GetInstance();
 	int id;
-	Weak_Sound sound = std::dynamic_pointer_cast<Sound>(resourceManager.Get(audioList.GetAudioData(type).resourceKey));
+	Weak_Sound sound = std::dynamic_pointer_cast<Sound>(resourceManager.GetResourceFile(audioList.GetAudioData(type).resourceKey));
 	// 再生する効果音のトータルの長さが3分以内だったら元のサウンドをコピーする
 	if (sound.lock()->GetTotalTime() < 180000) {
 		id = duplicateSounds_.size();
@@ -63,7 +63,7 @@ int AudioManager::Play(
 	auto& audioList = AudioList::GetInstance();
 	auto& resourceManager = ResourceManager::GetInstance();
 	int id;
-	Weak_Sound sound = std::dynamic_pointer_cast<Sound>(resourceManager.Get(audioList.GetAudioData(type).resourceKey));
+	Weak_Sound sound = std::dynamic_pointer_cast<Sound>(resourceManager.GetResourceFile(audioList.GetAudioData(type).resourceKey));
 
 	Set3DSoundListenerPosAndFrontPos_UpVecY(listenerPos, VAdd(listenerPos, listenerDir));
 	// 再生する効果音のトータルの長さが3分以内だったら元のサウンドをコピーする
@@ -129,7 +129,7 @@ int AudioManager::Play(AudioList::AUDIO_TYPE type,
 	auto& audioList = AudioList::GetInstance();
 	auto& resourceManager = ResourceManager::GetInstance();
 	int id;
-	Weak_Sound sound = std::dynamic_pointer_cast<Sound>(resourceManager.Get(audioList.GetAudioData(type).resourceKey));
+	Weak_Sound sound = std::dynamic_pointer_cast<Sound>(resourceManager.GetResourceFile(audioList.GetAudioData(type).resourceKey));
 
 	Set3DSoundListenerPosAndFrontPos_UpVecY(*listenerPos_, VAdd(*listenerPos_, *listenerDir_));
 	// 再生する効果音のトータルの長さが3分以内だったら元のサウンドをコピーする

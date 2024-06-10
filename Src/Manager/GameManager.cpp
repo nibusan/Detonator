@@ -39,7 +39,7 @@ GameManager::GameManager(void) : netManager_(NetManager::GetInstance())
 
 	killMessage_.Init(2.0f, 1.0f / 60.0f);
 	std::weak_ptr<Font> s = std::dynamic_pointer_cast<Font>(ResourceManager::GetInstance().
-		Get("Font_GenShinGothic_Bold"));
+		GetResourceFile("Font_GenShinGothic_Bold"));
 
 	fontKill_ = std::make_unique<Font>(s.lock()->GetFontName(), 40);
 	fontKill_->SetIsAutoDeleteHandle(true);

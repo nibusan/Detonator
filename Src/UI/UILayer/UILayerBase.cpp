@@ -113,7 +113,7 @@ std::shared_ptr<UIBase> UILayerBase::CreateUI(std::shared_ptr<UILayerList::DEFAU
 	switch (uiData->uiType) {
 	case UI::TYPE::IMAGE: {
 		auto uiData_Image = std::dynamic_pointer_cast<UILayerList::IMAGE_UI_DATA>(uiData);
-		Weak_Graphic graphic = std::dynamic_pointer_cast<Graphic>(resouceManager.Get(uiData_Image->image_ResourceKey));
+		Weak_Graphic graphic = std::dynamic_pointer_cast<Graphic>(resouceManager.GetResourceFile(uiData_Image->image_ResourceKey));
 		ui = std::make_shared<UI_Image>(graphic);
 		if (uiData->isFixedSize) {
 			ui->CreateDrawScreen(uiData->size);
@@ -126,7 +126,7 @@ std::shared_ptr<UIBase> UILayerBase::CreateUI(std::shared_ptr<UILayerList::DEFAU
 
 	case UI::TYPE::TEXT: {
 		auto uiData_Text = std::dynamic_pointer_cast<UILayerList::TEXT_UI_DATA>(uiData);
-		Weak_Font font = std::dynamic_pointer_cast<Font>(resouceManager.Get(uiData_Text->font_ResourceKey));
+		Weak_Font font = std::dynamic_pointer_cast<Font>(resouceManager.GetResourceFile(uiData_Text->font_ResourceKey));
 		ui = std::make_shared<UI_Text>(uiData_Text->message, font.lock()->GetFontName(), uiData_Text->fontSize, uiData_Text->fontColor);
 		auto text = std::dynamic_pointer_cast<UI_Text>(ui);
 		if (uiData->isFixedSize) {
@@ -145,9 +145,9 @@ std::shared_ptr<UIBase> UILayerBase::CreateUI(std::shared_ptr<UILayerList::DEFAU
 
 	case UI::TYPE::BUTTON: {
 		auto uiData_Button = std::dynamic_pointer_cast<UILayerList::BUTTON_UI_DATA>(uiData);
-		Weak_Graphic graphic = std::dynamic_pointer_cast<Graphic>(resouceManager.Get(uiData_Button->image_ResourceKey));
-		Weak_Font font = std::dynamic_pointer_cast<Font>(resouceManager.Get(uiData_Button->font_ResourceKey));
-		Weak_Font font2 = std::dynamic_pointer_cast<Font>(resouceManager.Get(uiData_Button->font_ResourceKey2));
+		Weak_Graphic graphic = std::dynamic_pointer_cast<Graphic>(resouceManager.GetResourceFile(uiData_Button->image_ResourceKey));
+		Weak_Font font = std::dynamic_pointer_cast<Font>(resouceManager.GetResourceFile(uiData_Button->font_ResourceKey));
+		Weak_Font font2 = std::dynamic_pointer_cast<Font>(resouceManager.GetResourceFile(uiData_Button->font_ResourceKey2));
 		ui = std::make_shared<UI_Button>(
 			graphic, 
 			uiData_Button->message,
@@ -173,9 +173,9 @@ std::shared_ptr<UIBase> UILayerBase::CreateUI(std::shared_ptr<UILayerList::DEFAU
 
 	case UI::TYPE::WINDOW: {
 		auto uiData_Window = std::dynamic_pointer_cast<UILayerList::WINDOW_UI_DATA>(uiData);
-		Weak_Graphic graphic = std::dynamic_pointer_cast<Graphic>(resouceManager.Get(uiData_Window->image_ResourceKey));
-		Weak_Font font = std::dynamic_pointer_cast<Font>(resouceManager.Get(uiData_Window->font_ResourceKey));
-		Weak_Font font2 = std::dynamic_pointer_cast<Font>(resouceManager.Get(uiData_Window->font_ResourceKey2));
+		Weak_Graphic graphic = std::dynamic_pointer_cast<Graphic>(resouceManager.GetResourceFile(uiData_Window->image_ResourceKey));
+		Weak_Font font = std::dynamic_pointer_cast<Font>(resouceManager.GetResourceFile(uiData_Window->font_ResourceKey));
+		Weak_Font font2 = std::dynamic_pointer_cast<Font>(resouceManager.GetResourceFile(uiData_Window->font_ResourceKey2));
 		ui = std::make_shared<UI_Window>(
 			graphic, 
 			uiData_Window->message, 
@@ -205,8 +205,8 @@ std::shared_ptr<UIBase> UILayerBase::CreateUI(std::shared_ptr<UILayerList::DEFAU
 
 	case UI::TYPE::INPUT_TEXT_AREA: {
 		auto uiData_InputTextArea = std::dynamic_pointer_cast<UILayerList::INPUT_TEXT_AREA_UI_DATA>(uiData);
-		Weak_Graphic graphic = std::dynamic_pointer_cast<Graphic>(resouceManager.Get(uiData_InputTextArea->image_ResourceKey));
-		Weak_Font font = std::dynamic_pointer_cast<Font>(resouceManager.Get(uiData_InputTextArea->font_ResourceKey));
+		Weak_Graphic graphic = std::dynamic_pointer_cast<Graphic>(resouceManager.GetResourceFile(uiData_InputTextArea->image_ResourceKey));
+		Weak_Font font = std::dynamic_pointer_cast<Font>(resouceManager.GetResourceFile(uiData_InputTextArea->font_ResourceKey));
 		ui = std::make_shared<UI_InputTextArea>(
 			graphic,
 			font.lock()->GetFontName(), 
@@ -235,9 +235,9 @@ std::shared_ptr<UIBase> UILayerBase::CreateUI(std::shared_ptr<UILayerList::DEFAU
 
 	case UI::TYPE::MODEL_PREVIEW: {
 		auto uiData_ModelPreview = std::dynamic_pointer_cast<UILayerList::MODEL_PREVIEW_UI_DATA>(uiData);
-		Weak_Graphic graphic = std::dynamic_pointer_cast<Graphic>(resouceManager.Get(uiData_ModelPreview->image_ResourceKey));
-		Weak_Graphic graphic_Mask = std::dynamic_pointer_cast<Graphic>(resouceManager.Get(uiData_ModelPreview->imageMask_ResourceKey));
-		Weak_PixelShader pixelShader = std::dynamic_pointer_cast<PixelShader>(resouceManager.Get(uiData_ModelPreview->pixelShader_ResourceKey));
+		Weak_Graphic graphic = std::dynamic_pointer_cast<Graphic>(resouceManager.GetResourceFile(uiData_ModelPreview->image_ResourceKey));
+		Weak_Graphic graphic_Mask = std::dynamic_pointer_cast<Graphic>(resouceManager.GetResourceFile(uiData_ModelPreview->imageMask_ResourceKey));
+		Weak_PixelShader pixelShader = std::dynamic_pointer_cast<PixelShader>(resouceManager.GetResourceFile(uiData_ModelPreview->pixelShader_ResourceKey));
 		ui = std::make_shared<UI_ModelPreview>(graphic, graphic_Mask, pixelShader, uiData_ModelPreview->objectIDs);
 		if (uiData->isFixedSize) {
 			ui->CreateDrawScreen(uiData->size);
@@ -250,7 +250,7 @@ std::shared_ptr<UIBase> UILayerBase::CreateUI(std::shared_ptr<UILayerList::DEFAU
 
 	case UI::TYPE::CURSOR: {
 		auto uiData_Cursor = std::dynamic_pointer_cast<UILayerList::CURSOR_UI_DATA>(uiData);
-		Weak_Graphic graphic = std::dynamic_pointer_cast<Graphic>(resouceManager.Get(uiData_Cursor->image_ResourceKey));
+		Weak_Graphic graphic = std::dynamic_pointer_cast<Graphic>(resouceManager.GetResourceFile(uiData_Cursor->image_ResourceKey));
 		ui = std::make_shared<UI_Cursor>(graphic, uiData_Cursor->dir);
 		if (uiData->isFixedSize) {
 			ui->CreateDrawScreen(uiData->size);
@@ -263,8 +263,8 @@ std::shared_ptr<UIBase> UILayerBase::CreateUI(std::shared_ptr<UILayerList::DEFAU
 
 	case UI::TYPE::MESSAGE_BOX: {
 		auto uiData_MessageBox = std::dynamic_pointer_cast<UILayerList::MESSAGE_BOX_UI_DATA>(uiData);
-		Weak_Graphic graphic = std::dynamic_pointer_cast<Graphic>(resouceManager.Get(uiData_MessageBox->image_ResourceKey));
-		Weak_Font font = std::dynamic_pointer_cast<Font>(resouceManager.Get(uiData_MessageBox->font_ResourceKey));
+		Weak_Graphic graphic = std::dynamic_pointer_cast<Graphic>(resouceManager.GetResourceFile(uiData_MessageBox->image_ResourceKey));
+		Weak_Font font = std::dynamic_pointer_cast<Font>(resouceManager.GetResourceFile(uiData_MessageBox->font_ResourceKey));
 		ui = std::make_shared<UI_MessageBox>(
 			graphic,
 			uiData_MessageBox->defMessage,
@@ -284,17 +284,17 @@ std::shared_ptr<UIBase> UILayerBase::CreateUI(std::shared_ptr<UILayerList::DEFAU
 
 	case UI::TYPE::WEAPON_INFO: {
 		auto uiData_WeaponInfo = std::dynamic_pointer_cast<UILayerList::WEAPON_INFO_UI_DATA>(uiData);
-		Weak_Graphic graphic = std::dynamic_pointer_cast<Graphic>(resouceManager.Get(uiData_WeaponInfo->image_ResourceKey));
+		Weak_Graphic graphic = std::dynamic_pointer_cast<Graphic>(resouceManager.GetResourceFile(uiData_WeaponInfo->image_ResourceKey));
 		std::vector<Weak_Graphic> graphic_Grenades;
 		for (int i = 0; i < uiData_WeaponInfo->image_Grenade_ResourceKeys.size(); i++) {
-			graphic_Grenades.push_back(std::dynamic_pointer_cast<Graphic>(resouceManager.Get(uiData_WeaponInfo->image_Grenade_ResourceKeys[i])));
+			graphic_Grenades.push_back(std::dynamic_pointer_cast<Graphic>(resouceManager.GetResourceFile(uiData_WeaponInfo->image_Grenade_ResourceKeys[i])));
 		}
 		std::vector<Weak_Graphic> graphic_Guns;
 		for (int i = 0; i < uiData_WeaponInfo->image_Gun_ResourceKeys.size(); i++) {
-			graphic_Guns.push_back(std::dynamic_pointer_cast<Graphic>(resouceManager.Get(uiData_WeaponInfo->image_Gun_ResourceKeys[i])));
+			graphic_Guns.push_back(std::dynamic_pointer_cast<Graphic>(resouceManager.GetResourceFile(uiData_WeaponInfo->image_Gun_ResourceKeys[i])));
 		}
-		Weak_Font font_Magazine = std::dynamic_pointer_cast<Font>(resouceManager.Get(uiData_WeaponInfo->font_Magazine_ResourceKey));
-		Weak_Font font_GunName = std::dynamic_pointer_cast<Font>(resouceManager.Get(uiData_WeaponInfo->font_GunName_ResourceKey));
+		Weak_Font font_Magazine = std::dynamic_pointer_cast<Font>(resouceManager.GetResourceFile(uiData_WeaponInfo->font_Magazine_ResourceKey));
+		Weak_Font font_GunName = std::dynamic_pointer_cast<Font>(resouceManager.GetResourceFile(uiData_WeaponInfo->font_GunName_ResourceKey));
 		ui = std::make_shared<UI_WeaponInfo>(
 			graphic,
 			graphic_Grenades,
@@ -314,7 +314,7 @@ std::shared_ptr<UIBase> UILayerBase::CreateUI(std::shared_ptr<UILayerList::DEFAU
 
 	case UI::TYPE::LOG_MESSAGE_AREA: {
 		auto uiData_LogMessageArea = std::dynamic_pointer_cast<UILayerList::LOG_MESSAGE_AREA_UI_DATA>(uiData);
-		Weak_Font font = std::dynamic_pointer_cast<Font>(resouceManager.Get(uiData_LogMessageArea->font_ResourceKey));
+		Weak_Font font = std::dynamic_pointer_cast<Font>(resouceManager.GetResourceFile(uiData_LogMessageArea->font_ResourceKey));
 		ui = std::make_shared<UI_LogMessageArea>(
 			font.lock()->GetFontName(),
 			uiData_LogMessageArea->maxLineCount,
@@ -329,7 +329,7 @@ std::shared_ptr<UIBase> UILayerBase::CreateUI(std::shared_ptr<UILayerList::DEFAU
 
 	case UI::TYPE::RESULT_TEXT : {
 		auto uiData_ResultText = std::dynamic_pointer_cast<UILayerList::RESULT_TEXT_UI_DATA>(uiData);
-		Weak_Font font = std::dynamic_pointer_cast<Font>(resouceManager.Get(uiData_ResultText->font_ResourceKey));
+		Weak_Font font = std::dynamic_pointer_cast<Font>(resouceManager.GetResourceFile(uiData_ResultText->font_ResourceKey));
 		ui = std::make_shared<UI_ResultText>(
 			uiData_ResultText->defMessage,
 			font.lock()->GetFontName(),
@@ -353,7 +353,7 @@ std::shared_ptr<UIBase> UILayerBase::CreateUI(std::shared_ptr<UILayerList::DEFAU
 
 	case UI::TYPE::GAME_TIME : {
 		auto uiData_Time = std::dynamic_pointer_cast<UILayerList::TIME_UI_DATA>(uiData);
-		Weak_Font font = std::dynamic_pointer_cast<Font>(resouceManager.Get(uiData_Time->font_ResourceKey));
+		Weak_Font font = std::dynamic_pointer_cast<Font>(resouceManager.GetResourceFile(uiData_Time->font_ResourceKey));
 		ui = std::make_shared<UI_Time>(
 			font.lock()->GetFontName(),
 			uiData_Time->fontSize,

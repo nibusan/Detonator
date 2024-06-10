@@ -1,0 +1,20 @@
+{
+    "ResourceList": {
+        "Image": null,
+        "Sound2D": null,
+        "Sound3D": null,
+        "Model": [
+            "Model_Player_Player1",
+            "Model_Gun_AK47",
+            "Model_Gun_AWM",
+            "Model_Gun_M4",
+            "Model_Gun_M24R",
+            "Model_Grenade_HandGrenade1",
+            "Model_Grenade_SmokeGrenade",
+            "Model_Grenade_StickyGrenade"
+        ],
+        "Font": null,
+        "PixelShader": null,
+        "VertexShader": null
+    }
+}

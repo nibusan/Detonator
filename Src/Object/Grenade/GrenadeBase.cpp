@@ -68,7 +68,7 @@ void GrenadeBase::Init_Object(void)
 {
 	// Še©“Æ©‚Ìİ’è
 	SetParam();
-	model_ = std::make_unique<Model>(ResourceManager::GetInstance().Get(fileName_.c_str())->GetHandle());
+	model_ = std::make_unique<Model>(ResourceManager::GetInstance().GetResourceFile(fileName_.c_str())->GetHandle());
 	model_->SetIsAutoDeleteHandle(true);
 	transform_.SetModel(model_->GetHandle());
 	// ƒ‚ƒfƒ‹‰¼“Ç‚İ‚İ

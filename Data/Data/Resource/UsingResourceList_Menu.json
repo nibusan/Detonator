@@ -1,0 +1,20 @@
+{
+    "ResourceList": {
+        "Image": [
+            "Image_Menu_Background",
+            "Image_Icon_Menu_Exit",
+            "Image_Icon_Menu_Option",
+            "Image_Icon_TitleLogo",
+            "Image_Icon_Menu_Player_1",
+            "Image_Menu_Window"
+        ],
+        "Sound2D": null,
+        "Sound3D": null,
+        "Model": [
+            "Model_Gun_AK47"
+        ],
+        "Font": null,
+        "PixelShader": null,
+        "VertexShader": null
+    }
+}

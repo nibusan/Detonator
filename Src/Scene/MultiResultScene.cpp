@@ -61,7 +61,7 @@ void MultiResultScene::UISetting(void)
 	alias_[(int)GameManager::ALIAS::COMEDIAN] = LoadGraph("Data/Image/UI/Icon_Result_Alias_Comedian.png");
 
 	std::weak_ptr<Font> s = std::dynamic_pointer_cast<Font>(ResourceManager::GetInstance().
-		Get("Font_GenShinGothic_Bold"));
+		GetResourceFile("Font_GenShinGothic_Bold"));
 
 	fontWinner_ = std::make_unique<Font>(s.lock()->GetFontName(), 60);
 	fontWinner_->SetIsAutoDeleteHandle(true);

@@ -88,7 +88,7 @@ void MultiLobbyScene::UISetting(void)
 	box_.Update();
 
 	std::weak_ptr<Font> s = std::dynamic_pointer_cast<Font>(ResourceManager::GetInstance().
-		Get("Font_GenShinGothic_Bold"));
+		GetResourceFile("Font_GenShinGothic_Bold"));
 
 	fontGunName_ = std::make_unique<Font>(s.lock()->GetFontName(), 50);
 	fontGunName_->SetIsAutoDeleteHandle(true);

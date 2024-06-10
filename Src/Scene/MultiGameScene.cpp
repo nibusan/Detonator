@@ -36,7 +36,7 @@ void MultiGameScene::Init(void)
 	input.ClearController();
 
 	std::weak_ptr<Font> s = std::dynamic_pointer_cast<Font>(ResourceManager::GetInstance().
-		Get("Font_GenShinGothic_Bold"));
+		GetResourceFile("Font_GenShinGothic_Bold"));
 
 	usingFont_ = std::make_shared<Font>("", 48);
 	usingFont_->SetIsAutoDeleteHandle(true);
@@ -78,7 +78,7 @@ void MultiGameScene::Init(void)
 	gCamera->ChangeMode(GameCamera::MODE::FIXED_POINT, players_.at(keyMain_));
 
 	vignetteScreen_ = std::make_unique<Graphic>(MakeScreen(Application::SCREEN_SIZE_X, Application::SCREEN_SIZE_Y, true));
-	pixelShader_Vignette_ = std::dynamic_pointer_cast<PixelShader>(ResourceManager::GetInstance().Get("PixelShader_Vignette"));
+	pixelShader_Vignette_ = std::dynamic_pointer_cast<PixelShader>(ResourceManager::GetInstance().GetResourceFile("PixelShader_Vignette"));
 	pixelShader_Vignette_.lock()->CreateConstantBuffer(sizeof(float) * 4);
 	pixelShader_Vignette_.lock()->SetConstantValue(0, 1.0f);
 	pixelShader_Vignette_.lock()->SetConstantValue(1, 0.0f);

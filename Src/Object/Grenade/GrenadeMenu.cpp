@@ -9,15 +9,15 @@ gameManager_(GameManager::GetInstance())
 	slotNo_ = slotNo;
 	ChangeType(GameManager::GetInstance().GetLoadOut((int)ID_).greType_[slotNo_]);
 
-	models_[(int)GRENADE_TYPE::HAND] = std::make_unique<Model>(ResourceManager::GetInstance().Get("Model_Grenade_HandGrenade1")->GetHandle());
+	models_[(int)GRENADE_TYPE::HAND] = std::make_unique<Model>(ResourceManager::GetInstance().GetResourceFile("Model_Grenade_HandGrenade1")->GetHandle());
 	models_[(int)GRENADE_TYPE::HAND]->SetIsAutoDeleteHandle(true);
 	greTransform_[(int)GRENADE_TYPE::HAND].SetModel(models_[(int)GRENADE_TYPE::HAND]->GetHandle());
 
-	models_[(int)GRENADE_TYPE::SMOKE] = std::make_unique<Model>(ResourceManager::GetInstance().Get("Model_Grenade_SmokeGrenade")->GetHandle());
+	models_[(int)GRENADE_TYPE::SMOKE] = std::make_unique<Model>(ResourceManager::GetInstance().GetResourceFile("Model_Grenade_SmokeGrenade")->GetHandle());
 	models_[(int)GRENADE_TYPE::SMOKE]->SetIsAutoDeleteHandle(true);
 	greTransform_[(int)GRENADE_TYPE::SMOKE].SetModel(models_[(int)GRENADE_TYPE::SMOKE]->GetHandle());
 
-	models_[(int)GRENADE_TYPE::STICKY] = std::make_unique<Model>(ResourceManager::GetInstance().Get("Model_Grenade_StickyGrenade")->GetHandle());
+	models_[(int)GRENADE_TYPE::STICKY] = std::make_unique<Model>(ResourceManager::GetInstance().GetResourceFile("Model_Grenade_StickyGrenade")->GetHandle());
 	models_[(int)GRENADE_TYPE::STICKY]->SetIsAutoDeleteHandle(true);
 	greTransform_[(int)GRENADE_TYPE::STICKY].SetModel(models_[(int)GRENADE_TYPE::STICKY]->GetHandle());
 
