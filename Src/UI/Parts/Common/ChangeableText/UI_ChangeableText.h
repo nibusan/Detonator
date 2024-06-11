@@ -15,10 +15,19 @@ public:
 	void Release_UI(void) override;
 
 private:
+	// 描画するテキスト
 	std::string text_;
+
+	// 使用するフォント
 	Shared_Font usingFont_;
+
+	// テキストの色
 	unsigned int color_;
 
-	void SetText(const std::string& text);
+	// 文字列を更新する関数
 	std::function<std::string(void)> updateText_;
+
+	/// @brief テキストをセットする
+	/// @param text テキスト
+	void SetText(const std::string& text);
 };

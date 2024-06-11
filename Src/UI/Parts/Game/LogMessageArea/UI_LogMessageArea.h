@@ -6,24 +6,26 @@
 
 class UI_LogMessageArea : public UIBase {
 public:
-	// ログメッセージのX軸のスタート地点
-	static constexpr float START_POS_X = 30.0f;
-
-	// ログメッセージが入ってないときに格納する文字列
-	static const std::string EMPTY_MESSAGE;
 
 	// ログの種類
 	enum class LOG_MESSAGE_TYPE {
 		NONE = -1,
-		NORMAL,
-		KILL
+		NORMAL,		// ノーマルログ
+		KILL		// キルログ
 	};
 
 	// ログメッセージデータのベース
 	struct MESSAGE_DATA_BASE {
+		// 入場にかかる時間
 		float enterTime;
+
+		// 退場にかかる時間
 		float exitTime;
+
+		// 止まって表示する時間
 		float waitTime;
+
+		// ログの種類
 		LOG_MESSAGE_TYPE type;
 
 		MESSAGE_DATA_BASE(void) :
@@ -44,7 +46,10 @@ public:
 
 	// メッセージのデータ
 	struct LOG_MESSAGE_DATA {
+		// ログのメッセージ
 		std::string message_;
+
+		// ログの色
 		unsigned int color_;
 
 		LOG_MESSAGE_DATA(const std::string& message, unsigned int color) :
@@ -72,6 +77,7 @@ public:
 
 	// キルログ
 	struct MESSAGE_DATA_KILL : public MESSAGE_DATA_BASE {
+		// キルした・された相手のログデータ
 		LOG_MESSAGE_DATA by_;
 		LOG_MESSAGE_DATA killed_;
 
@@ -107,6 +113,11 @@ public:
 	void Draw_UI(void) override;
 	void Release_UI(void) override;
 private:
+	// ログメッセージのX軸のスタート地点
+	static constexpr float START_POS_X = 30.0f;
+
+	// ログメッセージが入ってないときに格納する文字列
+	static const std::string EMPTY_MESSAGE;
 
 	// 使用するフォント
 	Shared_Font usingFont_;

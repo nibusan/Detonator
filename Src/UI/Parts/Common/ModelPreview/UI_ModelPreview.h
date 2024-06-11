@@ -35,6 +35,7 @@ private:
 	// 描画するオブジェクト
 	std::vector<std::shared_ptr<ObjectBase>> object_;
 
+	// 描画するモデル
 	std::vector<Weak_Model> model_;
 
 };

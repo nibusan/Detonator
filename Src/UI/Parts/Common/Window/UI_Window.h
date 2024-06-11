@@ -26,6 +26,8 @@ public:
 	void Draw_UI(void) override;
 	void Release_UI(void) override;
 
+	/// @brief ボタンを追加
+	/// @param button ボタン
 	void AddButton(std::shared_ptr<UIBase> button);
 private:
 	// 画像
@@ -39,6 +41,7 @@ private:
 	Shared_Font usingFont_;
 	Shared_Font usingFont2_;
 
+	// テキストの色
 	unsigned int color_;
 	unsigned int color2_;
 

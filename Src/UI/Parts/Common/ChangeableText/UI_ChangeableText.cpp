@@ -13,6 +13,7 @@ void UI_ChangeableText::Init_UI(void) {
 }
 
 bool UI_ChangeableText::Update_UI(void) {
+	// •¶š—ñ‚ğXV‚·‚é
 	SetText(updateText_());
 	return false;
 }

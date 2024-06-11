@@ -59,6 +59,9 @@ void UI_WeaponInfo::Draw_UI(void) {
 	int gunID = (int)(loadOut.gunType_);
 	//int magazineCount = gameManager.GetPlayerInfo(0).
 	graphic_.lock()->Draw({ 0.0f, 0.0f }, false, nullptr);
+
+	// 紛らわしい定数が大量に増えることを避けるために
+	// ここでしか使わない座標などはあえて定数化せずに使用してます
 	graphic_Grenade_[gunID].lock()->Draw({ 130.0f, 26.0f }, false, nullptr);
 	graphic_Gun_[grenadeID].lock()->Draw(ICON_GRENADE_POS, false, nullptr);
 	DrawStringToHandle(365, 35, std::to_string(magazineCount_).c_str(), 0xFFFFFF, usingFont_Magazine_->GetHandle());

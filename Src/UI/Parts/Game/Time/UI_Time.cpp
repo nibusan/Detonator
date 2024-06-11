@@ -16,6 +16,7 @@ bool UI_Time::Update_UI(void) {
 }
 
 void UI_Time::Draw_UI(void) {
+	// ŽžŠÔ‚ÌŒvŽZ
 	auto time = GameManager::GetInstance().GetGameTime();
 	int min = time / 60.0f;
 	int sec = (int)(time) % 60;

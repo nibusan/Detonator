@@ -14,5 +14,6 @@ public:
 	void Draw_UI(void) override;
 	void Release_UI(void) override;
 private:
+	// “h‚è‚Â‚Ô‚·F
 	unsigned int color_;
 };

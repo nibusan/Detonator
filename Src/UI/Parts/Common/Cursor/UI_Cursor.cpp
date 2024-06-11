@@ -30,6 +30,8 @@ bool UI_Cursor::Update_UI(void) {
 
 void UI_Cursor::Draw_UI(void) {
 	auto size = GetSize();
+
+	// •ûŒü‚É‰ž‚¶‚Ä‰ñ“]‚³‚¹‚é
 	graphic_.lock()->Draw({ size.x / 2.0f, size.y / 2.0f }, 1.0f, dir_ == DIR::LEFT ? 0.0f : Utility::Deg2RadF(180.0f), nullptr);
 }
 

@@ -33,13 +33,17 @@ bool UI_LogMessageArea::Update_UI(void) {
 	auto& sceneManager = SceneManager::GetInstance();
 	auto& inputManager = InputManager::GetInstance();
 
-	if (inputManager.IsTrgDown(KEY_INPUT_0)) {
+	// ログ表示テスト用
+	/*if (inputManager.IsTrgDown(KEY_INPUT_0)) {
 		std::shared_ptr<UI_LogMessageArea::MESSAGE_DATA_BASE> messageDataBase
 			= std::make_shared<UI_LogMessageArea::MESSAGE_DATA_NORMAL>("AIUEOAIUEO", 0x00FF00);
 		AddMessage(messageDataBase);
-	}
+	}*/
 
+	// 新規のログを取得する
 	auto logMessage = getLogDataFunction_();
+
+	// もしnullptrじゃなかったら種類によって処理を変える
 	if (logMessage != nullptr) {
 		if (logMessage->type != LOG_MESSAGE_TYPE::NONE) {
 			switch (logMessage->type) {
@@ -88,6 +92,7 @@ bool UI_LogMessageArea::Update_UI(void) {
 			break;
 		}
 
+		// 表示時間の更新
 		if (messageData->enterTime <= enterTime_) {
 			messageData->enterTime += sceneManager.GetDeltaTime();
 			continue;
@@ -103,6 +108,7 @@ bool UI_LogMessageArea::Update_UI(void) {
 		messageData->Init();
 	}
 
+	// 表示時間が短い順にソートする
 	std::sort(
 		messageList_.begin(),
 		messageList_.end(), 
@@ -111,6 +117,7 @@ bool UI_LogMessageArea::Update_UI(void) {
 		}
 	);
 
+	// そもそもこのUIはクリックできないのでfalseを返す
     return false;
 }
 
@@ -119,8 +126,13 @@ void UI_LogMessageArea::Draw_UI(void) {
 	auto size = GetSize();
 	for (int i = 0; i < messageList_.size(); i++) {
 		if (messageList_[i]->type == UI_LogMessageArea::LOG_MESSAGE_TYPE::NONE) continue;
+		// ログを描画する座標
 		Vector2<int> messageDrawPos = {};
+
+		// ログの透明度
 		int messageAlpha = 0;
+
+		// ログの表示方法(入場、待機、退場)によって座標の計算の仕方を変える
 		if (messageList_[i]->enterTime <= enterTime_) {
 			messageDrawPos.x = cosf((1.0f - (messageList_[i]->enterTime / enterTime_)) * DX_PI_F) * START_POS_X;
 			messageAlpha = static_cast<int>(messageList_[i]->enterTime / enterTime_ * 255);
@@ -140,6 +152,8 @@ void UI_LogMessageArea::Draw_UI(void) {
 
 		SetDrawBlendMode(DX_BLENDMODE_ALPHA, messageAlpha);
 		if (messageList_[i]->type == LOG_MESSAGE_TYPE::NORMAL) {
+			// ノーマルログの描画処理
+
 			auto normalLog = std::dynamic_pointer_cast<MESSAGE_DATA_NORMAL>(messageList_[i]);
 			DrawStringToHandle(
 				messageDrawPos.x,
@@ -150,6 +164,8 @@ void UI_LogMessageArea::Draw_UI(void) {
 			);
 		}
 		else if (messageList_[i]->type == UI_LogMessageArea::LOG_MESSAGE_TYPE::KILL) {
+			// キルログの描画処理
+
 			auto killLog = std::dynamic_pointer_cast<MESSAGE_DATA_KILL>(messageList_[i]);
 			DrawStringToHandle(
 				messageDrawPos.x,
@@ -167,9 +183,11 @@ void UI_LogMessageArea::Draw_UI(void) {
 				nullptr
 			);
 
+			// キルされた側のメッセージを描画するためのオフセット
+			Vector2<int> offset = { 48, 32 };
 			DrawStringToHandle(
-				width + 48 + messageDrawPos.x,
-				32 * (messageList_.size() - 1 - i),
+				width + offset.x + messageDrawPos.x,
+				offset.y * (messageList_.size() - 1 - i),
 				killLog->by_.message_.c_str(),
 				killLog->by_.color_,
 				usingFont_->GetHandle()
@@ -184,6 +202,7 @@ void UI_LogMessageArea::Release_UI(void) {
 }
 
 void UI_LogMessageArea::AddMessage(const std::shared_ptr<MESSAGE_DATA_BASE>& logData) {
+	// ログを追加する
 	for (int i = 0; i < messageList_.size(); i++) {
 		if (messageList_[i]->type == LOG_MESSAGE_TYPE::NONE) {
 			messageList_[i] = logData;

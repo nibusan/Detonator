@@ -13,6 +13,7 @@ graphic_Mask_(graphic_Mask) {
 	auto& resourceManager = ResourceManager::GetInstance();
 	usingPixelShader_ = pixelShader;
 
+	// •`‰æ‚·‚é3Dƒ‚ƒfƒ‹‚ğ‘S‚Ä¶¬‚·‚é
 	for (auto& objID : objectIDs) {
 		std::shared_ptr<ObjectBase> obj;
 		switch (objID) {

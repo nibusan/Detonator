@@ -23,6 +23,7 @@ public:
 	void Release_UI(void) override;
 
 private:
+	// 各アイコンの描画位置
 	static constexpr Vector2<float> ICON_GRENADE_POS = { 25.0f, 41.0f };
 	static constexpr Vector2<float> ICON_GUN_POS = { 150.0f, 26.0f };
 

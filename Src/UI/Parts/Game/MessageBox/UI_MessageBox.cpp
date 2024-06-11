@@ -14,6 +14,7 @@ void UI_MessageBox::Init_UI(void) {
 }
 
 bool UI_MessageBox::Update_UI(void) {
+	// 追加するテキストの更新
 	addText_ = getAddTextFunction_();
 	return false;
 }
@@ -21,6 +22,8 @@ bool UI_MessageBox::Update_UI(void) {
 void UI_MessageBox::Draw_UI(void) {
 	auto textTotalCount = defText_.length() + addText_.length();
 	auto size = graphic_.lock()->GetSize();
+	
+	// 画像を文字列に長さに合わせるために3分割にして描画してます
 	graphic_.lock()->Draw({ 0.0f,0.0f }, false, 3, 1, 0, 0, nullptr);
 	graphic_.lock()->Draw(
 		{ 

@@ -50,7 +50,6 @@ bool UI_Button::Update_UI(void) {
 	// 入っていなかったら強調表示状態を解除してクリックされてない状態を示すfalseを返す
 	if (!isHit) {
 		SetIsHighlighted(false);
-		scaleRad_ = 0.0f;
 		scale_ = 1.0f;
 
 		if (colorValue_ >= 0.0f) {
@@ -93,9 +92,10 @@ void UI_Button::Release_UI(void) {
 }
 
 void UI_Button::HighlightedUpdate(void) {
-	scaleRad_ += Utility::Deg2RadF(2.0f);
-	//scale_ = 1.05f;
-	if (colorValue_ < 0.5f) {
-		colorValue_ += 0.1f;
+	// ピクセルシェーダーに渡す色の濃さを計算
+	const float MAX_COLOR_VALUE = 0.5f;
+	const float ADD_COLOR_VALUE = 0.1f;
+	if (colorValue_ < MAX_COLOR_VALUE) {
+		colorValue_ += ADD_COLOR_VALUE;
 	}
 }

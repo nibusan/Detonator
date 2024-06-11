@@ -18,6 +18,7 @@ void UI_ResultText::Init_UI(void) {
 }
 
 bool UI_ResultText::Update_UI(void) {
+	// 追加するテキストの更新
 	addText_ = getAddTextFunction_();
 	return false;
 }

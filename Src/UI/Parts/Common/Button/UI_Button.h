@@ -40,8 +40,7 @@ private:
 	Shared_Font usingFont2_;
 	unsigned int color2_;
 
-	// 
-	float scaleRad_;
+	// 強調表示状態で使用する色の濃さ
 	float colorValue_;
 
 	void HighlightedUpdate(void) override;
