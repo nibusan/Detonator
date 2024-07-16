@@ -20,8 +20,7 @@ graphic_(graphic),
 text_(text),
 color_(color),
 text2_(text2),
-color2_(color2),
-scaleRad_(0.0f) {
+color2_(color2) {
 	pixelShader_ = std::dynamic_pointer_cast<PixelShader>(ResourceManager::GetInstance().GetResourceFile("PixelShader_Button"));
 	usingFont_ = std::make_shared<Font>(name, size);
 	usingFont_->SetIsAutoDeleteHandle(true);
